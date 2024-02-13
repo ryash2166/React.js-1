@@ -1,0 +1,272 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    color: lightgreen;
+    text-transform: capitalize;
+    padding: 10px 0px;
+}
+
+
+.main
+{
+    background: linear-gradient(to bottom , #e0dbdb 44%, #f53939 );
+    width: 98%;
+    height: 850px;
+    margin: 10px auto;
+    position: relative;
+}
+
+.main-line{
+    position: sticky;
+    top: 450px;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    z-index: 2;
+}
+
+
+.Box
+{
+    font-size: 12px;
+    text-align: center;
+    text-transform: capitalize;
+    position: absolute;
+    width: 76px;
+    z-index: 2;
+    height: 300px;
+}
+
+.div
+{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.div::after
+{
+    position: absolute;
+    background-color:rgb(0, 53, 52);
+    height: 380px;
+    width: 8px;
+    top: -10%;
+    left: 45%;
+    content: "";
+    display: block;
+    margin: auto;
+    z-index: -1;
+}
+
+.box-1
+{
+    background-color: #0039a6;
+    margin: auto;
+    inset: 200px 0px 0px 50px ;
+}
+.m-box-1
+{
+    z-index: 1;
+}
+
+.box-2
+{
+    background-color:#D2122E;
+    inset: 300px 0px 0px 150px ;
+    margin: auto;
+}
+
+.box-3
+{
+    background-color:#4B5320;
+    inset: 100px 0px 0px 210px ;
+    margin: auto;
+}
+.m-box-3
+{
+    z-index: 1;
+}
+
+.box-4
+{
+    background-color:#F0E68C;
+    inset: 300px 0px 0px 300px ;
+    margin: auto;
+}
+
+.box-5
+{
+    background-color:#662d91;
+    inset: 450px 0px 0px 400px ;
+    margin: auto;
+}
+
+.box-6
+{
+    background-color:#FFC72C;
+    inset: 200px 0px 0px 450px ;
+    margin: auto;
+}
+.m-box-6
+{
+    z-index: 1;
+}
+
+.box-7
+{
+    background-color:#1DB954;
+    inset: 50px 0px 0px 530px ;
+    margin: auto;
+}
+
+.box-8
+{
+    background-color:#555;
+    inset: 250px 0px 0px 600px ;
+    margin: auto;
+}
+.m-box-8
+{
+    z-index: 1;
+}
+
+.box-9
+{
+    background-color:#000;
+    inset: 300px 0px 0px 700px ;
+    margin: auto;
+}
+.m-box-9
+{
+    z-index: 1;
+}
+
+.box-10
+{
+    background:linear-gradient(to left , #f53939 , #cde640 ,#FFC72C);
+    inset: 170px 0px 0px 780px ;
+    margin: auto;
+}
+
+
+section
+{
+    background-color: #e0dbdb;
+    height: 100vh;
+    width: 98%;
+    margin: 10px auto;
+    position: relative;
+}
+
+section .line:not(:hover)
+{
+    opacity: 0.55;
+}
+
+section .line-box:not(:hover)
+{
+    transform: rotate(0.5turn);
+}
+
+.line-box
+{
+    position: absolute;
+    z-index: 2;
+    width: 25%;
+    height: 41%;
+    top: 260px;
+    left: -55px;
+    right: 0;
+    margin: auto;
+    border-radius: 60%;
+    box-shadow: 0px 1px 10px 0px #800080;
+    transition: all 0.5s ease-in;
+    background-image: linear-gradient(to right, #0bdc54,#e6e6fa);
+}
+
+.line
+{
+    width: 5%;
+    height: 50px;
+    position: absolute;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.44);
+    z-index: 7;
+    transition: 0.5s all ease-out;
+}
+
+.line-1
+{
+    z-index: 8;
+    background-color: #0039a6;
+    width: 80%;
+    border-radius: 0px 40px 40px 0px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.line-2
+{
+    z-index: 7;
+    background-color: #1DB954;
+    height: 70%;
+    border-radius: 0px 0px 40px 40px;
+    right: 400px;
+    top: 0;
+    margin: auto;
+}
+.line-3
+{
+    z-index: 10;
+    background-color: #4B5320;
+    width: 85%;
+    border-radius: 40px 0px 0px 40px;
+    bottom: 60px;
+    right: 0;
+    margin: auto;
+}
+.line-4
+{
+    background-color:#555;
+    height: 70%;
+    border-radius: 40px 40px 0px 0px;
+    bottom:0;
+    left: 400px;
+    margin: auto;
+}
+.line-5
+{
+    z-index: 9;
+    background-color:#ff35ab;
+    height: 98%;
+    border-radius: 0px 0px 40px 40px;
+    left: 700px;
+    top: 0;
+    margin: auto;
+}
+.line-6
+{
+    background-color: #cde640;
+    right: 0%;
+    width: 55%;
+    border-radius: 40px 0px 0px 40px;
+    top: 160px;
+    margin: auto;
+}
+.line-7
+{
+    z-index: 11;
+    background-color: #f53939;
+    height: 76%;
+    border-radius: 40px 40px 0px 0px;
+    bottom:0;
+    left: 310px;
+    margin: auto;
+}
+

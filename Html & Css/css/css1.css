@@ -1,0 +1,117 @@
+
+/* @import'./CSS-Introduction.css';  */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+
+body
+{
+    font-family: sans-serif;
+}
+
+.main > p
+{
+    padding: 2px;
+    background-color: lightcoral;
+}
+
+.main + p
+{
+    padding: 20px;
+    background-color: lightsalmon;
+    color: brown;
+}
+
+.main ~ .General
+{
+    border: 3px solid lightslategrey;
+    padding: 4px;
+}
+
+/* ============link selecter======= */
+
+
+.links
+{
+    margin: auto;
+    padding: 2%;
+}
+
+.links a
+{
+    display: inline-block;
+    padding: 2px;
+}
+
+.links .link-1:link
+{
+    background-color:orange ;
+    color:rgb(0, 0, 0);
+}
+
+.links .link-1:focus
+{
+    background-color: #000000;
+}
+
+
+.links .link-2:visited
+{
+    background-color:#000000;
+    color: brown;
+}
+
+.links .link-3:hover
+{
+    background-color: lightcoral;
+}
+
+
+.links .link-4:active
+{
+    background-color: black;
+    color: aliceblue;
+}
+
+.links a[href="./CSS-Introduction.css"]
+{
+    background-color:red;
+}
+
+
+a {
+    color: blue;
+  }
+  
+  /* Internal links, beginning with "#" */
+  a[href^="#"] {
+    background-color: gold;
+  }
+  
+  /* Links with "example" anywhere in the URL */
+  a[href*="example"] {
+    background-color: silver;
+  }
+  
+  /* Links with "insensitive" anywhere in the URL,
+     regardless of capitalization */
+  a[href*="insensitive" i] {
+    color: cyan;
+  }
+  
+  /* Links with "cAsE" anywhere in the URL,
+  with matching capitalization */
+  a[href*="cAsE" s] {
+    color: pink;
+  }
+  
+  /* Links that end in ".org" */
+  a[href$=".org"] {
+    color: red;
+  }
+  
+  /* Links that start with "https://" and end in ".org" */
+  a[href^="https://"][href$=".org"]
+  {
+    color: green;
+  }

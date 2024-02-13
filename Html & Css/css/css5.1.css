@@ -1,0 +1,112 @@
+.mainbox{
+    display: flex;
+    height: 800px;
+    border: 5px dotted blue;
+    /* flex-wrap: nowrap;
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse; */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end;
+    justify-content: center;
+    justify-content: end;
+    justify-content: space-around;
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; 
+    align-items: flex-end;
+    align-items: flex-start;
+    align-items: center;
+    flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column;
+    flex-direction: column-reverse;
+    flex-flow: row;
+    flex-flow: row-reverse;
+    flex-flow: column;
+    flex-flow: column-reverse;
+    flex-flow: wrap;
+    flex-flow: nowrap;
+    flex-flow: wrap-reverse;
+    flex-flow: row wrap;
+    flex-flow: column wrap;
+    flex-flow: row-reverse wrap-reverse; */
+}
+.box1{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    color: white;
+    order: 5;
+    /* align-self: flex-start; */
+}
+.box2{
+    background-color: rgb(63, 63, 154);
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    color: white;
+    order: 8;
+    /* align-self: flex-end; */
+}
+.box3{
+    background-color: rgb(57,127,104);
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    color: white;
+    order: 3;
+    /* align-self: center; */
+}
+.box4{
+    background-color: rgb(167,224,148);
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    color: white;
+    order: 4;
+    /* align-self: self-end; */
+}
+.box5{
+    background-color: rgb(189,214,25);
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    color: white;
+    order: 1;
+    /* align-self: self-start; */
+}
+.box6{
+    background-color: rgb(177,185,30);
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    color: white;
+    order: 6;
+    /* align-self: center; */
+}
+.box7{
+    background-color: rgb(30,176,35);
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    color: white;
+    order: 7;
+    /* align-self: self-end; */
+}
+.box8{
+    background-color: rgb(86,12,63);
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    color: white;
+    order: 2;
+    /* align-self: start; */
+}
+.box9{
+    background-color: rgb(146,6,6);
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    color: white;
+    order: 9;
+}

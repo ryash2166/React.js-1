@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css1.css">
+    <title>Lecture 1 to CSS</title>
+</head>
+<body>
+
+    <!-- 
+        CSS Resetting value
+
+        CSS @import rule
+        CSS selector
+        
+        acceptable values
+
+        CSS combinator selector
+        CSS link selector
+        CSS color
+        CSS background propertie
+    -->
+
+    <h1 style="text-align: center;">
+        import rule
+    </h1>
+    <p>
+        using @import propertie we link other css file in to mine Css file  <br>
+        >  @import'./CSS-Introduction.css'; 
+         <br>
+         and also we improt font style in over page <br>
+        > @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+    </p>
+
+
+    <h1>
+        CSS selector
+    </h1>
+
+    <!--
+        Universal selector
+        simple tag selector
+        multi class selector
+        unique id selector
+        combinator selector
+        pseudo class selector
+        link selector
+        pseudo elements 
+    -->
+
+    <h1>
+        Universal selector <Q> * </Q>
+    </h1>
+    <p>
+        The universal selector is used with the star symbol 
+    </p>
+
+    <h1>
+        simple tag name 
+    </h1>
+    <p>Example, h1, h2, h3, P,pre, div, form, table,ol, ul, etc..</p>
+
+    <h1>
+        multi class selector<q> . </q>
+    </h1>
+    <p class="pera-class">
+        Fullstop symbol to use class in css 
+    </p>
+
+    <h1>
+        unique id selector <q>#</q>
+    </h1>
+
+    <p id="pera-id">
+        Hashtag symbol to use ID in css 
+        <br>
+        <q><b>More than one class can be given  but not more than one id </b></q>
+    </p>
+
+<div class="main">
+
+    <h1>
+        combina cor seleccon
+    </h1>
+
+    <p>
+        Descendent selector (space) <br>
+    </p>
+
+    <p>
+        Child selector (>) <br>
+    </p>
+
+</div>
+    
+    <p>
+        Adjuacent sibling selector (+) <br>
+    </p>
+        
+    <p class="General General-1">
+        General sibling selector (~) <br>
+    </p>
+    
+    <p class="General General-2">
+        SECOND PERA <br>
+        General sibling selector (~) <br>
+    </p>
+    
+    <h1>link selector</h1>
+
+    <div class="links">
+        <ol>
+            <li>link/focus</li>
+            <li>visited</li>
+            <li>hover</li>
+            <li>active</li>
+        </ol>
+        <a href="https://www.google.com" target="_blank" class="link-1">Google.com</a>
+        <a href="https://www.youtube.com" target="_blank" class="link-2">youtube.com</a>
+        <a href="https://www.facebook.com" target="_blank" class="link-3">facebook.com</a>
+        <a href="https://www.instagram.com" target="_blank" class="link-4">instagram.com</a>
+
+        <a href="./CSS-Introduction.css">css file</a>
+    </div>
+
+
+    <div class="link-selector" style="border: 2px solid lightblue; padding: 10px;">
+
+        <p style="padding: 2px 4px;">
+            <br> <q>[attr]</q><br>
+            Represents elements with an attribute name of attr. <br>
+    
+            <br> <q>[attr=value]</q><br>
+            Represents elements with an attribute name of attr whose value is exactly value. <br>
+    
+            <br> <q>[attr~=value]</q><br>
+            Represents elements with an attribute name of attr whose value is a whitespace-separated list of words, one of
+            which is exactly value. <br>
+    
+            <br> <q>[attr|=value]</q><br>
+            Represents elements with an attribute name of attr whose value can be exactly value or can begin with value
+            immediately followed by a hyphen, - (U+002D). It is often used for language subcode matches. <br>
+    
+            <br> <q>[attr^=value]</q><br>
+            Represents elements with an attribute name of attr whose value is prefixed (preceded) by value. <br>
+    
+            <br> <q>[attr$=value]</q><br>
+            Represents elements with an attribute name of attr whose value is suffixed (followed) by value. <br>
+    
+            <br> <q>[attr*=value]</q><br>
+            Represents elements with an attribute name of attr whose value contains at least one occurrence of value within
+            the string. <br>
+        </p>
+
+        <ul>
+            <li><a href="#internal">Internal link</a></li> <br>
+            <li><a href="http://example.com">Example link</a></li> <br>
+            <li><a href="#InSensitive">Insensitive internal link</a></li> <br>
+            <li><a href="http://example.org">Example org link</a></li> <br>
+            <li><a href="https://example.org">Example https org link</a></li> <br>
+        </ul>
+
+    </div>
+
+  
+
+</body>
+</html>

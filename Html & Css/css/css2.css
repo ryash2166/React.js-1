@@ -1,0 +1,94 @@
+.redius{
+    height: 200px;
+    width: 200px;
+    border: 2px solid brown;
+    border-radius: 40px;
+    border-radius: 10px 50px;
+    border-radius: 10px 50px 100px;
+    border-radius: 10px 50px 70px  100px;
+}
+
+.opacity{
+    height: 500px;
+    width: 400px;
+    background-color: rgb(0,250, 214);
+    opacity: 1;
+    color: rgb, (0,0,25);
+}
+
+.font{
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; */
+    /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ; */
+    font-family: 'montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.fontweight{
+    font-weight: lighter;
+}
+
+.textpropties{
+    color: blueviolet;
+}
+
+.decorethion{
+    /* text-decoration: overline; */
+    /* text-decoration:line-through; */
+    /* text-decoration: underline; */
+    /* text-decoration: underline dotted; */
+    /* text-decoration: wavy yellow line-through; */
+    text-decoration: none;
+    text-decoration: ;
+}
+
+.transform{
+    text-transform: capitalize;
+    text-transform: lowercase;
+    text-transform: uppercase;
+}
+
+.letterspacing{
+    text-align: justify;
+    letter-spacing: 12px;
+} 
+
+.wordspacing{
+    word-spacing: 40px;
+}
+
+.a{
+    vertical-align: bottom;
+}
+
+.b{
+    vertical-align: baseline;
+}
+
+.c{
+    vertical-align: middle;
+}
+
+.d{
+    vertical-align: sub;
+}
+
+.e{
+    vertical-align: super;
+}
+
+.f{
+    vertical-align: text-bottom;
+}
+
+.g{
+    vertical-align: top;
+}
+
+.whitespace{
+    white-space: nowrap; 
+    white-space: pre;
+    /* white-space: normal;
+    white-space: break-word; */
+}
