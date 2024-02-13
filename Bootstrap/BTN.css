@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(11, 11, 119);
+}
+
+h3{
+    text-align: center;
+    color: aliceblue;
+    margin-top: 20px;
+}
+
+.Ani{
+    width: 150px;
+    text-align: center;
+    padding: 20px;    
+}
+
+.Anni{
+    width: 150px;
+    text-align: center;
+    padding: 20px; 
+}
+

@@ -1,0 +1,33 @@
+.Acco-1 {
+    background-color: none;
+}
+
+.Acco {
+    margin: auto;
+    margin-top: 100px;
+}
+
+body {
+    background: rgb(243, 170, 60);
+}
+
+.line {
+    color: aliceblue;
+     margin-left: 30px;   
+} 
+
+.Acco-2 {
+    background-color: aliceblue;
+}
+
+button:focus {
+    outline-color: black;
+}
+
+/* Adjustments for responsive design */
+/* @media (max-width: 768px) {
+    .accordion-item {
+        margin-bottom: 10px;
+    }
+} */
+

@@ -1,0 +1,37 @@
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: red;
+}
+
+.offcanvas {
+    position: fixed;
+    bottom: 0;
+    z-index: var(--bs-offcanvas-zindex);
+    /* display: flex; */
+     flex-direction: column; 
+     max-width: 100%;
+    color: var(--bs-offcanvas-color);
+     visibility: hidden; 
+    background-color: red; 
+    background-clip: padding-box; 
+     outline: 0;
+    transition: var(--bs-offcanvas-transition); 
+}
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: red;
+}
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+}
+
+.wr{
+    /* width: 150px;
+    height: 150px;
+    color: white; */
+    /* margin-top: 10px;
+    margin-left: 10px; */
+}
+
+

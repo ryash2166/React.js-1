@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./Pract.css">
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+
+    <nav class="offcanvas offcanvas-start show" tabindex="-1" id="offcanvas" data-bs-keyboard="false"
+        data-bs-backdrop="true" data-bs-scroll="true">
+        <div class="offcanvas-header border-bottom">
+            <a href="/" class="d-flex align-items-center text-decoration-none offcanvas-title d-sm-block">
+                <h3>
+                    <i class="bi bi-chat-right-text-fill"></i>
+                    Sidebar
+                </h3>
+            </a>
+        </div>
+        <div class="offcanvas-body px-0">
+            <ul class="list-unstyled ps-0">
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse"
+                        data-bs-target="#home-collapse" aria-expanded="true">
+                        Home
+                    </button>
+                    <div class="collapse show" id="home-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="/" class="rounded">Overview</a></li>
+                            <li><a href="#" class="rounded">Updates</a></li>
+                            <li><a href="#" class="rounded">Reports</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#dashboard-collapse" aria-expanded="false">
+                        Dashboard
+                    </button>
+                    <div class="collapse" id="dashboard-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class="rounded">Overview</a></li>
+                            <li><a href="#" class="rounded">Weekly</a></li>
+                            <li><a href="#" class="rounded">Monthly</a></li>
+                            <li><a href="#" class="rounded">Annually</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#orders-collapse" aria-expanded="false">
+                        Orders
+                    </button>
+                    <div class="collapse" id="orders-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class="rounded">New</a></li>
+                            <li><a href="#" class="rounded">Processed</a></li>
+                            <li><a href="#" class="rounded">Shipped</a></li>
+                            <li><a href="#" class="rounded">Returned</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="border-top my-3"></li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#account-collapse" aria-expanded="false">
+                        Account
+                    </button>
+                    <div class="collapse" id="account-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class="rounded">New...</a></li>
+                            <li><a href="#" class="rounded">Profile</a></li>
+                            <li><a href="#" class="rounded">Settings</a></li>
+                            <li><a href="#" class="rounded">Sign out</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <button id="sidebarCollapse" class="float-end" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button"
+        aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <h1>Offcanvas Show</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit commodi voluptas, facilis itaque, soluta quae
+        maiores sapiente architecto hic consectetur deserunt non eius maxime facere nemo similique esse voluptates
+        ducimus nihil dolorem? Adipisci quas magni iure molestiae veniam totam atque temporibus distinctio voluptatum
+        vero, officia excepturi officiis quod, quam in obcaecati natus? Sunt nostrum, eius nobis, qui tenetur itaque
+        possimus incidunt fugit numquam repellendus amet reiciendis illo. Odio culpa unde cumque corporis laboriosam
+        earum, numquam mollitia? Neque iste dolore qui maxime, fugiat sunt deleniti eaque similique explicabo! Omnis
+        iste, nobis blanditiis veritatis recusandae aliquid corrupti nesciunt error officia excepturi eaque voluptatum
+        eius ducimus modi, tempora dolorum in voluptas! Velit nisi labore harum excepturi accusamus. Itaque ex
+        aspernatur quo tempore dignissimos.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem eligendi odio quia natus perferendis
+        laudantium exercitationem tempora repudiandae facere quas error, sint, expedita nobis enim voluptate numquam
+        magni facilis asperiores tenetur doloribus explicabo quaerat dolore officia. Minima ullam iusto maxime illo
+        praesentium nisi optio, non vel ducimus cumque, quibusdam explicabo temporibus omnis blanditiis. Earum
+        architecto eius cumque esse aperiam. Molestiae possimus aspernatur facere modi, commodi beatae accusamus
+        expedita excepturi iure quia esse quisquam repellat adipisci ut id recusandae aut animi incidunt ab porro? Ad
+        doloribus quo, error, magnam velit, corporis vero ipsa quaerat dolorem dolore odit rem unde placeat earum?</p>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

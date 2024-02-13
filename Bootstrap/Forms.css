@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(142, 0, 250);
+}
+
+.Anii{
+    height: 400px;
+    width: 750px;
+    background-color: white;
+    padding-top: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.Anni{
+    width: 340px;
+}
+
+.Anu{
+    width: 700px;
+}
+
+.Annii{
+    width: 210px;
+}

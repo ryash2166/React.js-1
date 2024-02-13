@@ -1,0 +1,21 @@
+.Ani{
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.btn{
+    height: 200px;
+    width: 200px;
+    border-radius: 30px;
+}
+
+.h-w{
+    height: 100px;
+    width: 100px;
+}
+
+i{
+    font-size: 100px;   
+}

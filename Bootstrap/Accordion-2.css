@@ -1,0 +1,22 @@
+.Acco {
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+.accordion-item {
+    border: none;
+}
+
+.Acco-2 {
+     
+        background: linear-gradient(to right,rgb(0, 123, 255),rgb(243, 170, 60)) ;
+        height: 100vh;
+}
+
+.clr {
+    background: linear-gradient(to right,rgb(0, 123, 255),rgb(243, 170, 60)) ;
+    color: white;
+}

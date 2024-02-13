@@ -1,0 +1,95 @@
+.Ani {
+    height: 650px;
+    width: 1350px;
+    background-color: rgb(169, 211, 228);
+    margin: auto;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+.Anii {
+    height: 570px;
+    width: 670px;
+    background-color: white;
+    margin-left: 40px;
+    padding-top: 30px;
+
+}
+
+h4 {
+    text-align: center;
+}
+
+h5 {
+    float: left;
+}
+
+.Anni {
+    font-size: 35px;
+    margin-left: 120px;
+}
+
+h6 {
+    text-wrap: nowrap;
+}
+
+.ani {
+    margin-left: 120px;
+}
+
+.anii {
+    margin-left: 50px;
+}
+i {
+    margin-left: 80px;
+}
+
+.ani-1 {
+    height: 90px;
+    width: 670;
+    background-color: rgb(197, 192, 185);
+    margin-top: 120px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+.ani-2 {
+    height: 550px;
+    width: 600px;
+    background-color: rgb(4, 4, 96);
+    margin-top: 30px;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+}
+
+.ani-3 {
+    margin-left: 80px;
+    color: skyblue;
+}
+
+table,
+td {
+    border: 2px solid white;
+    padding: 15px;
+    width: 400px;
+    color: white;
+}
+
+table {
+    margin-left: 100px;
+}
+
+.ani-4 {
+    height: 90px;
+    width: 670;
+    background-color: rgb(31, 31, 151);
+    margin-top: 90px;
+    text-align: center;
+    padding-top: 30px;
+    color: white;
+}

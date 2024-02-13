@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion-3</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./Accordion-3.css">
+</head>
+
+<body>
+
+    <div class="line50px" style="margin-left: 50px;">
+        _________________________________________________________________________________________________________________
+    </div>
+
+    <div class="accordion accordion-flush  w-75 p-2 Acco" id="accordionFlushExample">
+        <div class="accordion-item mb-2">
+            <div class="card">
+                <button class="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseOne">
+
+                    <i class="fas fa-minus float-right "></i>
+                    <b class="header-title float-left">
+                        COLLAPASIBLE GROUP ITEM #1
+                    </b>
+                </button>
+                <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body Acco-2">Placeholder content for this accordion, which is intended to
+                        demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body. It
+                        is shown by default, until the collapse plugin adds the appropriate classes that we use to style
+                        each element. These classes control the overall appearance, as well as the showing and hiding
+                        via CSS transitions. You can modify any of this with custom CSS or overriding our default
+                        variables.</div>
+                </div>
+            </div>
+            <div class="accordion-item mb-2">
+                <div class="card">
+                    <button class="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseOne">
+
+                        <i class="fas fa-minus float-right "></i>
+                        <b class="header-title float-left">
+                            COLLAPASIBLE GROUP ITEM #2
+                        </b>
+                    </button>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body Acco-2">Placeholder content for this accordion, which is intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
+                            body.</div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <div class="card">
+                        <button class="card-header collapsed card-link" data-toggle="collapse"
+                            data-target="#collapseOne">
+
+                            <i class="fas fa-minus float-right "></i>
+                            <b class="header-title float-left">
+                                COLLAPASIBLE GROUP ITEM #3
+                            </b>
+                        </button>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body Acco-2">Placeholder content for this accordion, which is intended
+                                to demonstrate the <code>.accordion-flush</code> class. This is the third item's
+                                accordion body. </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item mb-2">
+                        <div class="card">
+                            <button class="card-header collapsed card-link" data-toggle="collapse"
+                                data-target="#collapseOne">
+
+                                <i class="fas fa-minus float-right "></i>
+                                <b class="header-title float-left">
+                                    COLLAPASIBLE GROUP ITEM #4
+                                </b>
+                            </button>
+                            <div id="flush-collapsefour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body Acco-2">Placeholder content for this accordion, which is
+                                    intended to demonstrate the <code>.accordion-flush</code> class. This is the third
+                                    item's accordion body. </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <script>
+                        $('.card-header').click(function () {
+                            $(this).find('i').toggleClass('fas fa-plus fas fa-minus');
+                        });
+                    </script>
+
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

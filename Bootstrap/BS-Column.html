@@ -1,0 +1,3347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Practice</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="./Bs-Column.css" />
+</head>
+
+<body>
+
+  <!-- Vertical alignment -->
+
+  <div class="container">
+    <div class="row align-items-start">
+      <div class="col">
+        One of three columns
+      </div>
+      <div class="col">
+        One of three columns
+      </div>
+      <div class="col">
+        One of three columns
+      </div>
+    </div><br>
+    <div class="row align-items-center">
+      <div class="col">
+        One of three columns
+      </div>
+      <div class="col">
+        One of three columns
+      </div>
+      <div class="col">
+        One of three columns
+      </div>
+    </div><br>
+    <div class="row align-items-end">
+      <div class="col">
+        One of three columns
+      </div>
+      <div class="col">
+        One of three columns
+      </div>
+      <div class="col">
+        One of three columns
+      </div>
+    </div>
+  </div><br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col align-self-start">
+        One of three columns
+      </div>
+      <div class="col align-self-center">
+        One of three columns
+      </div>
+      <div class="col align-self-end">
+        One of three columns
+      </div>
+    </div>
+  </div><br>
+
+  <!-- Horizontal alignment -->
+  <div class="container">
+    <div class="row justify-content-start">
+      <div class="col-4">
+        One of two columns
+      </div>
+      <div class="col-4">
+        One of two columns
+      </div>
+    </div><br>
+    <div class="row justify-content-center">
+      <div class="col-4">
+        One of two columns
+      </div>
+      <div class="col-4">
+        One of two columns
+      </div>
+    </div><br>
+    <div class="row justify-content-end">
+      <div class="col-4">
+        One of two columns
+      </div>
+      <div class="col-4">
+        One of two columns
+      </div>
+    </div><br>
+    <div class="row justify-content-around">
+      <div class="col-4">
+        One of two columns
+      </div>
+      <div class="col-4">
+        One of two columns
+      </div>
+    </div><br>
+    <div class="row justify-content-between">
+      <div class="col-4">
+        One of two columns
+      </div>
+      <div class="col-4">
+        One of two columns
+      </div>
+    </div><br>
+    <div class="row justify-content-evenly">
+      <div class="col-4">
+        One of two columns
+      </div>
+      <div class="col-4">
+        One of two columns
+      </div>
+    </div>
+  </div><br>
+
+  <!-- Column wrapping -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-9">.col-9</div>
+      <div class="col-4">.col-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one
+        contiguous unit.</div>
+      <div class="col-7">.col-7<br>Subsequent columns continue along the new line.</div>
+    </div>
+  </div><br><br>
+
+  <!-- Column breaks -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+      <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+
+      <!-- Force next columns to break to new line -->
+      <div class="w-100"></div>
+
+      <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+      <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+    </div>
+  </div><br><br><br><br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+      <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+
+      <!-- Force next columns to break to new line at md breakpoint and up -->
+      <div class="w-100 d-none d-md-block"></div>
+
+      <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+      <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+    </div>
+  </div><br><br><br><br>
+
+  <!-- Order classes -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        First in DOM, no order applied
+      </div>
+      <div class="col order-5">
+        Second in DOM, with a larger order
+      </div>
+      <div class="col order-1">
+        Third in DOM, with an order of 1
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col order-last">
+        First in DOM, ordered last
+      </div>
+      <div class="col">
+        Second in DOM, unordered
+      </div>
+      <div class="col order-first">
+        Third in DOM, ordered first
+      </div>
+    </div>
+  </div><br><br>
+
+  <!-- Offset classes -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">.col-md-3</div>
+      <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+    </div><br>
+    <div class="row">
+      <div class="col-md-2 offset-md-5">.col-md-2 .offset-md-5</div>
+      <div class="col-md-2 offset-md-5">.col-md-2 .offset-md-5</div>
+    </div><br>
+    <div class="row">
+      <div class="col-md-8 offset-md-1">.col-md-8 .offset-md-1</div>
+    </div>
+  </div><br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>
+      <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">.col-sm-5 .offset-sm-2 .col-md-6 .offset-md-0</div>
+    </div><br>
+    <div class="row">
+      <div class="col-sm-6 col-md-5 col-lg-6">.col-sm-6 .col-md-5 .col-lg-6</div><br>
+      <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">.col-sm-6 .col-md-5 .offset-md-2 .col-lg-6
+        .offset-lg-0</div>
+    </div>
+  </div><br><br><br><br>
+
+  <!-- Margin utilities -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">.col-md-4</div>
+      <div class="col-md-4 ms-auto">.col-md-4 .ms-auto</div>
+    </div><br>
+    <div class="row">
+      <div class="col-md-3 ms-md-auto">.col-md-3 .ms-md-auto</div>
+      <div class="col-md-3 ms-md-auto">.col-md-3 .ms-md-auto</div>
+    </div><br>
+    <div class="row">
+      <div class="col-auto me-auto">.col-auto .me-auto</div>
+      <div class="col-auto">.col-auto</div>
+    </div>
+  </div><br><br>
+
+  <!-- Standalone column classes -->
+
+  <div class="col-3 p-3 border">
+    .col-3: width of 25%
+  </div>
+  <div class="col-sm-9  p-3 border">
+    .col-sm-9: width of 75% above sm breakpoint
+  </div>
+
+  <!-- Horizontal gutters  -->
+  <div class="container px-4 text-center">
+    <div class="row gx-5">
+      <div class="col">
+        <div class="p-3">Custom column padding</div>
+      </div>
+      <div class="col">
+        <div class="p-3">Custom column padding</div>
+      </div>
+    </div>
+  </div><br>
+
+  <div class="container overflow-hidden text-center">
+    <div class="row gx-5">
+      <div class="col">
+        <div class="p-3">Custom column padding</div>
+      </div>
+      <div class="col">
+        <div class="p-3">Custom column padding</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vertical gutters  -->
+  <div class="container overflow-hidden text-center">
+    <div class="row gy-5">
+      <div class="col-6">
+        <div class="p-3">Custom column padding</div>
+      </div>
+      <div class="col-6">
+        <div class="p-3">Custom column padding</div>
+      </div>
+      <div class="col-6">
+        <div class="p-3">Custom column padding</div>
+      </div>
+      <div class="col-6">
+        <div class="p-3">Custom column padding</div>
+      </div>
+    </div>
+  </div><br><br>
+
+  <!-- Horizontal & vertical gutters  -->
+
+  <div class="container text-center">
+    <div class="row g-2">
+      <div class="col-6">
+        <div class="p-3">Custom column padding</div>
+      </div>
+      <div class="col-6">
+        <div class="p-3">Custom column padding</div>
+      </div>
+      <div class="col-6">
+        <div class="p-3">Custom column padding</div>
+      </div>
+      <div class="col-6">
+        <div class="p-3">Custom column padding</div>
+      </div>
+    </div>
+  </div><br><br><br><br><br><br><br><br><br><br><br>
+
+  <!-- Paragraphs -->
+
+  <p>This is an example paragraph.</p>
+
+  <!-- heading -->
+  <h1>h1. Bootstrap heading</h1>
+  <h2>h2. Bootstrap heading</h2>
+  <h3>h3. Bootstrap heading</h3>
+  <h4>h4. Bootstrap heading</h4>
+  <h5>h5. Bootstrap heading</h5>
+  <h6>h6. Bootstrap heading</h6>
+
+  <!-- Links -->
+
+  <a href="#">This is an example link</a><br>
+  <a href="#" style="--bs-link-opacity: .5">This is an example link</a><br>
+
+  <!-- Horizontal rules  -->
+
+  <hr>
+
+  <div class="text-dark">
+    <hr>
+  </div>
+
+  <hr class="border border-danger border-2 opacity-50">
+  <hr class="border border-success border-3 opacity-75">
+
+  <!-- Inline code  -->
+
+  <code>&lt;section&gt;</code> should be wrapped as inline. <br><br>
+
+  <!-- Code blocks  -->
+
+  <pre><code>&lt;p&gt;Sample text here...&lt;/p&gt;
+  &lt;p&gt;And another line of sample text here...&lt;/p&gt;
+  </code></pre>
+
+  <!-- Tables  -->
+
+  <table>
+    <caption>
+      This is an example table, and this is its caption to describe the contents.
+    </caption>
+    <thead>
+      <tr>
+        <th>Table heading</th>
+        <th>Table heading</th>
+        <th>Table heading</th>
+        <th>Table heading</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Table cell</td>
+        <td>Table cell</td>
+        <td>Table cell</td>
+        <td>Table cell</td>
+      </tr>
+      <tr>
+        <td>Table cell</td>
+        <td>Table cell</td>
+        <td>Table cell</td>
+        <td>Table cell</td>
+      </tr>
+      <tr>
+        <td>Table cell</td>
+        <td>Table cell</td>
+        <td>Table cell</td>
+        <td>Table cell</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Typography -->
+  <!-- Customizing headings -->
+
+  <h3>
+    Fancy display heading
+    <small class="text-body-secondary">With faded secondary text</small>
+  </h3>
+
+  <!-- Display headings  -->
+
+  <h1 class="display-1">Display 1</h1>
+  <h1 class="display-2">Display 2</h1>
+  <h1 class="display-3">Display 3</h1>
+  <h1 class="display-4">Display 4</h1>
+  <h1 class="display-5">Display 5</h1>
+  <h1 class="display-6">Display 6</h1>
+
+  <!-- Lead  -->
+
+  <p class="lead">
+    This is a lead paragraph. It stands out from regular paragraphs.
+  </p>
+
+  <!-- Inline text elements -->
+
+  <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+  <p><del>This line of text is meant to be treated as deleted text.</del></p>
+  <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+  <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+  <p><u>This line of text will render as underlined.</u></p>
+  <p><small>This line of text is meant to be treated as fine print.</small></p>
+  <p><strong>This line rendered as bold text.</strong></p>
+  <p><em>This line rendered as italicized text.</em></p>
+
+  <!-- Naming a source -->
+
+  <figure>
+    <blockquote class="blockquote">
+      <p>A well-known quote, contained in a blockquote element.</p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+      Someone famous in <cite title="Source Title">Source Title</cite>
+    </figcaption>
+  </figure>
+
+  <!-- Alignment  -->
+  <!-- 1st -->
+  <figure class="text-center">
+    <blockquote class="blockquote">
+      <p>A well-known quote, contained in a blockquote element.</p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+      Someone famous in <cite title="Source Title">Source Title</cite>
+    </figcaption>
+  </figure>
+
+  <!-- 2nd -->
+  <figure class="text-end">
+    <blockquote class="blockquote">
+      <p>A well-known quote, contained in a blockquote element.</p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+      Someone famous in <cite title="Source Title">Source Title</cite>
+    </figcaption>
+  </figure>
+
+  <!-- Inline -->
+
+  <ul class="list-inline">
+    <li class="list-inline-item">This is a list item.</li>
+    <li class="list-inline-item">And another one.</li>
+    <li class="list-inline-item">But they're displayed inline.</li>
+  </ul>
+
+  <!-- Description list alignment  -->
+
+  <dl class="row">
+    <dt class="col-sm-3">Description lists</dt>
+    <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+
+    <dt class="col-sm-3">Term</dt>
+    <dd class="col-sm-9">
+      <p>Definition for the term.</p>
+      <p>And some more placeholder definition text.</p>
+    </dd>
+
+    <dt class="col-sm-3">Another term</dt>
+    <dd class="col-sm-9">This definition is short, so no extra paragraphs or anything.</dd>
+
+    <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
+    <dd class="col-sm-9">This can be useful when space is tight. Adds an ellipsis at the end.</dd>
+
+    <dt class="col-sm-3">Nesting</dt>
+    <dd class="col-sm-9">
+      <dl class="row">
+        <dt class="col-sm-4">Nested definition list</dt>
+        <dd class="col-sm-8">I heard you like definition lists. Let me put a definition list inside your definition
+          list.</dd>
+      </dl>
+    </dd>
+  </dl><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <!-- Images -->
+  <!-- Responsive images  -->
+
+  <!-- <img src="e:\BootStrap\asset 47.jpeg" class="img-fluid" alt="..."> -->
+  <!-- skip topics -->
+
+  <!-- Tables -->
+  <!-- Overview -->
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Variants -->
+  <!-- color  -->
+
+  <!-- Accented tables  -->
+  <!-- Striped rows  -->
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Striped columns -->
+
+  <table class="table table-striped-columns">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!--  -->
+
+  <table class="table table-dark table-striped-columns">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!--  -->
+
+  <table class="table table-dark table-striped-columns">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!--  -->
+  <table class="table table-success table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!--  -->
+  <table class="table table-success table-striped-columns">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!--  -->
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!--  -->
+  <table class="table table-dark table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!--  -->
+  <table class="table table-striped table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!--  -->
+  <!-- Active tables  -->
+  <table class="table table-primary">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="table-active">
+        ...
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2" class="table-active">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!--  -->
+  <table class="table table-dark">
+    <thead>
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+    </thead>
+    <tbody>
+      <tr class="table-active">
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2" class="table-active">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Table borders -->
+  <!-- Bordered tables  -->
+  <table class="table table-bordered border-dark">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!--  -->
+  <table class="table table-bordered border-primary">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Tables without borders -->
+  <table class="table table-success table-borderless">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- -->
+  <table class="table table-dark table-borderless">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Small tables  -->
+  <table class="table table-danger table-sm">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!--  -->
+  <table class="table table-dark table-sm">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Table group dividers  -->
+  <table class="table table-secondary">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Vertical alignment -->
+  <div class="table-responsive ">
+    <table class="table align-middle table-success">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr class="align-bottom">
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td class="align-top">This cell is aligned to the top.</td>
+          <td>@fat</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Nesting  -->
+  <table class="table table-primary table-striped table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+      <tr>
+        <td colspan="4">
+          <table class="table mb-0">
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </table>
+        </td>
+      </tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tbody>
+  </table>
+
+  <!-- Anatomy  -->
+  <!-- Table head  -->
+  <table class="table">
+    <thead class="table-light">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!--  -->
+  <table class="table">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Table Foot -->
+  <table class="table table-success">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <!-- Captions  -->
+  <table class="table table-info table-sm">
+    <caption>List of users</caption>
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!--  -->
+  <table class="table table-dark caption-top">
+    <caption>List of users</caption>
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Responsive tables  -->
+  <!-- Always responsive  -->
+  <div class="table-responsive">
+    <table class="table table-danger">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td colspan="2">Larry the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Breakpoint specific -->
+  <div class="table-responsive">
+    <table class="table table-warning">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td colspan="2">Larry the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!--  -->
+  <div class="table-responsive-sm">
+    <table class="table table-info">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td colspan="2">Larry the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!--  -->
+  <div class="table-responsive-md">
+    <table class="table table-secondary">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td colspan="2">Larry the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!--  -->
+  <div class="table-responsive-lg">
+    <table class="table table-success">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td colspan="2">Larry the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!--  -->
+  <div class="table-responsive-xl">
+    <table class="table table-primary">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td colspan="2">Larry the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!--  -->
+  <div class="table-responsive-xxl">
+    <table class="table table-danger">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td colspan="2">Larry the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Figures -->
+
+  <!-- <figure class="figure">
+  <img src="..." class="figure-img img-fluid rounded" alt="...">
+  <figcaption class="figure-caption">A caption for the above image.</figcaption>
+</figure> -->
+
+  <!--  -->
+  <!-- <figure class="figure">
+  <img src="..." class="figure-img img-fluid rounded" alt="...">
+  <figcaption class="figure-caption text-end">A caption for the above image.</figcaption>
+</figure> -->
+
+  <!-- Forms -->
+  <!-- Overview  -->
+  <form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form><br>
+  <hr>
+
+  <!-- Disabled forms -->
+  <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled><br>
+  <hr>
+
+  <!--  -->
+  <form>
+    <fieldset disabled>
+      <legend>Disabled fieldset example</legend>
+      <div class="mb-3">
+        <label for="disabledTextInput" class="form-label">Disabled input</label>
+        <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+      </div>
+      <div class="mb-3">
+        <label for="disabledSelect" class="form-label">Disabled select menu</label>
+        <select id="disabledSelect" class="form-select">
+          <option>Disabled select</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+          <label class="form-check-label" for="disabledFieldsetCheck">
+            Can't check this
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </fieldset>
+  </form><br>
+  <hr>
+
+  <!-- Form controls -->
+
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <hr>
+
+  <!-- Sizing -->
+
+  <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg"
+    aria-label=".form-control-lg example"><br>
+  <input class="form-control" type="text" placeholder="Default input" aria-label="default input example"><br>
+  <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm"
+    aria-label=".form-control-sm example">
+  <hr>
+
+  <!-- Form text -->
+
+  <label for="inputPassword5" class="form-label">Password</label>
+  <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+  <div id="passwordHelpBlock" class="form-text">
+    Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special
+    characters, or emoji.
+  </div>
+  <hr><br>
+
+  <div class="row g-3 align-items-center">
+    <div class="col-auto">
+      <label for="inputPassword6" class="col-form-label">Password</label>
+    </div>
+    <div class="col-auto">
+      <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+    </div>
+    <div class="col-auto">
+      <span id="passwordHelpInline" class="form-text">
+        Must be 8-20 characters long.
+      </span>
+    </div>
+  </div>
+  <hr>
+
+  <!-- Disabled -->
+
+  <input class="form-control" type="text" placeholder="Disabled input" aria-label="Disabled input example" disabled><br>
+  <input class="form-control" type="text" value="Disabled readonly input" aria-label="Disabled input example" disabled
+    readonly>
+  <hr>
+
+  <!-- Readonly  -->
+
+  <input class="form-control" type="text" value="Readonly input here..." aria-label="readonly input example" readonly>
+  <hr>
+
+  <!-- Readonly plain text  -->
+
+  <div class="mb-3 row">
+    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+    </div>
+  </div>
+  <div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword">
+    </div>
+  </div>
+  <hr><br>
+
+  <form class="row g-3">
+    <div class="col-auto">
+      <label for="staticEmail2" class="visually-hidden">Email</label>
+      <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+    </div>
+    <div class="col-auto">
+      <label for="inputPassword2" class="visually-hidden">Password</label>
+      <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+    </div>
+    <div class="col-auto">
+      <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+    </div>
+  </form>
+  <hr>
+
+  <!-- File input -->
+
+  <div class="mb-3">
+    <label for="formFile" class="form-label">Default file input example</label>
+    <input class="form-control" type="file" id="formFile">
+  </div>
+  <div class="mb-3">
+    <label for="formFileMultiple" class="form-label">Multiple files input example</label>
+    <input class="form-control" type="file" id="formFileMultiple" multiple>
+  </div>
+  <div class="mb-3">
+    <label for="formFileDisabled" class="form-label">Disabled file input example</label>
+    <input class="form-control" type="file" id="formFileDisabled" disabled>
+  </div>
+  <div class="mb-3">
+    <label for="formFileSm" class="form-label">Small file input example</label>
+    <input class="form-control form-control-sm" id="formFileSm" type="file">
+  </div>
+  <div>
+    <label for="formFileLg" class="form-label">Large file input example</label>
+    <input class="form-control form-control-lg" id="formFileLg" type="file">
+  </div>
+  <hr>
+
+  <!-- Color -->
+
+  <label for="exampleColorInput" class="form-label">Color picker</label>
+  <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c"
+    title="Choose your color">
+  <hr>
+
+  <!-- Datalists -->
+
+  <label for="exampleDataList" class="form-label">Datalist example</label>
+  <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+  <datalist id="datalistOptions">
+    <option value="San Francisco">
+    <option value="New York">
+    <option value="Seattle">
+    <option value="Los Angeles">
+    <option value="Chicago">
+  </datalist>
+  <hr>
+
+  <!-- Select -->
+  <!-- Default  -->
+  <select class="form-select" aria-label="Default select example">
+    <option selected>Open this select menu</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+  <hr>
+
+  <!-- Sizing  -->
+
+  <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+    <option selected>Open this select menu</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+
+  <select class="form-select form-select-sm" aria-label="Small select example">
+    <option selected>Open this select menu</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+  <hr>
+
+  <!--  -->
+  <select class="form-select" multiple aria-label="Multiple select example">
+    <option selected>Open this select menu</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+  <hr>
+
+  <!--  -->
+  <select class="form-select" size="3" aria-label="Size 3 select example">
+    <option selected>Open this select menu</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+  <hr>
+
+  <!-- Disabled -->
+
+  <select class="form-select" aria-label="Disabled select example" disabled>
+    <option selected>Open this select menu</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+  <hr>
+
+  <!-- Checks and radios -->
+  <!-- Checks -->
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+    <label class="form-check-label" for="flexCheckDefault">
+      Default checkbox
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+    <label class="form-check-label" for="flexCheckChecked">
+      Checked checkbox
+    </label>
+  </div>
+  <hr>
+
+  <!-- Indeterminate -->
+
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+    <label class="form-check-label" for="flexCheckIndeterminate">
+      Indeterminate checkbox
+    </label>
+  </div>
+  <hr>
+
+  <!-- Disabled -->
+
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" disabled>
+    <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+      Disabled indeterminate checkbox
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled" disabled>
+    <label class="form-check-label" for="flexCheckDisabled">
+      Disabled checkbox
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled" checked disabled>
+    <label class="form-check-label" for="flexCheckCheckedDisabled">
+      Disabled checked checkbox
+    </label>
+  </div>
+  <hr>
+
+  <!-- Radios  -->
+
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+    <label class="form-check-label" for="flexRadioDefault1">
+      Default radio
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+    <label class="form-check-label" for="flexRadioDefault2">
+      Default checked radio
+    </label>
+  </div>
+  <hr>
+
+  <!-- Disabled  -->
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" disabled>
+    <label class="form-check-label" for="flexRadioDisabled">
+      Disabled radio
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioCheckedDisabled" checked
+      disabled>
+    <label class="form-check-label" for="flexRadioCheckedDisabled">
+      Disabled checked radio
+    </label>
+  </div>
+  <hr>
+
+  <!-- Switches -->
+
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+    <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+  </div>
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+    <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+  </div>
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDisabled" disabled>
+    <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+  </div>
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedDisabled" checked disabled>
+    <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+  </div>
+  <hr>
+
+  <!-- Default (stacked) -->
+
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+    <label class="form-check-label" for="defaultCheck1">
+      Default checkbox
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+    <label class="form-check-label" for="defaultCheck2">
+      Disabled checkbox
+    </label>
+  </div>
+  <hr>
+
+  <!--  -->
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+    <label class="form-check-label" for="exampleRadios1">
+      Default radio
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+    <label class="form-check-label" for="exampleRadios2">
+      Second default radio
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+    <label class="form-check-label" for="exampleRadios3">
+      Disabled radio
+    </label>
+  </div>
+  <hr>
+
+  <!-- Inline -->
+
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+    <label class="form-check-label" for="inlineCheckbox1">1</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+    <label class="form-check-label" for="inlineCheckbox2">2</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+    <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+  </div>
+  <hr>
+  <!--  -->
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+    <label class="form-check-label" for="inlineRadio1">1</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+    <label class="form-check-label" for="inlineRadio2">2</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+    <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+  </div>
+  <hr>
+
+  <!-- Reverse  -->
+
+  <div class="form-check form-check-reverse">
+    <input class="form-check-input" type="checkbox" value="" id="reverseCheck1">
+    <label class="form-check-label" for="reverseCheck1">
+      Reverse checkbox
+    </label>
+  </div>
+  <div class="form-check form-check-reverse">
+    <input class="form-check-input" type="checkbox" value="" id="reverseCheck2" disabled>
+    <label class="form-check-label" for="reverseCheck2">
+      Disabled reverse checkbox
+    </label>
+  </div>
+
+  <div class="form-check form-switch form-check-reverse">
+    <input class="form-check-input" type="checkbox" id="flexSwitchCheckReverse">
+    <label class="form-check-label" for="flexSwitchCheckReverse">Reverse switch checkbox input</label>
+  </div>
+  <hr>
+
+  <!-- Without labels -->
+
+  <div>
+    <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+  </div>
+
+  <div>
+    <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" aria-label="...">
+  </div>
+  <hr>
+
+  <!-- Toggle buttons -->
+  <!-- Checkbox toggle buttons -->
+
+  <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+  <label class="btn btn-primary" for="btn-check">Single toggle</label>
+
+  <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off">
+  <label class="btn btn-primary" for="btn-check-2">Checked</label>
+
+  <input type="checkbox" class="btn-check" id="btn-check-3" autocomplete="off" disabled>
+  <label class="btn btn-primary" for="btn-check-3">Disabled</label>
+  <hr>
+
+  <!--  -->
+  <input type="checkbox" class="btn-check" id="btn-check-4" autocomplete="off">
+  <label class="btn" for="btn-check-4">Single toggle</label>
+
+  <input type="checkbox" class="btn-check" id="btn-check-5" checked autocomplete="off">
+  <label class="btn" for="btn-check-5">Checked</label>
+
+  <input type="checkbox" class="btn-check" id="btn-check-6" autocomplete="off" disabled>
+  <label class="btn" for="btn-check-6">Disabled</label>
+  <hr>
+
+  <!-- Radio toggle buttons  -->
+
+  <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+  <label class="btn btn-secondary" for="option1">Checked</label>
+
+  <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+  <label class="btn btn-secondary" for="option2">Radio</label>
+
+  <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off" disabled>
+  <label class="btn btn-secondary" for="option3">Disabled</label>
+
+  <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+  <label class="btn btn-secondary" for="option4">Radio</label>
+  <hr>
+
+  <!-- -->
+  <input type="radio" class="btn-check" name="options-base" id="option5" autocomplete="off" checked>
+  <label class="btn" for="option5">Checked</label>
+
+  <input type="radio" class="btn-check" name="options-base" id="option6" autocomplete="off">
+  <label class="btn" for="option6">Radio</label>
+
+  <input type="radio" class="btn-check" name="options-base" id="option7" autocomplete="off" disabled>
+  <label class="btn" for="option7">Disabled</label>
+
+  <input type="radio" class="btn-check" name="options-base" id="option8" autocomplete="off">
+  <label class="btn" for="option8">Radio</label>
+  <hr>
+
+  <!-- Outlined styles -->
+
+  <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+  <label class="btn btn-outline-primary" for="btn-check-outlined">Single toggle</label><br>
+
+  <input type="checkbox" class="btn-check" id="btn-check-2-outlined" checked autocomplete="off">
+  <label class="btn btn-outline-secondary" for="btn-check-2-outlined">Checked</label><br>
+
+  <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked>
+  <label class="btn btn-outline-success" for="success-outlined">Checked success radio</label>
+
+  <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
+  <label class="btn btn-outline-danger" for="danger-outlined">Danger radio</label>
+  <hr>
+
+  <!-- Range -->
+
+  <label for="customRange1" class="form-label">Example range</label>
+  <input type="range" class="form-range" id="customRange1"><br><br>
+
+  <!-- Disabled  -->
+
+  <label for="disabledRange" class="form-label">Disabled range</label>
+  <input type="range" class="form-range" id="disabledRange" disabled><br><br>
+
+  <!-- Min and max  -->
+
+  <label for="customRange2" class="form-label">Example range</label>
+  <input type="range" class="form-range" min="0" max="5" id="customRange2"><br><br>
+
+  <!-- Steps  -->
+
+  <label for="customRange3" class="form-label">Example range</label>
+  <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3"><br><br>
+  <hr>
+
+  <!-- Input group -->
+
+  <!-- Basic example -->
+  <!-- 1st  -->
+  <div class="input-group mb-3">
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">@</span>
+      <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+        aria-describedby="basic-addon1">
+    </div>
+    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+      aria-describedby="basic-addon1">
+  </div>
+
+  <!-- 2nd  -->
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+      aria-describedby="basic-addon1">
+    <span class="input-group-text" id="basic-addon1">@</span>
+  </div>
+  <hr>
+
+  <!-- 1st -->
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">@</span>
+    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+      aria-describedby="basic-addon2">
+    <span class="input-group-text" id="basic-addon2">@example.com</span>
+  </div>
+
+  <!-- 2nd -->
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+      aria-describedby="basic-addon2">
+    <span class="input-group-text" id="basic-addon1">@</span>
+    <span class="input-group-text" id="basic-addon2">@example.com</span>
+  </div>
+
+  <!-- 3rd -->
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon2">@example.com</span>
+    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+      aria-describedby="basic-addon2">
+  </div>
+  <hr>
+
+  <!-- 1st  -->
+  <div class="mb-3">
+    <label for="basic-url" class="form-label">Your vanity URL</label>
+    <div class="input-group">
+      <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+      <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+    </div>
+    <div class="form-text" id="basic-addon4">Example help text goes outside the input group.</div>
+  </div>
+  <hr>
+
+  <!-- 1st -->
+  <div class="input-group mb-3">
+    <span class="input-group-text">$</span>
+    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+    <span class="input-group-text">.00</span>
+  </div>
+
+  <!-- 2nd -->
+  <div class="input-group mb-3">
+    <span class="input-group-text">$</span>
+    <span class="input-group-text">.00</span>
+    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+  </div>
+
+  <!-- 3rd  -->
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+    <span class="input-group-text">$</span>
+    <span class="input-group-text">.00</span>
+  </div>
+  <hr>
+
+  <!--  -->
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+    <span class="input-group-text">@</span>
+    <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+  </div>
+
+  <div class="input-group">
+    <span class="input-group-text">With textarea</span>
+    <textarea class="form-control" aria-label="With textarea"></textarea>
+  </div><br>
+  <hr>
+
+  <!-- Wrapping  -->
+
+  <div class="input-group flex-nowrap">
+    <span class="input-group-text" id="addon-wrapping">@</span>
+    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+      aria-describedby="addon-wrapping">
+  </div><br>
+  <hr>
+
+  <!-- Sizing  -->
+
+  <div class="input-group input-group-sm mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+  </div>
+
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-default">Default</span>
+    <input type="text" class="form-control" aria-label="Sizing example input"
+      aria-describedby="inputGroup-sizing-default">
+  </div>
+
+  <div class="input-group input-group-lg">
+    <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
+    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+  </div><br>
+  <hr>
+
+  <!-- Checkboxes and radios  -->
+
+  <div class="input-group mb-3">
+    <div class="input-group-text">
+      <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+    </div>
+    <input type="text" class="form-control" aria-label="Text input with checkbox">
+  </div>
+
+  <div class="input-group">
+    <div class="input-group-text">
+      <input class="form-check-input mt-0" type="radio" value="" aria-label="Radio button for following text input">
+    </div>
+    <input type="text" class="form-control" aria-label="Text input with radio button">
+  </div><br>
+
+  <!-- rever -->
+
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" aria-label="Text input with checkbox">
+    <div class="input-group-text">
+      <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+    </div>
+  </div>
+
+  <div class="input-group">
+    <input type="text" class="form-control" aria-label="Text input with radio button">
+    <div class="input-group-text">
+      <input class="form-check-input mt-0" type="radio" value="" aria-label="Radio button for following text input">
+    </div>
+  </div><br>
+  <hr>
+
+  <!-- Multiple inputs  -->
+  <!-- 1st  -->
+  <div class="input-group">
+    <span class="input-group-text">First and last name</span>
+    <input type="text" aria-label="First name" class="form-control">
+    <input type="text" aria-label="Last name" class="form-control">
+  </div><br>
+
+  <!-- 2nd  -->
+  <div class="input-group">
+    <input type="text" aria-label="First name" class="form-control">
+    <span class="input-group-text">First and last name</span>
+    <input type="text" aria-label="Last name" class="form-control">
+  </div><br>
+
+  <!-- 3rd -->
+  <div class="input-group">
+    <input type="text" aria-label="First name" class="form-control">
+    <input type="text" aria-label="Last name" class="form-control">
+    <span class="input-group-text">First and last name</span>
+  </div><br>
+  <hr>
+
+  <!-- Button addons -->
+  <!-- 1st -->
+  <div class="input-group mb-3">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+    <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon"
+      aria-describedby="button-addon1">
+  </div>
+
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+      aria-describedby="button-addon2">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+  </div>
+
+  <div class="input-group mb-3">
+    <button class="btn btn-outline-secondary" type="button">Button</button>
+    <button class="btn btn-outline-secondary" type="button">Button</button>
+    <input type="text" class="form-control" placeholder="" aria-label="Example text with two button addons">
+  </div>
+
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="Recipient's username"
+      aria-label="Recipient's username with two button addons">
+    <button class="btn btn-outline-secondary" type="button">Button</button>
+    <button class="btn btn-outline-secondary" type="button">Button</button>
+  </div><br>
+
+  <!-- 2nd -->
+  <div class="input-group">
+    <button class="btn btn-outline-secondary" type="button">Button</button>
+    <input type="text" class="form-control" placeholder="Recipient's username"
+      aria-label="Recipient's username with two button addons">
+    <button class="btn btn-outline-secondary" type="button">Button</button>
+  </div><br>
+  <hr>
+
+  <!-- Buttons with dropdowns  -->
+  <!-- 1st -->
+  <div class="input-group mb-3">
+    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+      aria-expanded="false">Dropdown</button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li>
+        <hr class="dropdown-divider">
+      </li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+    <input type="text" class="form-control" aria-label="Text input with dropdown button">
+  </div>
+
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" aria-label="Text input with dropdown button">
+    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+      aria-expanded="false">Dropdown</button>
+    <ul class="dropdown-menu dropdown-menu-end">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li>
+        <hr class="dropdown-divider">
+      </li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </div>
+
+  <div class="input-group">
+    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+      aria-expanded="false">Dropdown</button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action before</a></li>
+      <li><a class="dropdown-item" href="#">Another action before</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li>
+        <hr class="dropdown-divider">
+      </li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+    <input type="text" class="form-control" aria-label="Text input with 2 dropdown buttons">
+    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+      aria-expanded="false">Dropdown</button>
+    <ul class="dropdown-menu dropdown-menu-end">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li>
+        <hr class="dropdown-divider">
+      </li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </div><br>
+
+  <!-- 2nd -->
+  <div class="input-group mb-3">
+    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+      aria-expanded="false">Dropdown</button>
+    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+      aria-expanded="false">Dropdown</button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li>
+        <hr class="dropdown-divider">
+      </li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+    <input type="text" class="form-control" aria-label="Text input with dropdown button">
+  </div>
+
+  <div class="input-group mb-3">
+    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+      aria-expanded="false">Dropdown</button>
+    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+      aria-expanded="false">Dropdown</button>
+    <input type="text" class="form-control" aria-label="Text input with dropdown button">
+    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+      aria-expanded="false">Dropdown</button>
+    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+      aria-expanded="false">Dropdown</button>
+    <ul class="dropdown-menu dropdown-menu-end">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li>
+        <hr class="dropdown-divider">
+      </li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </div>
+
+  <div class="input-group">
+    <input type="text" class="form-control" aria-label="Text input with 2 dropdown buttons">
+    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+      aria-expanded="false">Dropdown</button>
+    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+      aria-expanded="false">Dropdown</button>
+    <ul class="dropdown-menu dropdown-menu-end">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li>
+        <hr class="dropdown-divider">
+      </li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </div><br>
+  <hr>
+
+  <!-- Segmented buttons  -->
+  <!-- 1st -->
+  <div class="input-group mb-3">
+    <button type="button" class="btn btn-outline-secondary">Action</button>
+    <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+      data-bs-toggle="dropdown" aria-expanded="false">
+      <span class="visually-hidden">Toggle Dropdown</span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li>
+        <hr class="dropdown-divider">
+      </li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+    <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+  </div>
+
+  <div class="input-group">
+    <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+    <button type="button" class="btn btn-outline-secondary">Action</button>
+    <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+      data-bs-toggle="dropdown" aria-expanded="false">
+      <span class="visually-hidden">Toggle Dropdown</span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li>
+        <hr class="dropdown-divider">
+      </li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </div><br>
+
+  <!-- 2nd -->
+  <div class="input-group mb-3">
+    <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+      data-bs-toggle="dropdown" aria-expanded="false">
+      <button type="button" class="btn btn-outline-secondary">Action</button>
+      <span class="visually-hidden">Toggle Dropdown</span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li>
+        <hr class="dropdown-divider">
+      </li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+    <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+  </div>
+
+  <!-- 3rd -->
+  <div class="input-group">
+    <button type="button" class="btn btn-outline-secondary">Action</button>
+    <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+    <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+      data-bs-toggle="dropdown" aria-expanded="false">
+      <span class="visually-hidden">Toggle Dropdown</span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li>
+        <hr class="dropdown-divider">
+      </li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </div><br>
+
+  <!-- 4th -->
+  <div class="input-group">
+    <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+    <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+      data-bs-toggle="dropdown" aria-expanded="false">
+      <span class="visually-hidden">Toggle Dropdown</span>
+      <button type="button" class="btn btn-outline-secondary">Action</button>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li>
+        <hr class="dropdown-divider">
+      </li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </div><br>
+
+  <!-- 5th -->
+  <div class="input-group">
+    <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+      data-bs-toggle="dropdown" aria-expanded="false">
+      <span class="visually-hidden">Toggle Dropdown</span>
+    </button>
+    <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+    <button type="button" class="btn btn-outline-secondary">Action</button>
+    <ul class="dropdown-menu dropdown-menu-end">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li>
+        <hr class="dropdown-divider">
+      </li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </div><br>
+  <hr>
+
+  <!-- Custom forms  -->
+  <!-- Custom select  -->
+  <!-- 1st -->
+  <div class="input-group mb-3">
+    <label class="input-group-text" for="inputGroupSelect01">Options</label>
+    <select class="form-select" id="inputGroupSelect01">
+      <option selected>Choose...</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+  </div>
+
+  <div class="input-group mb-3">
+    <select class="form-select" id="inputGroupSelect02">
+      <option selected>Choose...</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+    <label class="input-group-text" for="inputGroupSelect02">Options</label>
+  </div>
+
+  <div class="input-group mb-3">
+    <button class="btn btn-outline-secondary" type="button">Button</button>
+    <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+      <option selected>Choose...</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+  </div>
+
+  <div class="input-group">
+    <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+      <option selected>Choose...</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+    <button class="btn btn-outline-secondary" type="button">Button</button>
+  </div><br>
+
+  <!-- 2nd -->
+  <div class="input-group mb-3">
+    <label class="input-group-text" for="inputGroupSelect01">Options</label>
+    <button class="btn btn-outline-secondary" type="button">Button</button>
+    <select class="form-select" id="inputGroupSelect01">
+      <option selected>Choose...</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+  </div>
+
+  <div class="input-group mb-3">
+    <select class="form-select" id="inputGroupSelect02">
+      <option selected>Choose...</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+    <label class="input-group-text" for="inputGroupSelect02">Options</label>
+    <button class="btn btn-outline-secondary" type="button">Button</button>
+  </div>
+
+  <div class="input-group mb-3">
+    <button class="btn btn-outline-secondary" type="button">Button</button>
+    <label class="input-group-text" for="inputGroupSelect01">Options</label>
+    <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+      <option selected>Choose...</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+  </div>
+
+  <div class="input-group">
+    <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+      <option selected>Choose...</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+    <button class="btn btn-outline-secondary" type="button">Button</button>
+    <label class="input-group-text" for="inputGroupSelect01">Options</label>
+  </div>
+  <hr>
+
+  <!-- Custom file input -->
+  <!-- 1st -->
+  <div class="input-group mb-3">
+    <label class="input-group-text" for="inputGroupFile01">Upload</label>
+    <input type="file" class="form-control" id="inputGroupFile01">
+  </div>
+
+  <div class="input-group mb-3">
+    <input type="file" class="form-control" id="inputGroupFile02">
+    <label class="input-group-text" for="inputGroupFile02">Upload</label>
+  </div>
+
+  <div class="input-group mb-3">
+    <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon03">Button</button>
+    <input type="file" class="form-control" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03"
+      aria-label="Upload">
+  </div>
+
+  <div class="input-group">
+    <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04"
+      aria-label="Upload">
+    <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button>
+  </div>
+  <hr>
+
+  <!-- Floating labels -->
+
+  <div class="form-floating mb-3">
+    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+    <label for="floatingInput">Email address</label>
+  </div>
+  <div class="form-floating">
+    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+    <label for="floatingPassword">Password</label>
+  </div>
+  <hr>
+
+  <!-- -->
+
+  <form class="form-floating">
+    <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com"
+      value="test@example.com">
+    <label for="floatingInputValue">Input with value</label>
+  </form>
+  <hr>
+
+  <!--  -->
+
+  <form class="form-floating">
+    <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com"
+      value="test@example.com">
+    <label for="floatingInputInvalid">Invalid input</label>
+  </form>
+  <hr>
+
+  <!-- Textareas -->
+
+  <div class="form-floating">
+    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+    <label for="floatingTextarea">Comments</label>
+  </div>
+  <hr>
+
+  <!--  -->
+
+  <div class="form-floating">
+    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+      style="height: 100px"></textarea>
+    <label for="floatingTextarea2">Comments</label>
+  </div>
+  <hr>
+
+  <!-- Selects  -->
+
+  <div class="form-floating">
+    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+      <option selected>Open this select menu</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+    <label for="floatingSelect">Works with selects</label>
+  </div>
+  <hr>
+
+  <!-- Disabled -->
+
+  <div class="form-floating mb-3">
+    <input type="email" class="form-control" id="floatingInputDisabled" placeholder="name@example.com" disabled>
+    <label for="floatingInputDisabled">Email address</label>
+  </div>
+  <div class="form-floating mb-3">
+    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextareaDisabled" disabled></textarea>
+    <label for="floatingTextareaDisabled">Comments</label>
+  </div>
+  <div class="form-floating mb-3">
+    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2Disabled"
+      style="height: 100px" disabled>Disabled textarea with some text inside</textarea>
+    <label for="floatingTextarea2Disabled">Comments</label>
+  </div>
+  <div class="form-floating">
+    <select class="form-select" id="floatingSelectDisabled" aria-label="Floating label disabled select example"
+      disabled>
+      <option selected>Open this select menu</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+    <label for="floatingSelectDisabled">Works with selects</label>
+  </div>
+  <hr>
+
+  <!-- Readonly plaintext  -->
+
+  <div class="form-floating mb-3">
+    <input type="email" readonly class="form-control-plaintext" id="floatingEmptyPlaintextInput"
+      placeholder="name@example.com">
+    <label for="floatingEmptyPlaintextInput">Empty input</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="email" readonly class="form-control-plaintext" id="floatingPlaintextInput"
+      placeholder="name@example.com" value="name@example.com">
+    <label for="floatingPlaintextInput">Input with value</label>
+  </div>
+  <hr>
+
+  <!-- Input groups -->
+
+  <div class="input-group mb-3">
+    <span class="input-group-text">@</span>
+    <div class="form-floating">
+      <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
+      <label for="floatingInputGroup1">Username</label>
+    </div>
+  </div>
+  <hr>
+
+  <!--  -->
+
+  <div class="input-group has-validation">
+    <span class="input-group-text">@</span>
+    <div class="form-floating is-invalid">
+      <input type="text" class="form-control is-invalid" id="floatingInputGroup2" placeholder="Username" required>
+      <label for="floatingInputGroup2">Username</label>
+    </div>
+    <div class="invalid-feedback">
+      Please choose a username.
+    </div>
+  </div>
+  <hr>
+
+  <!-- Layout  -->
+
+  <div class="row g-2">
+    <div class="col-md">
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com"
+          value="mdo@example.com">
+        <label for="floatingInputGrid">Email address</label>
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="form-floating">
+        <select class="form-select" id="floatingSelectGrid">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <label for="floatingSelectGrid">Works with selects</label>
+      </div>
+    </div>
+  </div><br>
+  <hr>
+
+  <!-- Layout -->
+  <!-- Form -->
+
+  <div class="mb-3">
+    <label for="formGroupExampleInput" class="form-label">Example label</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+  </div>
+  <div class="mb-3">
+    <label for="formGroupExampleInput2" class="form-label">Another label</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+  </div>
+  <hr>
+
+  <!-- Form Grid -->
+
+  <div class="row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+    </div>
+  </div>
+  <hr><br>
+
+  <!-- Gutters -->
+
+  <div class="row g-3">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+    </div>
+  </div><br>
+  <hr>
+
+
+  <!--  -->
+
+  <!-- <form class="row g-3">
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Email</label>
+    <input type="email" class="form-control" id="inputEmail4">
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Password</label>
+    <input type="password" class="form-control" id="inputPassword4">
+  </div>
+  <div class="col-12">
+    <label for="inputAddress" class="form-label">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <div class="col-12">
+    <label for="inputAddress2" class="form-label">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div>
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label">City</label>
+    <input type="text" class="form-control" id="inputCity">
+  </div>
+  <div class="col-md-4">
+    <label for="inputState" class="form-label">State</label>
+    <select id="inputState" class="form-select">
+      <option selected>Choose...</option>
+      <option>...</option>
+    </select>
+  </div>
+  <div class="col-md-2">
+    <label for="inputZip" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="inputZip">
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Sign in</button>
+  </div>
+<form><br><br><br><hr> -->
+
+
+  <!-- Horizontal form -->
+
+  <form>
+    <div class="row mb-3">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="inputEmail3">
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+      <div class="col-sm-10">
+        <input type="password" class="form-control" id="inputPassword3">
+      </div>
+    </div>
+    <fieldset class="row mb-3">
+      <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+          <label class="form-check-label" for="gridRadios1">
+            First radio
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+          <label class="form-check-label" for="gridRadios2">
+            Second radio
+          </label>
+        </div>
+        <div class="form-check disabled">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+          <label class="form-check-label" for="gridRadios3">
+            Third disabled radio
+          </label>
+        </div>
+      </div>
+    </fieldset>
+    <div class="row mb-3">
+      <div class="col-sm-10 offset-sm-2">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck1">
+          <label class="form-check-label" for="gridCheck1">
+            Example checkbox
+          </label>
+        </div>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Sign in</button>
+  </form>
+  <hr>
+
+  <!-- Horizontal form label sizing -->
+
+  <div class="row mb-3">
+    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="colFormLabel" placeholder="col-form-label">
+    </div>
+  </div>
+  <div class="row">
+    <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg">
+    </div>
+  </div>
+  <hr><br>
+
+  <!-- Column sizing -->
+
+  <div class="row g-3">
+    <div class="col-sm-7">
+      <input type="text" class="form-control" placeholder="City" aria-label="City">
+    </div>
+    <div class="col-sm">
+      <input type="text" class="form-control" placeholder="State" aria-label="State">
+    </div>
+    <div class="col-sm">
+      <input type="text" class="form-control" placeholder="Zip" aria-label="Zip">
+    </div>
+  </div>
+  <hr>
+
+  <!-- Auto-sizing  -->
+
+  <form class="row gy-2 gx-3 align-items-center">
+    <div class="col-auto">
+      <label class="visually-hidden" for="autoSizingInput">Name</label>
+      <input type="text" class="form-control" id="autoSizingInput" placeholder="Jane Doe">
+    </div>
+    <div class="col-auto">
+      <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
+      <div class="input-group">
+        <div class="input-group-text">@</div>
+        <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+      </div>
+    </div>
+    <div class="col-auto">
+      <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+      <select class="form-select" id="autoSizingSelect">
+        <option selected>Choose...</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+    <div class="col-auto">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+        <label class="form-check-label" for="autoSizingCheck">
+          Remember me
+        </label>
+      </div>
+    </div>
+    <div class="col-auto">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+  <hr><br>
+
+  <!--  -->
+
+  <form class="row gx-3 gy-2 align-items-center">
+    <div class="col-sm-3">
+      <label class="visually-hidden" for="specificSizeInputName">Name</label>
+      <input type="text" class="form-control" id="specificSizeInputName" placeholder="Jane Doe">
+    </div>
+    <div class="col-sm-3">
+      <label class="visually-hidden" for="specificSizeInputGroupUsername">Username</label>
+      <div class="input-group">
+        <div class="input-group-text">@</div>
+        <input type="text" class="form-control" id="specificSizeInputGroupUsername" placeholder="Username">
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <label class="visually-hidden" for="specificSizeSelect">Preference</label>
+      <select class="form-select" id="specificSizeSelect">
+        <option selected>Choose...</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+    <div class="col-auto">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+        <label class="form-check-label" for="autoSizingCheck2">
+          Remember me
+        </label>
+      </div>
+    </div>
+    <div class="col-auto">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+  <hr><br>
+
+  <!-- Inline forms  -->
+
+  <form class="row row-cols-lg-auto g-3 align-items-center">
+    <div class="col-12">
+      <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+      <div class="input-group">
+        <div class="input-group-text">@</div>
+        <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+      </div>
+    </div>
+
+    <div class="col-12">
+      <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+      <select class="form-select" id="inlineFormSelectPref">
+        <option selected>Choose...</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+        <label class="form-check-label" for="inlineFormCheck">
+          Remember me
+        </label>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+  <hr><br>
+
+  <!-- Validation -->
+  <!-- Custom styles -->
+
+  <form class="row g-3 needs-validation" novalidate>
+    <div class="col-md-4">
+      <label for="validationCustom01" class="form-label">First name</label>
+      <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label for="validationCustom02" class="form-label">Last name</label>
+      <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label for="validationCustomUsername" class="form-label">Username</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text" id="inputGroupPrepend">@</span>
+        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"
+          required>
+        <div class="invalid-feedback">
+          Please choose a username.
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="validationCustom03" class="form-label">City</label>
+      <input type="text" class="form-control" id="validationCustom03" required>
+      <div class="invalid-feedback">
+        Please provide a valid city.
+      </div>
+    </div>
+    <div class="col-md-3">
+      <label for="validationCustom04" class="form-label">State</label>
+      <select class="form-select" id="validationCustom04" required>
+        <option selected disabled value="">Choose...</option>
+        <option>...</option>
+      </select>
+      <div class="invalid-feedback">
+        Please select a valid state.
+      </div>
+    </div>
+    <div class="col-md-3">
+      <label for="validationCustom05" class="form-label">Zip</label>
+      <input type="text" class="form-control" id="validationCustom05" required>
+      <div class="invalid-feedback">
+        Please provide a valid zip.
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+        <label class="form-check-label" for="invalidCheck">
+          Agree to terms and conditions
+        </label>
+        <div class="invalid-feedback">
+          You must agree before submitting.
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit">Submit form</button>
+    </div>
+  </form><br><br>
+
+
+  <!-- Browser defaults  -->
+
+  <!-- <form class="row g-3">
+  <div class="col-md-4">
+    <label for="validationDefault01" class="form-label">First name</label>
+    <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
+  </div>
+  <div class="col-md-4">
+    <label for="validationDefault02" class="form-label">Last name</label>
+    <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
+  </div>
+  <div class="col-md-4">
+    <label for="validationDefaultUsername" class="form-label">Username</label>
+    <div class="input-group">
+      <span class="input-group-text" id="inputGroupPrepend2">@</span>
+      <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="validationDefault03" class="form-label">City</label>
+    <input type="text" class="form-control" id="validationDefault03" required>
+  </div>
+  <div class="col-md-3">
+    <label for="validationDefault04" class="form-label">State</label>
+    <select class="form-select" id="validationDefault04" required>
+      <option selected disabled value="">Choose...</option>
+      <option>...</option>
+    </select>
+  </div>
+  <div class="col-md-3">
+    <label for="validationDefault05" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="validationDefault05" required>
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+      <label class="form-check-label" for="invalidCheck2">
+        Agree to terms and conditions
+      </label>
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+</form> -->
+  <!-- <hr> -->
+
+  <!-- Server-side -->
+
+  <!-- <form class="row g-3">
+  <div class="col-md-4">
+    <label for="validationServer01" class="form-label">First name</label>
+    <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationServer02" class="form-label">Last name</label>
+    <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationServerUsername" class="form-label">Username</label>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="inputGroupPrepend3">@</span>
+      <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+      <div id="validationServerUsernameFeedback" class="invalid-feedback">
+        Please choose a username.
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="validationServer03" class="form-label">City</label>
+    <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+    <div id="validationServer03Feedback" class="invalid-feedback">
+      Please provide a valid city.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationServer04" class="form-label">State</label>
+    <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+      <option selected disabled value="">Choose...</option>
+      <option>...</option>
+    </select>
+    <div id="validationServer04Feedback" class="invalid-feedback">
+      Please select a valid state.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationServer05" class="form-label">Zip</label>
+    <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+    <div id="validationServer05Feedback" class="invalid-feedback">
+      Please provide a valid zip.
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+      <label class="form-check-label" for="invalidCheck3">
+        Agree to terms and conditions
+      </label>
+      <div id="invalidCheck3Feedback" class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+</form>
+<hr> -->
+
+  <!-- Supported elements  -->
+
+  <!-- <form class="was-validated">
+  <div class="mb-3">
+    <label for="validationTextarea" class="form-label">Textarea</label>
+    <textarea class="form-control" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+    <div class="invalid-feedback">
+      Please enter a message in the textarea.
+    </div>
+  </div>
+
+  <div class="form-check mb-3">
+    <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
+    <label class="form-check-label" for="validationFormCheck1">Check this checkbox</label>
+    <div class="invalid-feedback">Example invalid feedback text</div>
+  </div>
+
+  <div class="form-check">
+    <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+    <label class="form-check-label" for="validationFormCheck2">Toggle this radio</label>
+  </div>
+  <div class="form-check mb-3">
+    <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
+    <label class="form-check-label" for="validationFormCheck3">Or toggle this other radio</label>
+    <div class="invalid-feedback">More example invalid feedback text</div>
+  </div>
+
+  <div class="mb-3">
+    <select class="form-select" required aria-label="select example">
+      <option value="">Open this select menu</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+    <div class="invalid-feedback">Example invalid select feedback</div>
+  </div>
+
+  <div class="mb-3">
+    <input type="file" class="form-control" aria-label="file example" required>
+    <div class="invalid-feedback">Example invalid form file feedback</div>
+  </div>
+
+  <div class="mb-3">
+    <button class="btn btn-primary" type="submit" disabled>Submit form</button>
+  </div>
+</form>
+<hr> -->
+
+  <!-- Tooltips -->
+
+  <!-- <form class="row g-3 needs-validation" novalidate>
+  <div class="col-md-4 position-relative">
+    <label for="validationTooltip01" class="form-label">First name</label>
+    <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
+    <div class="valid-tooltip">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4 position-relative">
+    <label for="validationTooltip02" class="form-label">Last name</label>
+    <input type="text" class="form-control" id="validationTooltip02" value="Otto" required>
+    <div class="valid-tooltip">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4 position-relative">
+    <label for="validationTooltipUsername" class="form-label">Username</label>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+      <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+      <div class="invalid-tooltip">
+        Please choose a unique and valid username.
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 position-relative">
+    <label for="validationTooltip03" class="form-label">City</label>
+    <input type="text" class="form-control" id="validationTooltip03" required>
+    <div class="invalid-tooltip">
+      Please provide a valid city.
+    </div>
+  </div>
+  <div class="col-md-3 position-relative">
+    <label for="validationTooltip04" class="form-label">State</label>
+    <select class="form-select" id="validationTooltip04" required>
+      <option selected disabled value="">Choose...</option>
+      <option>...</option>
+    </select>
+    <div class="invalid-tooltip">
+      Please select a valid state.
+    </div>
+  </div>
+  <div class="col-md-3 position-relative">
+    <label for="validationTooltip05" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="validationTooltip05" required>
+    <div class="invalid-tooltip">
+      Please provide a valid zip.
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+</form>
+<hr> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

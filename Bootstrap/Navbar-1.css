@@ -1,0 +1,120 @@
+/* Navbar-1 */
+
+ .navbar .navbar-nav .nav-link:hover {
+    color: whitesmoke;
+  }
+
+  .navbar .navbar-nav .nav-link {
+    color: red;
+    font-size: 20px;
+  }
+
+  .navbar .navbar-nav .nav-item {
+    position: relative;
+  }
+
+  .navbar .navbar-nav .nav-item::after {
+    position: absolute;
+    background-color: black;
+    content: "";
+    height: 4px;
+  }
+
+  .navbar .navbar-nav .nav-item:hover::after {
+    width: 100%;
+  }
+
+  .navbar-brand {
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 30px;
+  } 
+
+  /* Navbar-2 */
+
+.Anni-bar {
+  overflow: hidden;
+  border: 2px solid black;
+}
+
+.Anni-bar a {
+  float: right;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.Anni-bar a:hover {
+  background-color: rgb(226, 73, 75);
+}
+
+.active {
+  background-color: royalblue;
+  color: white;
+}
+
+  /* Navbar-3 */
+
+.navbar .navbar-nav .nav-link {
+    color: black;
+    font-size: 20px;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: purple;
+}
+
+.navbar {
+    border-top: 5px solid white;
+}
+
+.navbar .nav-item.active {
+    background-color: red;
+}
+
+.navbar-brand {
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    color:violet;
+  }
+
+  .d-flex {
+    margin-left: auto;
+  }
+
+  /* Navbar-4 */
+ 
+.glo {
+    background-color: brown;
+    height: 100vh;
+    text-align: center;
+} 
+
+/* Navbar-5 */
+
+.Ani {
+    color: aliceblue;
+}
+
+/* Navbar-6 */
+
+.navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+    color: crimson;
+    margin-left: 10px;
+}
+
+.part {
+    display: flex;
+    background-color: darkslategray;
+    height: 100vh;
+    color: yellow;
+}
+
+hr {
+  border: 2px solid saddlebrown;
+}

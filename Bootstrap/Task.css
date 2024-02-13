@@ -1,0 +1,37 @@
+body {
+    background-color: rgb(134, 129, 231);
+}
+
+.Ani {
+    height: 300px;
+    width: 280px;
+    margin-left: 600px;
+    margin-top: 180px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.img-1 {
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    margin-top: -30px;
+  
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background-color:
+    whitesmoke;
+}
+  
+.Ani-1 {
+    display: flex; 
+    justify-content: end;
+}
+
+.form-check-label {
+ color: black;
+}

@@ -1,0 +1,63 @@
+body {
+    background-color: grey;
+}
+
+
+.Ani {
+    height: 300px;
+    width: 500px;
+    margin-left: 500px;
+    margin-top: 150px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+img {
+    height: 30px;
+    width: 40px; 
+    margin-top: -10px; margin-left: -7px;
+}
+
+.Anii {
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;  
+}
+
+.Ani-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.Ani-2 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+p {
+    color: gray;
+}
+
+button {
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    font-weight: bolder;
+    border: none;
+}
+
+.btn-1 {
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    font-weight: bolder;
+   border: 1px solid lightgrey;
+}
+
+
+.Ani-3 {
+     display: flex; 
+    justify-content: center; 
+    justify-content: space-evenly;
+}
