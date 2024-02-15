@@ -421,3 +421,92 @@ Array indexes start with 0:
     //  const newarray4 = num.flat(4);
     //  console.log(newarray4);
  }
+
+ /*  JavaScript Multidimensional Array */
+ 
+ /* A multidimensional array is an array that contains another array. */
+ 
+ {
+    // multidimensional array
+   //  const data = [[1, 2, 3], [1, 3, 4], [4, 5, 6]];
+}
+
+/* Access Elements of an Array */
+
+{
+   // const data = [[1, 2, 3], [1, 9, 4], [4, 5, 6]];
+   // let data1 = data[1][1];
+   // console.log(data1);
+}
+
+
+
+
+/* Add an Element to a Multidimensional Array */
+
+{
+    // Adding Element to the Outer Array
+
+   //  let studentsData = [['Jack', 24], ['Sara', 23]];
+   //  studentsData.push(['Peter', 24]);
+
+   //  let data = studentsData[1][1]
+
+   //  console.log(studentsData);
+   //  console.log(data);
+}
+
+// Adding Element to the Inner Array
+{
+    // using index notation
+   //  let studentsData = [['Jack', 24], ['Sara', 23],];
+   //  studentsData[1][2] = 'hello';
+    
+   //  console.log(studentsData);
+}
+
+
+{
+    // // using push()
+    // let studentsData = [['Jack', 24], ['Sara', 23],];
+    // studentsData[1].push('hello');
+
+    // console.log(studentsData);
+}
+{
+    // the Array's splice() method to add an element at a specified index.
+
+   //  let studentsData = [['Jack', 24], ['Sara', 23],];
+
+   //  // adding element at 1 index
+   //  studentsData.splice(0, 2 , ["peter"  , 58]);
+
+   //  console.log(studentsData);
+}
+
+/*  Remove an Element from a Multidimensional Array */
+
+{
+    // remove the array element from outer array
+   //  let studentsData = [['Jack', 24], ['Sara', 23],];
+   //  studentsData.pop();
+
+   //  console.log(studentsData);
+}
+
+{
+   //  // remove the element from the inner array
+   //  let studentsData = [['Jack', 24], ['Sara', 23]];
+   //  studentsData[1].pop();
+
+   //  console.log(studentsData); // [["Jack", 24], ["Sara"]]
+}
+
+{
+    // the splice() method to remove an element at a specified index.
+    //  let studentsData = [['Jack', 24], ['Sara', 23],];
+
+    // removing 1 index array item
+    //  studentsData.splice(0,1);
+    //  console.log(studentsData);
+}
