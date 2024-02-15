@@ -422,11 +422,11 @@ Array indexes start with 0:
     //  console.log(newarray4);
  }
 
- /*  JavaScript Multidimensional Array */
+/*  JavaScript Multidimensional Array */
  
- /* A multidimensional array is an array that contains another array. */
+/* A multidimensional array is an array that contains another array. */
  
- {
+{
     // multidimensional array
    //  const data = [[1, 2, 3], [1, 3, 4], [4, 5, 6]];
 }
@@ -456,7 +456,8 @@ Array indexes start with 0:
    //  console.log(data);
 }
 
-// Adding Element to the Inner Array
+/* Adding Element to the Inner Array */
+
 {
     // using index notation
    //  let studentsData = [['Jack', 24], ['Sara', 23],];
@@ -473,6 +474,7 @@ Array indexes start with 0:
 
     // console.log(studentsData);
 }
+
 {
     // the Array's splice() method to add an element at a specified index.
 
