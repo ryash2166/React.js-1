@@ -21,7 +21,7 @@
         let Celsius = 10.00;
         let F = 0;
 
-        console.log("Fahrenheit is " , (Celsius * 9/5) + 32 ); 
+        console.log("Fahrenheit is" , (Celsius * 9/5) + 32 ); 
 
     }
     Fahrenheit();
@@ -34,7 +34,7 @@
         let l = 12; w = 20; r = 0;
 
         r = l * w;
-        console.log("The Reactangle Area is " , r);
+        console.log("The Reactangle Area is" , r);
     }
     Rectangle();
 }
@@ -46,8 +46,8 @@
         let num1 = 123456789;
         let result = num1.toString().split('').reverse().join('');
 
-        console.log("After Reverse: " , num1);
-        console.log("Before Reverse: ", result);
+        console.log("After Reverse:" , num1);
+        console.log("Before Reverse:", result);
     }
     reverse();
 }
@@ -130,5 +130,5 @@
 /* Write a JavaScript conditional statement to find the sign of the product of three numbers. Display an alert box with the specified sign. */
 
 {
-    
+
 }
