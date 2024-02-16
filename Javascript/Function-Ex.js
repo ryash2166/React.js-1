@@ -105,7 +105,7 @@
 {
     function date(){
         let now = new Date();
-        const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+        let weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
         let day = weekday[now.getDay()];
         let hours = now.getHours();
         let minutes = now.getMinutes();
