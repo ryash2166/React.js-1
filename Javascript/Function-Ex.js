@@ -66,7 +66,7 @@
         }
         return count;
     }
-    console.log("The Total Number Of Vowels is", num("Hello Beta!"));
+    console.log("The Total Number Of Vowels is", num("Yash Rakholiya!"));
 }
 
 /* Write a function to calculate simple interest based on the principal amount */
@@ -105,12 +105,12 @@
 {
     function date(){
         let now = new Date();
-        let weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-        let day = weekday[now.getDay()];
+        let Day = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+        let day = Day[now.getDay()];
         let hours = now.getHours();
         let minutes = now.getMinutes();
 
-        console.log("Today is", day , "and the time is", hours,":",minutes);
+        console.log("Today is", day , "& Current Time is", hours,":",minutes);
     }
     date();
 }
@@ -130,5 +130,5 @@
 /* Write a JavaScript conditional statement to find the sign of the product of three numbers. Display an alert box with the specified sign. */
 
 {
-
+    
 }
