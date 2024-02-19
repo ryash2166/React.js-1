@@ -130,18 +130,30 @@
 /* 10. Write a JavaScript conditional statement to find the sign of the product of three numbers. Display an alert box with the specified sign. */
 
 {
-    let a = 10; b = -20; c = 30;
+    let a = 10; b = 20; c = 30;
 
     if(a>0 && b>0 && c>0){
-        console.log("Sign +");
+        console.log("Sign is + + +");
     }
-    else if(a>0 && b>0 && c>0){
-        console.log("Sign ++");
+    else if(a<0 && b>0 && c>0){
+        console.log("Sign is - + +");
     }
-    else if(a<0 && b<0 & c<0){
-        console.log("Sign +++");
+    else if(a>0 && b<0 && c>0){
+        console.log("Sign is + - +");
+    }
+    else if(a>0 && b>0 && c<0){
+        console.log("Sign is + + -");
+    }
+    else if(a>0 && b<0 && c<0){
+        console.log("Sign is + - -");
+    }
+    else if(a<0 && b>0 && c<0){
+        console.log("Sign is - + -");
+    }
+    else if(a<0 && b<0 && c>0){
+        console.log("Sign is - - +");
     }
     else{
-        console.log("Sign-");
+        console.log("Sign is - - -");
     }
 }
