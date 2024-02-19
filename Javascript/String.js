@@ -74,13 +74,14 @@ console.log(String8);
 let String9 = "WHAT ARE MOST SIMPLE FOO."
 let String10 = String9.slice(6)
 let String11 = String9.slice(-6)
-let String12 = String9.slice(-6, -12)
+let String12 = String9.slice(-12 , -6)
 let String13 = String9.slice(6, 6)
 let String14 = String9.slice(-6, 6)
 let String15 = String9.slice(6, -6)
 
 console.log(String10)
 console.log(String11)
+console.log(String12)
 console.log(String13)
 console.log(String14)
 console.log(String15)
@@ -153,7 +154,7 @@ console.log(String37)
 /******  String trim() ******/
 
 
-let String38 = "      This is most common lecture!    "
+let String38 = "      This is most common lecture!     "
 console.log(String38)
 console.log(String38.length)
 
@@ -193,7 +194,7 @@ let String44 = "This is Common langauage!"
 console.log(String44)
 console.log(String44.length)
 
-let String45 = String44.padStart(30, "1")
+let String45 = String44.padStart(30, "2")
 console.log(String45)
 
 let Number1 = "500"

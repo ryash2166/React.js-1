@@ -49,7 +49,7 @@ The basic rules of naming a function are similar to naming a variable. It is bet
     //     return x + y
     // }
 
-    // console.log(add(12 , 4));
+    // console.log(add(12 , 2));
     // console.log(add(12 , 10));
     // console.log(add(12 , 34));
     // console.log(add(12 , 112));
@@ -63,10 +63,12 @@ The basic rules of naming a function are similar to naming a variable. It is bet
 {
     // program to find the square of a number
     // function is declared inside the variable
+
     // let a = function (num) { return num * num };
     // console.log(a(23));
 
     // can be used as variable value for other variables
+
     // let b = a(4);
     // console.log(b);
 

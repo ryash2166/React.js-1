@@ -4,7 +4,7 @@
     // console.log(newarry)
     // console.log(newarry.length)
     
-    // let newarry2 = ["Apple" , "Banana" , "Watermelon" ,  , "Lichi"]
+    // let newarry2 = ["Apple" , "Banana" , "Watermelon" , , "Lichi"]
     // console.log(newarry2)
     // console.log(newarry2[4])
     // console.log(Object.keys(newarry2))
@@ -203,9 +203,6 @@ Array indexes start with 0:
         // let arrya = ["option-1" , "gamit" , false , 1 , "skill" , "development"]
         // console.log(arrya)
         // console.log(arrya.length)
-    
-        // console.log(arrya)
-        // console.log(arrya.length)
         
         // arrya.length = 20
         // console.log(arrya)
@@ -339,7 +336,7 @@ Array indexes start with 0:
 
     // let flatmap = [1 , 2 , 3 ]
 
-    // let flatmap1 = flatmap.flatMap((num) => num === 2 ? [2 , 1] : 3)
+    // let flatmap1 = flatmap.flatMap((num) => num === 2 ? [2 , 2] : 3)
 
     // console.log(flatmap1);
 }
