@@ -129,7 +129,7 @@
 
 /* 10. Write a JavaScript conditional statement to find the sign of the product of three numbers. Display an alert box with the specified sign. */
 
-{
+{    
     let a = prompt("Enter Value With Sign: "); 
     let b = prompt("Enter Value With Sign: "); 
     let c = prompt("Enter Value With Sign: ");
