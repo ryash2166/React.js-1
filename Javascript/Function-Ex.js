@@ -135,7 +135,7 @@
     let c = prompt("Enter Value With Sign: ");
 
     if(a>0 && b>0 && c>0){
-        alert("Sign is '+ + +'");
+        alert("Sign is ' + '");
     }
     else if(a<0 && b>0 && c>0){
         alert("Sign is '- + +'");
@@ -156,6 +156,6 @@
         alert("Sign is '- - +'");
     }
     else{
-        alert("Sign is '- - -'");
+        alert("Sign is ' - '");
     }
 }
