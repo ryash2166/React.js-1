@@ -133,27 +133,27 @@
     let a = 10; b = 20; c = 30;
 
     if(a>0 && b>0 && c>0){
-        console.log("Sign is + + +");
+        console.log("Sign is '+ + +'");
     }
     else if(a<0 && b>0 && c>0){
-        console.log("Sign is - + +");
+        console.log("Sign is '- + +'");
     }
     else if(a>0 && b<0 && c>0){
-        console.log("Sign is + - +");
+        console.log("Sign is '+ - +'");
     }
     else if(a>0 && b>0 && c<0){
-        console.log("Sign is + + -");
+        console.log("Sign is '+ + -'");
     }
     else if(a>0 && b<0 && c<0){
-        console.log("Sign is + - -");
+        console.log("Sign is '+ - -'");
     }
     else if(a<0 && b>0 && c<0){
-        console.log("Sign is - + -");
+        console.log("Sign is '- + -'");
     }
     else if(a<0 && b<0 && c>0){
-        console.log("Sign is - - +");
+        console.log("Sign is '- - +'");
     }
     else{
-        console.log("Sign is - - -");
+        console.log("Sign is '- - -'");
     }
 }
