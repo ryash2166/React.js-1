@@ -1,0 +1,11 @@
+*{
+    background-color: rgb(76, 76, 153);
+}
+.button{
+    display: flex;
+    justify-content: center;
+    padding:20px;
+}
+.btn{
+    margin: 5px;
+}
