@@ -1,5 +1,5 @@
 {
-    const regexp = /^Rakholiy+a+\sYas+h+\s01$/
+    const regexp = /^Rakh*oliy+a+\sYas+h+\s01*\s01+\s2003$/
 
-    console.log(regexp.test('Rakholiya Yash 01'));
+    console.log(regexp.test(prompt()));
 }
