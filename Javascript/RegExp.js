@@ -7,9 +7,9 @@
 /* E-Mail */
 
 {
-    // const email = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.com$/;
+    const email = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.com$/;
 
-    // console.log(email.test(prompt("Enter The Mail: ")));
+    console.log(email.test(prompt("Enter The Mail: ")));
 }
 
 /* Number */
