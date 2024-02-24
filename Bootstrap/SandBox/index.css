@@ -106,6 +106,15 @@ body{
     max-width: 100%;
     height: auto !important;
 }
+h1{
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.lead .fs-lg{
+    font-size: 1.1rem !important;
+    line-height: 1.55;
+}
  #PP{
     color: #5eb9f0;
  }   
