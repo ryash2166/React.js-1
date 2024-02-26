@@ -114,29 +114,29 @@
 
 
 
-    // const input = prompt("Enter This Name Mobile, Tour, Treak, Bike, Car For Full List: ");
+    const input = prompt("Enter This Name Mobile, Tour, Treak, Bike, Car For Full List: ");
     
-    // if(input == "Mobile"){
-    //     console.log("Mobile",list[0]["Mobile"]);
-    // }
-    // else if(input == "Tour"){
-    //     console.log("Tour",list[0]["Tour"]);
+    if(input == "Mobile"){
+        console.log("Mobile",list[0]["Mobile"]);
+    }
+    else if(input == "Tour"){
+        console.log("Tour",list[0]["Tour"]);
 
-    // }
-    // else if(input == "Treak"){
-    //     console.log("Treak",list[0]["Treak"]);
+    }
+    else if(input == "Treak"){
+        console.log("Treak",list[0]["Treak"]);
 
-    // }
-    // else if(input == "Bike"){
-    //     console.log("Bike:",list[0]["Bike"]);
+    }
+    else if(input == "Bike"){
+        console.log("Bike:",list[0]["Bike"]);
 
-    // }
-    // else if(input == "Car"){
-    //     console.log("Car:" ,list[0]["Car"]);
-    // }
-    // else{
-    //     console.log("Please! Refresh The Page and Enter ValidInput For Result.");
-    // }
+    }
+    else if(input == "Car"){
+        console.log("Car:" ,list[0]["Car"]);
+    }
+    else{
+        console.log("Please! Refresh The Page and Enter ValidInput For Result.");
+    }
 
 }
 
@@ -173,10 +173,10 @@
         { Treak5: "Hampta", price:"$23", category: "treak" }
     ]; 
 
-    // let output = prompt("Enter This Name Mobile, Tour, Treak, Fruit, Car For Full List: ");
-    // let output1=  list1.filter(list1 => list1.category == output);
+    let output = prompt("Enter This Name Mobile, Tour, Treak, Fruit, Car For Full List: ");
+    let output1=  list1.filter(list1 => list1.category == output);
 
-    // console.log(output1);
+    console.log(output1);
 
     // for (let i = 0; i < output.length; i++) {
     //     console.log(output1[i])
