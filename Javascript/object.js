@@ -113,29 +113,30 @@
     }]
 
 
-    // const input = prompt("Enter This Name Mobile, Tour, Treak, Bike, Car For Full List: ");
+
+    const input = prompt("Enter This Name Mobile, Tour, Treak, Bike, Car For Full List: ");
     
-    // if(input == "Mobile"){
-    //     console.log("Mobile",list[0]["Mobile"]);
-    // }
-    // else if(input == "Tour"){
-    //     console.log("Tour",list[0]["Tour"]);
+    if(input == "Mobile"){
+        console.log("Mobile",list[0]["Mobile"]);
+    }
+    else if(input == "Tour"){
+        console.log("Tour",list[0]["Tour"]);
 
-    // }
-    // else if(input == "Treak"){
-    //     console.log("Treak",list[0]["Treak"]);
+    }
+    else if(input == "Treak"){
+        console.log("Treak",list[0]["Treak"]);
 
-    // }
-    // else if(input == "Bike"){
-    //     console.log("Bike:",list[0]["Bike"]);
+    }
+    else if(input == "Bike"){
+        console.log("Bike:",list[0]["Bike"]);
 
-    // }
-    // else if(input == "Car"){
-    //     console.log("Car:" ,list[0]["Car"]);
-    // }
-    // else{
-    //     console.log("Please! Refresh The Page and Enter Valid Input For Result.");
-    // }
+    }
+    else if(input == "Car"){
+        console.log("Car:" ,list[0]["Car"]);
+    }
+    else{
+        console.log("Please! Refresh The Page and Enter ValidInput For Result.");
+    }
 
 }
 
@@ -147,11 +148,11 @@
         { No4: "Samsung", price:"$329", category: "mobile" },
         { No5: "Pixel", price:"$389", category: "mobile" },
 
-        { Car1: "Chevelle", price:"$140000", category: "Car" },
-        { Car2: "Shelby", price:"$91450", category: "Car" },
-        { Car3: "Mustang", price:"$328900", category: "Car" },
-        { Car4: "Blazer", price:"$109945", category: "Car" },
-        { Car5: "Corvette", price:"$119500", category: "Car" },
+        { Car1: "Chevelle", price:"$140000", category: "car" },
+        { Car2: "Shelby", price:"$91450", category: "car" },
+        { Car3: "Mustang", price:"$328900", category: "car" },
+        { Car4: "Blazer", price:"$109945", category: "car" },
+        { Car5: "Corvette", price:"$119500", category: "car" },
 
         { Fruit1: "Strawberry", price:"$23", category: "fruit" },
         { Fruit2: "Brazil Nut", price:"$23", category: "fruit" },
