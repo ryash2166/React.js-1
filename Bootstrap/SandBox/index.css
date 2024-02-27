@@ -11,12 +11,45 @@ body{
     font-weight: 500;
     line-height: 1.7;
     -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+    margin-left: 20px;
 
+}
+.ab{
+    margin-top: 40px;
+}
+.te{
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #343f52;
+}
+.sec{
+
+}
+.more{
+    text-decoration: none;
+    font-size: 1rem;
 }
 div{
     display: block;
 }
-@media (min-width: 768px){
+.img-auto{
+    width: 100%;
+    max-width: 100%;
+    height: auto !important;
+}
+@media (max-width: 768px) {
+    .pw1{
+        font-size: 1rem;
+        font-weight: 200 !important;
+    }
+}
+@media (max-width: 991.98px) {
+    .gy-10{
+        gap: 2rem;
+    }
+}
+@media (min-width: 768px ){
     .pb-md-16{
         padding-bottom: 6rem !important;
     }
@@ -26,6 +59,7 @@ div{
     .pb-md-17{
         padding-bottom: 7rem !important;
     }
+    
 }
 @media (min-width: 992px){
     .text-lg-start{
@@ -45,16 +79,28 @@ div{
     .pt-lg-8{
         padding-top: 2rem !important;
     }
-    
+    .me-lg-6{
+        margin-right: 2rem !important;
+    }
+    .ms-lg-13{
+        margin-left: 4rem !important;
+    }
+    .mx-lg-6{
+        margin-left: 1.5rem !important;
+        margin-right: 1.5rem !important;
+    }    
 }
 @media (min-width: 1200px){
     .fs-54{
         font-size:2.7rem !important;
     }
     .display-3{
-        font-size: 2.1rem;
+        font-size: 2rem;
         line-height: 1.2;
         font-weight: 600;
+    }
+    .btn.btn-circle.btn-lg{
+        font-size: 1.3rem;
     }
 }
 @media (min-width: 992px) and (max-width: 1199.98px){
@@ -62,6 +108,7 @@ div{
     padding:2px;
     margin: auto;
  } 
+ 
  *{
      font-size: 15px;
  }  
@@ -94,6 +141,11 @@ div{
         padding-left: 2.5rem !important;
         padding-right: 2.5rem !important;
     }
+    .pw1{
+        margin-left: 50px !important;
+        margin-right: 50px !important;
+    }
+    
 }
 .mb-14{
     margin-bottom: 4.5rem !important;
@@ -107,11 +159,30 @@ div{
 .mb-5{
     margin-bottom: 1.25rem !important;
 }
+.mb-6{
+    margin-bottom: 1.5rem !important;
+}
+.mb-4{
+    margin-bottom: 1rem !important;
+}
+.mt-6{
+    margin-top: 1.5rem !important;
+}
+.shadow-lg {
+    box-shadow: 0 .25rem 1.75rem rgba(30,34,40,.07)!important;
+}
 .mt-7{
     margin-top: 1.75rem !important;
 }
 .fs-54{
     font-size: calc(1.395rem + 1.74vw) !important;
+}
+.s33{
+    font-size: 1.1rem;
+    background-color: #5eb9f0;
+    padding: 10px 20px;
+    font-weight: 600;
+    border: 0 solid transparent;
 }
 .row{
     display: flex;
@@ -138,6 +209,56 @@ div{
     max-width: 100%;
     height: auto !important;
 }
+.btn.btn-circle.btn-lg {
+    width: 3rem;
+    height: 3rem;
+    font-size: calc(1.255rem + .06vw);
+}
+
+.btn-soft-primary{
+    color: #5eb9f0;
+    background-color: #e5f4fd;
+}
+.btn.btn-circle {
+    padding: 0;
+    border-radius: 100%!important;
+    width: 4rem !important;
+    height: 4rem !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem !important;
+    line-height: 1;
+    backface-visibility: hidden;
+}
+.pe-none{
+    pointer-events: none !important;
+}
+.icon{
+    border: 1px solid transparent;
+}
+.me-4{
+    margin-right: 1rem !important;
+}
+.mb-1{
+    margin-bottom: 0.25rem !important;
+    font-size: 1.25rem;
+}
+.mb-0{
+    margin-bottom: 0px !important;
+}
+.display-3{
+    font-size: calc(1.325rem + 0.9vw);
+    font-weight: 700;
+    line-height: 1.2;
+    color: #343f52;
+}
+.p1{
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    color: #343f52;
+    font-weight: 300;
+}
 h1{
     display: block;
     margin-inline-start: 0px;
@@ -159,6 +280,11 @@ h1{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+
+.pad{
+    padding-left: 35px !important;
+    padding-right: 35px !important;
+}
 .get{
     letter-spacing: normal;
     font-weight: 600;
@@ -177,13 +303,15 @@ h1{
     overflow: clip;
 }
 .sq{
-    width: 159px;
-    height: 88px;
+    width: 150px;
+    height: 100px;
+}
+.text-primary{
+    color: #5eb9f0 !important;
 }
 .fs-16{
     font-size: 1rem !important;
     letter-spacing: 0.02rem;
-    font-weight: 600;
 }
 .mb-6{
     margin-bottom: 1.5rem !important;
@@ -203,6 +331,7 @@ p{
     margin-block-end: 1rem;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    font-weight: 600;
 }
 h3{
     display: block;
@@ -211,11 +340,84 @@ h3{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+section{
+    display: block;
+}
+.s3{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+.pb-14{
+    padding-bottom: 4.5rem !important;
+}
 .pw{
-    font-size: 1.15rem;
+    font-size: 17px;
     margin-bottom: 0.5rem;
     color: #343f52;
+    text-align: center !important;
+    padding-inline-start: 100px;
+    padding-inline-end: 100px;
 }
+.accordion-wrapper .card.plain {
+    background: 0 0;
+    border: 0;
+    margin-bottom: 0;
+    box-shadow: none;
+}
+.accordion-wrapper .card {
+    margin-bottom: 1.25rem;
+}
+.accordion-wrapper .card.plain .card-header {
+    padding: 0 0 0.8rem 0;
+}
+.accordion-wrapper .card-header {
+    margin-bottom: 0;
+    background: 0 0;
+    border: 0;
+    padding: 0.9rem 1.3rem 0.85rem;
+}
+.card-header:first-child {
+    border-radius: 0.4rem 0.4rem 0 0;
+}
+.accordion-wrapper .card.plain .card-header a {
+    padding: 0 0 0 1.1rem;
+}
+.accordion-wrapper .card-header a.collapsed {
+    color: #343f52;
+}
+.accordion-wrapper .card-header a, .collapse-link, .nav-tabs .nav-link {
+    font-size: .9rem;
+}
+.accordion-wrapper .card-header a {
+    cursor: pointer;
+    width: 100%;
+    padding: 0 0 0 1rem;
+    text-align: left;
+    margin: 0;
+    border: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--bs-primary);
+    transition: all 150ms ease-in-out;
+    background: 0 0;
+}
+.too{
+    font-size: 1rem;
+    color: #343f52;
+}
+.card{
+    border: 0;
+    color: inherit;
+    word-break: break-word;
+}
+a{
+    text-decoration: none;
+}
+.card-body{
+    flex: 1 1 auto;
+}
+
 .dw{
     font-size: 1.15rem;
     font-weight: 600;
@@ -223,6 +425,9 @@ h3{
     margin-top: 0;
     margin-bottom: 0.5rem;
     color: #343f52;
+}
+.p-6{
+    padding: 1.5rem !important;
 }
  #PP{
     color: #5eb9f0;
@@ -295,5 +500,23 @@ h3{
     color: black;
 }
 #document:hover{
+    color: #5eb9f0;
+}
+#headingOne{
+    color: black;
+}
+#headingOne:hover{
+    color: #5eb9f0;
+}
+#headingTwo{
+    color: black;
+}
+#headingTwo:hover{
+    color: #5eb9f0;
+}
+#headingThree{
+    color: black;
+}
+#headingThree:hover{
     color: #5eb9f0;
 }
