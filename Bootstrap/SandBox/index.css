@@ -12,8 +12,6 @@ body{
     line-height: 1.7;
     -webkit-text-size-adjust: 100%;
     overflow-x: hidden;
-    margin-left: 20px;
-
 }
 .ab{
     margin-top: 40px;
@@ -21,10 +19,12 @@ body{
 .te{
     font-weight: 300;
     font-size: 1.2rem;
-    color: #343f52;
 }
-.sec{
-
+.lift{
+    width: 100%;
+    max-width: 100%;
+    height: 145px;
+    object-fit: fill;
 }
 .more{
     text-decoration: none;
