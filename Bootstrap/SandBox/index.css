@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+
+
+
 * {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
     word-spacing: normal !important;
+    font-family: 'Urbanist', sans-serif;
 }
 body{
-    font-family: sans-serif;
+    font-family: 'Urbanist', sans-serif;
     font-size: .85rem;
     -webkit-font-smoothing: antialiased;
     font-weight: 500;
@@ -59,6 +64,10 @@ div{
     .pb-md-17{
         padding-bottom: 7rem !important;
     }
+    .col2 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
     
 }
 @media (min-width: 992px){
@@ -75,6 +84,9 @@ div{
     }
     .col-lg-5{
         flex: 0 0 auto;
+    }
+    .pt-lg-7 {
+        padding-top: 1.75rem!important;
     }
     .pt-lg-8{
         padding-top: 2rem !important;
@@ -102,13 +114,143 @@ div{
     .btn.btn-circle.btn-lg{
         font-size: 1.3rem;
     }
+    .col3 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+}
+@media (min-width: 567.98px) and (max-width: 575.98px) {
+    .isotope{
+        width: 100%;
+        position: relative;
+        height: 2204.78px !important;
+     }
+     .col4{
+        position: absolute;
+        left: 0% !important;
+        top: 357.266px !important;
+     }
+     .col5{
+        position: absolute;
+        left: 0% !important;
+        top: 745.125px !important;
+     }
+     .col6{
+        position: absolute;
+        left: 0% !important;
+        top: 1102.39px !important;
+     }
+     .col7{
+        position: absolute;
+        left: 0% !important;
+        top: 1490.25px !important;
+     }
+     .col8{
+        position: absolute;
+        left: 0% !important;
+        top: 1847.52px !important;
+     }  
+}
+@media (max-width: 767px) {
+    .isotope{
+        position: relative;
+        height: 2265.97px !important;
+     }
+     .col4{
+        position: absolute;
+        left: 0% !important;
+        top: 357.266px !important;
+     }
+     .col5{
+        position: absolute;
+        left: 0% !important;
+        top: 775.719px !important;
+     }
+     .col6{
+        position: absolute;
+        left: 0% !important;
+        top: 1163.58px !important;
+     }
+     .col7{
+        position: absolute;
+        left: 0% !important;
+        top: 1551.44px !important;
+     }
+     .col8{
+        position: absolute;
+        left: 0% !important;
+        top: 1908.7px !important;
+     }  
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .isotope{
+        position: relative;
+        height: 1438.92px !important;
+     }
+     .col4{
+        position: absolute;
+        left: 50% !important;
+        top: 0px !important;
+     }
+     .col5{
+        position: absolute;
+        left: 0% !important;
+        top: 449.047px !important;
+     }
+     .col6{
+        position: absolute;
+        left: 50% !important;
+        top: 510.234px !important;
+     }
+     .col7{
+        position: absolute;
+        left: 0% !important;
+        top: 928.688px !important;
+     }
+     .col8{
+        position: absolute;
+        left: 50% !important;
+        top: 989.875px !important;
+     }
 }
 @media (min-width: 992px) and (max-width: 1199.98px){
  .navbar .navbar-collapse .nav-link {
     padding:2px;
     margin: auto;
  } 
- 
+ .isotope{
+    position: relative;
+    height: 1194.17px !important;
+ }
+ .grid{
+    margin-inline-start: 50px;
+    margin-inline-end: 50px;
+ }
+ .col4{
+    position: absolute;
+    left: 50% !important;
+    top: 0px !important;
+ }
+ .col5{
+    position: absolute;
+    left: 0% !important;
+    top: 387.859px !important;
+ }
+ .col6{
+    position: absolute;
+    left: 50% !important;
+    top: 418.453px !important;
+ }
+ .col7{
+    position: absolute;
+    left: 0% !important;
+    top: 775.718px !important;
+ }
+ .col8{
+    position: absolute;
+    left: 50% !important;
+    top: 806.312px !important;
+ }
  *{
      font-size: 15px;
  }  
@@ -144,8 +286,16 @@ div{
     .pw1{
         margin-left: 50px !important;
         margin-right: 50px !important;
-    }
-    
+    }   
+}
+.pe-xxl-11 {
+    padding-right: 3rem!important;
+}
+.text-1{
+    font-size: 17px;
+    letter-spacing: 0.02rem;
+    color: #48505f;
+    font-weight: 600;
 }
 .mb-14{
     margin-bottom: 4.5rem !important;
@@ -428,6 +578,96 @@ a{
 }
 .p-6{
     padding: 1.5rem !important;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 2rem 2rem;
+}
+.meta {
+    font-size: .8rem !important;
+    font-weight: 500 !important;
+    color: #aab0bc;
+    text-transform: uppercase !important;
+    margin-top: 10px;
+}
+.gy-6{
+    gap: 1rem 0;
+}
+.meta-1 {
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+    color: #343f52;
+}
+.social{
+    gap: .7rem;
+    margin-top: 10px;
+}
+.card-1{
+    margin-top: 3%;
+}
+.mb-14 {
+    margin-bottom: 4.5rem!important;
+}
+
+.isotope{
+    gap: 1.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * 1.5rem);
+    margin-left: calc(-.5 * 1.5rem);
+}
+.g-6{
+    gap: 1.5rem;
+}
+.card-2{
+    flex: 1 1 auto;
+    padding: 2rem 2rem;
+}
+.p2{
+    font-size: 18px;
+    color: #60697b;
+    font-weight: 500;
+}
+.ratings {
+    display: inline-block;
+    position: relative;
+    width: 6rem;
+    height: 0.8rem;
+    margin-left: 15px;
+}
+blockquote {
+    border-left: 0.15rem solid transparent;
+    padding-left: 1rem;
+    font-size: .85rem;
+    line-height: 1.7;
+    font-weight: 500;
+    
+}
+.card {
+    box-shadow: 0 0 0 0.05rem rgba(8,60,130,.06), 0 0 1.25rem rgba(30,34,40,.04);
+    border: 0;
+    color: inherit;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.w-12{
+    width: 3.5rem !important;
+}
+.blockquote-details {
+    align-items: center;
+    flex:auto;
+    display: flex;
+}   
+.info{
+    padding-left: 1rem;
+}
+.bg1{
+    background-color: #212529;
+    color: #e5f4fd;
+    margin-top: -1px;
+    padding-bottom: 10px;
 }
  #PP{
     color: #5eb9f0;
