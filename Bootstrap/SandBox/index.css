@@ -43,6 +43,14 @@ div{
     max-width: 100%;
     height: auto !important;
 }
+@media (max-width: 420px) {
+    .p2{
+    font-size: 15px !important;
+    color: #60697b;
+    gap: 0;
+    font-weight: 500;
+}
+}
 @media (max-width: 768px) {
     .pw1{
         font-size: 1rem;
@@ -338,8 +346,8 @@ div{
     display: flex;
     flex-wrap: wrap;
     margin-top: calc(-1 * 0);
-    margin-right: calc(-.5 * 3.5rem);
-    margin-left: calc(-.5 * 3.5rem);
+    /* margin-right: calc(-.5 * 3.5rem);
+    margin-left: calc(-.5 * 3.5rem); */
 }
 .figure{
     display: block;
@@ -614,8 +622,8 @@ a{
     gap: 1.5rem 0;
     display: flex;
     flex-wrap: wrap;
-    margin-top: calc(-1 * 1.5rem);
-    margin-left: calc(-.5 * 1.5rem);
+    /* margin-top: calc(-1 * 1.5rem);
+    margin-left: calc(-.5 * 1.5rem); */
 }
 .g-6{
     gap: 1.5rem;
