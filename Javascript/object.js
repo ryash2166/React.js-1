@@ -680,10 +680,10 @@
     // The Object.values() method returns an array containing the enumerable values of an object.
   
     // array-like object having integers as key
-    const obj = { 65: "A", 66: "B", 67: "C" };
+    // const obj = { 65: "A", 66: "B", 67: "C" };
   
     // print the enumerable values of obj
-    console.log(Object.values(obj));
+    // console.log(Object.values(obj));
   
   }
   
@@ -691,10 +691,10 @@
     // values() With Object Having Random Key Ordering
   
     // object with random key ordering
-    const obj1 = { 42: "a", 22: "b", 71: "c" };
+    // const obj1 = { 42: "a", 22: "b", 71: "c" };
   
     // print the enumerable values of obj1
-    console.log(Object.values(obj1));
+    // console.log(Object.values(obj1));
   
   }
   
