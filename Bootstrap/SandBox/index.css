@@ -190,6 +190,11 @@ div{
         top: 1908.7px !important;
      }  
 }
+@media (max-width:991.98px) {
+    .try{
+        margin-left: 0px !important;
+    }
+}
 @media (min-width: 768px) and (max-width: 991.98px) {
     .isotope{
         position: relative;
@@ -372,7 +377,20 @@ div{
     height: 3rem;
     font-size: calc(1.255rem + .06vw);
 }
+a{
+    color: white;
+}
+#mce-EMAIL2{
+    background-color: #212529;
+    border: 1px solid t;
+}
+#mc-embedded-subscribe2{
+    border-top: 1px  solid;
+    border-right: 1px  solid;
+    border-bottom: 1px  solid;
+    padding: 0px 20px;
 
+}
 .btn-soft-primary{
     color: #5eb9f0;
     background-color: #e5f4fd;
