@@ -449,9 +449,9 @@
     //   std1.name = "Sheeran";
       
     //   console.log(std2);
-      // console.log(std1);
-      // std1.display();
-      // console.log(Student);
+    //   console.log(std1);
+    //   std1.display();
+    //   console.log(Student);
   }
   
   // 3.  JavaScript Object.entries()
@@ -682,7 +682,7 @@
     // array-like object having integers as key
     // const obj = { 65: "A", 66: "B", 67: "C" };
   
-    // print the enumerable values of obj
+    // // print the enumerable values of obj
     // console.log(Object.values(obj));
   
   }
@@ -693,7 +693,7 @@
     // object with random key ordering
     // const obj1 = { 42: "a", 22: "b", 71: "c" };
   
-    // print the enumerable values of obj1
+    // // print the enumerable values of obj1
     // console.log(Object.values(obj1));
   
   }
