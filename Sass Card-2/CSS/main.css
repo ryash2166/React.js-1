@@ -1,9 +1,11 @@
+
 .boxes {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   background-color: rgb(239, 172, 183);
   display: flex;
   justify-content: center;
+  margin-top: 50px;
 }
 
 .boxes-1 {
