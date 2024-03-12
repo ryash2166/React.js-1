@@ -11,15 +11,15 @@
 */
 
 {
-    alert("Hello Aniruddh");
+    alert("Hello World!");
     window.alert("this is javascript");
 }
 
 {
-    let  Ani;
-    Ani = false ;
+    let  data;
+    data = false ;
 
-    alert(Ani ? "Nagative User" : "Positive User");
+    alert(data ? "Nagative User" : "Positive User");
 }
 
 const Message = prompt();
