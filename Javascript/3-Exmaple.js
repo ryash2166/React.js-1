@@ -1425,5 +1425,6 @@
 /* 15. String Split() Method */
 
 {
+    let string = "String Split Method"
 
 }
