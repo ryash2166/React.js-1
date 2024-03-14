@@ -1425,6 +1425,185 @@
 /* 15. String Split() Method */
 
 {
-    let string = "String Split Method"
+    // let string = "String Split Method"
 
+    // console.log(string.split(''));
+}
+
+/* 16. String Includes() Method */
+
+{
+    // let string = "String Includes Method"
+
+    // console.log(string.includes("M"));
+
+    // let string1 = "String Includes Method"
+
+    // console.log(string1.includes("."));
+
+    // let string2 = "String Includes Method"
+
+    // console.log(string2.includes("i"));
+}
+
+/* 17. String Indexof() Method */
+
+{
+    // let string = "String IndexOf Method"
+
+    // console.log(string);
+
+    // console.log(string.indexOf("t" , 1));
+
+    // console.log(string.indexOf("S" , 0));
+
+    // console.log(string.indexOf("S" , 3));
+
+}
+
+/* 18. String LastIndexOf() Method */
+
+{
+    // let string = "String LastIndexOf Method"
+    // console.log(string.lastIndexOf("t" , 24));
+
+    // let string1 = "Why Need Form Valiadation In Web Development"
+    // console.log(string1.lastIndexOf("m" , 20))
+
+}
+
+/* 19. String Search() Method */
+
+{
+    // let string = "String Search Method"
+
+    // console.log(string.search("i"));
+}
+
+/* 20. String StartWith() Method */
+
+{
+    // let string = "String StartWith Method"
+
+    // console.log(string.startsWith("s"));
+
+    // console.log(string.startsWith("S"));
+
+    // console.log(string.startsWith("t"));
+
+}
+
+/* 21. String EndWith() Method */
+
+{
+    // let string = "String EndWith Method"
+
+    // console.log(string.endsWith("."));
+
+    // console.log(string.endsWith("d"));
+    
+    // console.log(string.endsWith("D"));
+}
+
+/* 22. String Match() Method */
+
+{
+
+}
+
+/* 23. String MatchAll() Method */
+
+{
+
+}
+
+/* DATE */
+
+/* Use Of New Date() */
+{
+    // let date = new Date();
+    // console.log(date);
+    // console.log(new Date("10/12/1987"));
+    // console.log(new Date(2023 , 4));
+    // console.log(new Date(2023 , 4 , 25));
+    // console.log(new Date(2023 , 4 , 20 , 12));
+    // console.log(new Date(2023 , 4 , 25 , 12 , 40));
+    // console.log(new Date(12000));
+}
+
+/* javascript ISO standard time */
+
+{
+    // const dates = new Date(2023 ,  3 , 16 , 6 , 15 , 20)
+    // console.log(dates);
+    // console.log(dates.toString());
+    // console.log(dates.toDateString());
+    // console.log(dates.toUTCString());
+    // console.log(dates.toISOString());
+}
+
+/* JavaScript Date Formats */
+
+/* ISO Date , Short Date  , Long Date */
+
+{
+//   const dates = new Date("2024");
+//   console.log(dates);
+}
+
+/* ShortDate */
+
+{
+//   const dates = new Date("03/25/2023");
+//   console.log(dates);
+}
+
+/* LongDate */
+
+{
+//   const dates = new Date("march 23 2023");
+//   console.log(dates);
+}
+
+{
+//   const dates = new Date("23 march 2023");
+//   console.log(dates);
+}
+
+/*  Date Input - Parsing Dates */
+
+{
+//   let msec = Date.parse("october 21, 2002");
+//   console.log(msec);
+}
+
+/*Date Get() Method */
+
+{
+    // let date = new Date();
+    // console.log(date);
+    // console.log(date.getFullYear());
+    // console.log(date.getMonth());
+    // console.log(date.getDate());
+    // console.log(date.getDay());
+    // console.log(date.getHours());
+    // console.log(date.getMinutes());
+    // console.log(date.getSeconds());
+    // console.log(date.getMilliseconds());
+    // console.log(date.getTime());
+}
+
+/* Date Set() Method */
+
+{
+    // let date = new Date();
+    // console.log(date);
+    // console.log(date.setFullYear(2019));
+    // console.log(date.setMonth(3));
+    // console.log(date.setDate(23));
+    // console.log(date.setHours(34));
+    // console.log(date.setMinutes(23));
+    // console.log(date.setSeconds(45));
+    // console.log(date.setMilliseconds(30000));
+    // console.log(date.setTime(3212));
 }
