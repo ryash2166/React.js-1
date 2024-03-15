@@ -1329,6 +1329,14 @@
     // console.log(string.substring(-10, 7));
 }
 
+/* 4.1 String Substr() Method */
+
+{
+    // let string = "String Substr Method"
+     
+    // console.log(string.substr(-2 ));
+}
+
 /* 5. String replace() Method */
 
 {
@@ -1607,3 +1615,20 @@
     // console.log(date.setMilliseconds(30000));
     // console.log(date.setTime(3212));
 }
+
+// function findLongestWord(inputString) {
+//     const wordsArray = inputString.split(' ');
+ 
+//     const sortedWords = wordsArray.sort(function (a, b) {
+//         return b.length - a.length; 
+//     });
+ 
+//     const longestWord = sortedWords[0];
+ 
+//     return longestWord;
+// }
+ 
+// const inputString = "JavaScript is an awesome programming language";
+// const result = findLongestWord(inputString);
+ 
+// console.log("Longest word:", result);
