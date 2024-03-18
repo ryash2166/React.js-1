@@ -1616,19 +1616,104 @@
     // console.log(date.setTime(3212));
 }
 
-// function findLongestWord(inputString) {
-//     const wordsArray = inputString.split(' ');
- 
-//     const sortedWords = wordsArray.sort(function (a, b) {
-//         return b.length - a.length; 
-//     });
- 
-//     const longestWord = sortedWords[0];
- 
-//     return longestWord;
-// }
- 
-// const inputString = "JavaScript is an awesome programming language";
-// const result = findLongestWord(inputString);
- 
-// console.log("Longest word:", result);
+/* Array Method */
+
+/* 1. Array Length */
+
+{
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+    console.log(fruits.length);
+}
+
+/* 2. Array Push */
+
+{
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.push("Lemon")
+    console.log(fruits);
+}
+
+/* 3. Array POP */
+
+{
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.pop()
+    console.log(fruits);
+}
+
+/* 4. Array Shift */
+
+{
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.shift()
+    console.log(fruits);
+}
+
+/* 5. Array Unshift */
+
+{
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.unshift()
+    console.log(fruits);
+}
+
+/* 6. Array Changing Elements */
+
+{
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits[2] = "Kiwi"
+    console.log(fruits);
+}
+
+/* 7. Array Merging (Concatenating) */
+
+{
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    const fruits1 = ["Banana", "Orange", "Apple", "Mango"];
+
+    const fruit = fruits.concat(fruits1)
+
+    console.log(fruit);
+}
+
+/* 8. Array Splice */
+
+{
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.splice(2 , 0 , "Lemon" , "Kiwi")
+    console.log(fruits);
+}
+
+/* 9. Array Slice */
+
+{
+    const fruits = ["Banana", "Orange", "Lemon", "Kiwi", "Apple", "Mango"];
+    const fruit =fruits.slice(1,3)
+    console.log(fruit);
+}
+
+/* 10. Array Sort */
+
+{
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.sort()
+    console.log(fruits);
+}
+
+/* Numeric Sort() */
+
+{
+    const point = [40,100,1,5,25,10]
+    point.sort(function(a,b){return a-b})
+
+    console.log(point);
+}
+
+/* 11. Array Reverse */
+
+{
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.reverse();
+    console.log(fruits);
+}
