@@ -1,0 +1,73 @@
+{
+    "food": [
+
+        {"Id" : "1" , "type" : "food" , "name" : "Dal-Makhani" , "price" : "800/-"},
+        {"Id" : "1" , "type" : "food" , "name" : "Dal-Makhani" , "price" : "800/-"}
+
+    ],
+    "car": [
+
+        {"Id" : "2" , "type" : "car" , "name" : "Shelby" , "price" : "230800/-"},
+        {"Id" : "2" , "type" : "car" , "name" : "Shelby" , "price" : "230800/-"}
+
+    ],
+    "bike": [
+
+        {"Id" : "3" , "type" : "bike" , "name" : "Ninja" , "price" : "13800/-"},
+        {"Id" : "2" , "type" : "car" , "name" : "Shelby" , "price" : "230800/-"}
+        
+    ],
+    "tour": [
+
+        {"Id" : "4" , "type" : "tour" , "name" : "Varanasi" , "price" : "24000/-"},
+        {"Id" : "4" , "type" : "tour" , "name" : "Varanasi" , "price" : "24000/-"}
+        
+    ],
+    "temple": [
+
+        {"Id" : "5" , "type" : "temple" , "name" : "Prem Mandir" , "timing" : "4 to 8"},
+        {"Id" : "5" , "type" : "temple" , "name" : "Prem Mandir" , "timing" : "4 to 8"}
+
+    ],
+    "treak": [
+
+        {"Id" : "6" , "type" : "treak" , "name" : "Spiti Valley" , "price" : "23800/-"},
+        {"Id" : "6" , "type" : "treak" , "name" : "Spiti Valley" , "price" : "23800/-"}
+
+    ],
+    "tool": [
+
+        {"Id" : "7" , "type" : "tool" , "name" : "Hammer" , "price" : "200/-"},
+        {"Id" : "7" , "type" : "tool" , "name" : "Hammer" , "price" : "200/-"}
+
+    ],
+    "fruit": [
+
+        {"Id" : "8" , "type" : "fruit" , "name" : "Kiwi" , "price" : "800/-"},
+        {"Id" : "8" , "type" : "fruit" , "name" : "Kiwi" , "price" : "800/-"}
+
+    ],
+    "movie": [
+
+        {"Id" : "9" , "type" : "movie" , "name" : "Ford vs. Ferrari" , "price" : "23000/-"},
+        {"Id" : "9" , "type" : "movie" , "name" : "Ford vs. Ferrari" , "price" : "23000/-"}
+
+    ],
+    "book": [
+
+        {"Id" : "10" , "type" : "book" , "name" : "Dune" , "part" : "8 part"},
+        {"Id" : "10" , "type" : "book" , "name" : "Dune" , "part" : "8 part"}
+
+    ],
+    "ott": [
+
+        {"Id" : "11" , "type" : "ott" , "name" : "Netflix" , "subscription" : "2499/-"},
+        {"Id" : "11" , "type" : "ott" , "name" : "Netflix" , "subscription" : "2499/-"}
+
+    ],
+    "sport": [
+
+        {"Id" : "12" , "type" : "sport" , "name" : "Cricket" , "league" : "IPL"},
+        {"Id" : "12" , "type" : "sport" , "name" : "Cricket" , "league" : "IPL"}
+    ]
+}
