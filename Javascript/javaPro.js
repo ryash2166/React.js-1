@@ -487,4 +487,49 @@ JavaScript */
 
 // }
 
-/* 53.  */
+/* 53.  Reload page JavaScript */
+
+// {
+//     location.reload();
+// }
+
+/* 55. JavaScript Conditional Operator */
+
+// {
+//     function getFee(isMember) {
+//         return isMember ? '$2.00' : '$10.00';
+//       }
+      
+//       console.log(getFee(true));
+//       console.log(getFee(false));
+// }
+
+/* 56. Example of this KeyWord in JavaScript */
+
+// {
+//     const person = {
+//         firstName: "John",
+//         lastName : "Doe",
+//         id       : 5566,
+//         fullName : function() {
+//           return this.firstName + " " + this.lastName;
+//         }
+//       };
+
+//       console.log(person.fullName);
+// }
+
+/* 57. JavaScript Validation API */
+
+// {
+//     function myFunction() {
+//         const inpObj = document.getElementById("id1");
+//         if (!inpObj.checkValidity()) {
+//           document.getElementById("demo").innerHTML = inpObj.validationMessage;
+//         } else {
+//           document.getElementById("demo").innerHTML = "Input OK";
+//         } 
+//       } 
+// }
+
+/* 58. JavaScript Set dropdown value on Button Click */
