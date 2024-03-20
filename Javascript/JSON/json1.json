@@ -14,7 +14,7 @@
     "bike": [
 
         {"Id" : "3" , "type" : "bike" , "name" : "Ninja" , "price" : "13800/-"},
-        {"Id" : "2" , "type" : "car" , "name" : "Shelby" , "price" : "230800/-"}
+        {"Id" : "3" , "type" : "bike" , "name" : "Ninja" , "price" : "13800/-"}
         
     ],
     "tour": [

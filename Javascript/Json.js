@@ -14,24 +14,24 @@ let Json = [
     {"Id" : "12" , "type" : "sport" , "name" : "Cricket" , "league" : "IPL"}
 ]
 
-fetch('http://localhost:3000/car').then(Response => Response.json()).then(json => console.log(json))   
+fetch('http://localhost:3000/food').then(Response => Response.json()).then(json => console.log(json))   
 
-let html = document.getElementById('json')
+// let html = document.getElementById('json')
 
-html.innerHTML = JSON.stringify(Json , null , 2)
+// html.innerHTML = JSON.stringify(Json , null , 2)
 
 
 
-// fetch("http://localhost:3000/json")
-//     .then((response) => {
-//       if (!response.ok) {
-//         throw new Error(HTTP error! status: ${response.status});
-//       }
-//       return response.json();
-//     })
-//     .then((data) => {
-//       document.getElementById("hk1").innerHTML = JSON.stringify(data, null, 2);
-//     })
-//     .catch((error) => {
-//       console.log("Fetch error:", error);
-//     });
+fetch("http://localhost:3000/bike")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then((data) => {
+      document.getElementById("json").innerHTML = JSON.stringify(data, null, 2);
+    })
+    .catch((error) => {
+      console.log("Fetch error:", error);
+    });
