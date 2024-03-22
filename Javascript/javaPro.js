@@ -564,8 +564,6 @@ JavaScript */
 
 /* 61. javascript browser detection */
 
-
-
 /* 62. How to sort array value using sort() method in JavaScript */
 
 // {
