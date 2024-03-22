@@ -1,7 +1,7 @@
 {
-    // const regexp = /^R?a?k?h?oliya?\sYash?\s01\s01+\s2003$/
+    const regexp = /^R?a?k?h?oliya?\sYash?\s01\s01+\s2003$/
 
-    // console.log(regexp.test(prompt("Enter NAme: ")));
+    console.log(regexp.test(prompt("Enter Name: ")));
 }
 
 /* E-Mail */
