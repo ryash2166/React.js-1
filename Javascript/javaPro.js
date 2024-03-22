@@ -242,7 +242,7 @@ JavaScript */
 
 /* 31. Checkbox validation using JavaScript (javascript checkbox checked) */
 
-{
+// {
     // function validate() {
     //     let checkbox = document.getElementById("check");
     //     let text = document.getElementById("con")
@@ -254,7 +254,7 @@ JavaScript */
     //         text.innerHTML = "Please Agree the Checkbox"
     //     }
     // }
-}
+// }
 
 /* 32. Get query string value in javascript */
 
@@ -563,6 +563,8 @@ JavaScript */
 // }
 
 /* 61. javascript browser detection */
+
+
 
 /* 62. How to sort array value using sort() method in JavaScript */
 
