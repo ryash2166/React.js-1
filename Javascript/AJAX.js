@@ -35,22 +35,22 @@
 
 /* Method 1 */
 {
-    async function data1() {
-        console.log("B : Message");
-    //   await  console.log("C : Message");
-        const response = await fetch("JSON/json1.json");
+    // async function data1() {
+    //     console.log("B : Message");
+    // //   await  console.log("C : Message");
+    //     const response = await fetch("JSON/json1.json");
 
-        console.log("D : Message");
+    //     console.log("D : Message");
 
-        const student = await response.json()
+    //     const student = await response.json()
 
-        return student;
-    }
+    //     return student;
+    // }
 
-    console.log("A : Message");
-    let a = data1();
-    console.log("E : Message");
-    console.log(a);
+    // console.log("A : Message");
+    // let a = data1();
+    // console.log("E : Message");
+    // console.log(a);
 }
 
 /* Method 2 */
