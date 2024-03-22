@@ -533,3 +533,53 @@ JavaScript */
 // }
 
 /* 58. JavaScript Set dropdown value on Button Click */
+
+// {
+//     function changeText() {
+//         x = document.getElementById("mySelect");
+//         x.options[x.selectedIndex].text = "Melon";
+//       }
+// }
+
+/* 59. Display Images Based on User Selection */
+
+/* 60. JavaScript Bind Arrays Value into Dropdown list */
+
+// {
+//     let res = document.getElementById('GFG');
+//         let select = document.getElementById("arr");
+//         let elmts = ["HTML", "CSS", "JS", "PHP", "jQuery"];
+ 
+//         function GFG_Fun() {
+//             for (let i = 0; i < elmts.length; i++) {
+//                 let optn = elmts[i];
+//                 let el = document.createElement("option");
+//                 el.textContent = optn;
+//                 el.value = optn;
+//                 select.appendChild(el);
+//             }
+//             res.innerHTML = "Elements Added";
+//         }
+// }
+
+/* 61. javascript browser detection */
+
+/* 62. How to sort array value using sort() method in JavaScript */
+
+// {
+//     function func() {
+//         let arr = [2, 5, 8, 1, 4]
+     
+//         console.log(arr.sort());
+//     }
+//     func();
+// }
+
+// {
+//     let numbers = [20, 5.2, -120, 100, 30, 0];
+ 
+//     function compare(a, b) {
+//         return a - b;
+//     }
+//     console.log(numbers.sort(compare));
+// }
