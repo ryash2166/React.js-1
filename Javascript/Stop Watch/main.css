@@ -15,30 +15,24 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-  
     height: 270px;
     width: 270px;
-  
     border: 2px solid;
     border-radius: 50%;
-    
-    margin-left: 70px;
+    margin-inline-start: 50px;
     
   }
   
   .time {
     font-family: "Roboto Mono", monospace;
-    font-weight: 200;
+    font-weight: 400;
     font-size: 32px;
   }
   h1 {
     font-size: 40px;
     font-family: "Montserrat", sans-serif;
-    font-weight: 150;
-  
+    font-weight: 500 !important;
     text-align: center;
-    line-height: 39px;
-  
     padding: 50px;
     margin: 10px;
   }
@@ -49,42 +43,29 @@ body {
     font-size: 40px;
     font-weight: bold;
     text-align: center;
-    /* background: #ffffff; */
     color: rgb(42, 164, 201);
-    
-      font-family: "Roboto Mono", monospace;
-      font-weight: 300;
-      font-size: 42px;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 300;
+    font-size: 42px;
     
   }
   
   .controls {
     display: flex;
-    /* flex-wrap: nowrap; */
-    margin: 70px 70px 70px 70px;
+    margin: 55px;
     flex-direction: row;
-    /* padding: 50px 600px 600px -2500px; */
     justify-content: space-between;
     align-items: center;
     
   }
   
   #sw-rst, #sw-go {
-      /* box-sizing: border-box;  */
     display: flex; 
     align-items: center;
     justify-content: space-between;
-  
     width: 130px;  
-  
-     /* width: 100%; */
     cursor: pointer;
-    
     padding: 10px  10px 10px 40px;
-    /*
-    border: 0;
-    color: rgb(19, 4, 4);
-    font-size: 20px; */
   } 
   
   
