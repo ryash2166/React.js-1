@@ -40,14 +40,11 @@ body {
   #sw-time {
     width: 80%;
     padding: 20px 0;
-    font-size: 40px;
-    font-weight: bold;
     text-align: center;
     color: rgb(42, 164, 201);
     font-family: "Roboto Mono", monospace;
     font-weight: 300;
     font-size: 42px;
-    
   }
   
   .controls {
@@ -62,6 +59,7 @@ body {
   #sw-rst, #sw-go {
     display: flex; 
     align-items: center;
+    border-radius: 20px;
     justify-content: space-between;
     width: 130px;  
     cursor: pointer;
