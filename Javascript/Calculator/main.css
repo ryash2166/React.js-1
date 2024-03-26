@@ -6,11 +6,13 @@
   }
   
 .App {
-    margin: 100px auto;
+    margin: 200px auto;
     text-align: center;
     background-color: black;
     width: 266px;
+    padding: 3px;
     border: black 2px solid;
+    border-radius: 10px;
   }
   
 .buttons{
