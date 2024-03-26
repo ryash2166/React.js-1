@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+  }
+  input {
+    width: 50%;
+      height: 30px;
+  }
+  
+  button {
+    padding: 7px 20px;
+    border-radius: 5px;
+    background-color: #3EC70B;
+    border-color: #3EC70B;
+    box-shadow: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: all 250ms;
+  }
+  
+  button:hover {
+    padding: 10px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
