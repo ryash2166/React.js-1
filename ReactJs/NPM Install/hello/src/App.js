@@ -1,24 +1,18 @@
-import logo from './logo.svg';
+import allu from "./IMG/card-2.jpg";
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className="relative flex justify-center h-auto max-w-xl m-auto p-auto mt-24 max-[1024px]:mt-14">
+      <div className="absolute">
+      <img src= {allu} alt="" className="rounded-xl" />
+      </div>
+    <div className="z-10">
+      <p class="text-3xl font-extrabold text-white tracking-wide">Do You need a trip?</p>
     </div>
+    </div>
+    </>
   );
 }
 
