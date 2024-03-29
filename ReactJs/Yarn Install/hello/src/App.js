@@ -1,14 +1,17 @@
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './App.css';
+import * as React from 'react';
+import Button from '@mui/material/Button';
+
 
 function App() {
   return (
     <>
-        <Navbar expand="lg" className="bg-body-tertiary">
+        {/* <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
         <Navbar.Brand href="#">TextUtils</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -28,7 +31,8 @@ function App() {
           </Form>
         </Navbar.Collapse>
       </Container>
-    </Navbar>
+    </Navbar> */}
+    <Button variant="contained">Hello world</Button>
     </>
   );
 }
