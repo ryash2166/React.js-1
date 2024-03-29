@@ -11,7 +11,7 @@ import Button from '@mui/material/Button';
 function App() {
   return (
     <>
-        {/* <Navbar expand="lg" className="bg-body-tertiary">
+        <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
         <Navbar.Brand href="#">TextUtils</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -31,8 +31,8 @@ function App() {
           </Form>
         </Navbar.Collapse>
       </Container>
-    </Navbar> */}
-    <Button variant="contained">Hello world</Button>
+    </Navbar>
+    {/* <Button variant="contained">Hello world</Button> */}
     </>
   );
 }
