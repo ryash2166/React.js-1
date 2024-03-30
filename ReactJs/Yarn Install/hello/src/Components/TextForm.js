@@ -3,6 +3,13 @@ import React, {useState} from 'react'
 
 
 export default function TextForm(props) {
+    const [color, setColor] = useState("black");
+
+    const mystyle = {
+        color : color,
+        fontSize : 26
+    }
+
     const handleUpClick = ()=>{
         // console.log("Uppercase was clicked: " +  text);
         let newText = text.toUpperCase();
@@ -15,12 +22,19 @@ export default function TextForm(props) {
         setText(newText)
     }
 
+    const changeColor = () => setColor("orange");
+
+    // const changecolor = () => {
+    //     let newText = text.style.setColor("Blue");
+    //     setText(newText)
+    // }
+
     const handleOnChange = (event)=>{
         // console.log("On change");
         setText(event.target.value)
     }
 
-    const [text, setText] = useState('Enter text here'); 
+    const [text, setText] = useState(''); 
     // text = "new text"; // Wrong way to change the state
     // setText("new text"); // Correct way to change the state
     return (
@@ -28,10 +42,12 @@ export default function TextForm(props) {
         <div> 
             <h1>{props.heading}</h1>
             <div className="mb-3"> 
-            <textarea className="form-control" value={text} onChange={handleOnChange} id="myBox" rows="8"></textarea>
+            <textarea className="form-control" value={text} onChange={handleOnChange} id="myBox" rows="8" style={mystyle}></textarea>
             </div>
             <button className="btn btn-primary" onClick={handleUpClick}>Convert to Uppercase</button>
             <button className="btn btn-primary mx-1" onClick={handleLoClick}>Convert to Lowercase</button>
+            <button className="btn btn-primary mx-1" onClick={changeColor}>Change Color</button>
+
         </div>
         <div className="container my-3">
             <h2>Your text summary</h2>
