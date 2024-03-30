@@ -7,7 +7,8 @@ export default function TextForm(props) {
 
     const mystyle = {
         color : color,
-        fontSize : 26
+        fontSize : 26,
+        fontWeight : 700,
     }
 
     const handleUpClick = ()=>{
@@ -23,6 +24,8 @@ export default function TextForm(props) {
     }
 
     const changeColor = () => setColor("orange");
+    const backColor = () => setColor("black");
+
 
     // const changecolor = () => {
     //     let newText = text.style.setColor("Blue");
@@ -47,6 +50,8 @@ export default function TextForm(props) {
             <button className="btn btn-primary" onClick={handleUpClick}>Convert to Uppercase</button>
             <button className="btn btn-primary mx-1" onClick={handleLoClick}>Convert to Lowercase</button>
             <button className="btn btn-primary mx-1" onClick={changeColor}>Change Color</button>
+            <button className="btn btn-primary mx-1" onClick={backColor}>Back To Real Color</button>
+
 
         </div>
         <div className="container my-3">
