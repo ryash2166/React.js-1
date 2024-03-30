@@ -15,7 +15,7 @@ export default function App() {
   const [openBasic, setOpenBasic] = useState(false);
 
   return (
-    <MDBNavbar expand='lg' light bgColor='light'>
+    <MDBNavbar expand='lg' dark bgColor='dark'>
       <MDBContainer fluid>
         <MDBNavbarBrand href='#'>Task-1</MDBNavbarBrand>
 
