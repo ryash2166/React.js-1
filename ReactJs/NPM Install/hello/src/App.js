@@ -1,9 +1,23 @@
-import * as React from "react";
-import {Button} from "@nextui-org/button";
+import React from "react";
+import Navbar from "./Components/Navbar";
+import Article from "./Components/Article";
+import Card from "./Components/Card";
+import Table from "./Components/Table";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
-    <Button>Press me</Button>
+    <>
+    <Navbar/>
+    <Article/>
+    <div className="flex gap-1 mt-2">
+      <div className="max-md:hidden">
+        <Card/>
+      </div>
+    <Table/>
+    </div>
+    <Footer/>
+    </>
   );
 }
 
