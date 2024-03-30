@@ -10,7 +10,7 @@ function App() {
     <>
     <Navbar/>
     <Article/>
-    <div className="flex gap-3 mt-2 mb-3">
+    <div className="flex gap-3 my-4">
       <div className="max-md:hidden">
         <Card/>
       </div>
