@@ -3,7 +3,7 @@ import { MDBCarousel, MDBCarouselItem, MDBCarouselCaption } from 'mdb-react-ui-k
 
 export default function App() {
   return (
-    <MDBCarousel  showControls fade>
+    <MDBCarousel fade>
       <MDBCarouselItem itemId={1}>
         <img src='https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg' className='d-block w-100' alt='...' />
         <MDBCarouselCaption>

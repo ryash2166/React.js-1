@@ -1,38 +1,63 @@
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import React, { useState } from 'react';
+import {
+  MDBContainer,
+  MDBNavbar,
+  MDBNavbarBrand,
+  MDBNavbarToggler,
+  MDBIcon,
+  MDBNavbarNav,
+  MDBNavbarItem,
+  MDBNavbarLink,
+  MDBCollapse,
+} from 'mdb-react-ui-kit';
 
-function NavScrollExample() {
+export default function App() {
+  const [openBasic, setOpenBasic] = useState(false);
+
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
-      <Container fluid>
-        <Navbar.Brand href="#">Task-1</Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px' }}
-            navbarScroll>
-            <Nav.Link href="./Components/Article.jsx">Article</Nav.Link>
-            <Nav.Link href="./Components/Card.jsx">Card</Nav.Link>
-            <Nav.Link href="#action2">Table</Nav.Link>
-            <Nav.Link href="#action2">Footer</Nav.Link>
-          </Nav>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
-          </Form>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <MDBNavbar expand='lg' light bgColor='light'>
+      <MDBContainer fluid>
+        <MDBNavbarBrand href='#'>Task-1</MDBNavbarBrand>
+
+        <MDBNavbarToggler
+          aria-controls='navbarSupportedContent'
+          aria-expanded='false'
+          aria-label='Toggle navigation'
+          onClick={() => setOpenBasic(!openBasic)}
+        >
+          <MDBIcon icon='bars' fas />
+        </MDBNavbarToggler>
+
+        <MDBCollapse navbar open={openBasic}>
+          <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
+            <MDBNavbarItem>
+              <MDBNavbarLink active aria-current='page' href='#'>
+                Article
+              </MDBNavbarLink>
+            </MDBNavbarItem>
+
+            <MDBNavbarItem>
+                <MDBNavbarLink aria-current='page' href='#'>
+                Card
+                </MDBNavbarLink>
+            </MDBNavbarItem>
+
+            <MDBNavbarItem>
+                <MDBNavbarLink aria-current='page' href='#'>
+                Table
+                </MDBNavbarLink>
+            </MDBNavbarItem>
+
+            <MDBNavbarItem>
+                <MDBNavbarLink disabled aria-current='page' href='#'>
+                Footer
+                </MDBNavbarLink>
+            </MDBNavbarItem>
+          </MDBNavbarNav>
+
+          
+        </MDBCollapse>
+      </MDBContainer>
+    </MDBNavbar>
   );
 }
-
-export default NavScrollExample;
