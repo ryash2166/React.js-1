@@ -1,6 +1,8 @@
 
-import React,{useState} from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
+import { Form } from 'react-bootstrap'
+
 
 export default function Navbar(props) {
     
@@ -17,7 +19,7 @@ export default function Navbar(props) {
                             <a className="nav-link active" aria-current="page" href="/">Home</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/">{props.aboutText}</a>
+                            <a className="nav-link" href="/about">{props.aboutText}</a>
                         </li>
                     </ul>
                     <form className="d-flex mx-3">
@@ -25,14 +27,13 @@ export default function Navbar(props) {
                         <button className="btn btn-outline-primary" type="submit">Search</button>
                     </form>
                     <div className={`form-check form-switch text-${props.mode==='light'?'dark':'light'}`}>
-                        <input className="form-check-input" onClick={props.toggleMode} type="checkbox" id="flexSwitchCheckDefault"/>
-                        <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Enable Dark Mode</label>
+                        <Form.Check type="switch" id="custom-switch" label="Enable Dark Mode" onClick={props.toggleMode} />
                     </div>
                 </div>
             </div>
         </nav>
     )
-}
+} 
 
 Navbar.propTypes = {
     title: PropTypes.string.isRequired,
