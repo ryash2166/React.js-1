@@ -38,8 +38,8 @@ function App() {
     <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} key={new Date()} />
     <Alert alert={alert}/>
     <div className="container my-3">
-      {/* <About  /> */}
       <TextForm showAlert={showAlert} heading="Try TextUtils - word counter, character counter, remove extra spaces" mode={mode}/>
+      {/* <About  /> */}
     </div>
     </> 
   );
