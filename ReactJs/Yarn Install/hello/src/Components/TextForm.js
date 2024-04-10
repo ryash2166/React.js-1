@@ -11,21 +11,21 @@ export default function TextForm(props) {
     //     fontWeight : 700,
     // }
 
-    const handleUpClick = ()=>{
+    const handleUpClick = () => {
         // console.log("Uppercase was clicked: " +  text);
         let newText = text.toUpperCase();
         setText(newText);
         props.showAlert("Converted to Uppercase!", "success");
     }
 
-    const handleLoClick = ()=>{
+    const handleLoClick = () => {
         // console.log("Uppercase was clicked: " +  text);
         let newText = text.toLowerCase();
         setText(newText);
         props.showAlert("Converted to Lowercase!", "success");
     }
 
-    const handleClearClick = ()=>{ 
+    const handleClearClick = () => { 
         let newText = '';
         setText(newText);
         props.showAlert("Text Cleared!", "success");
