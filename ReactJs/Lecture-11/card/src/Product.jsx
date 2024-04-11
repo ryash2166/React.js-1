@@ -60,7 +60,7 @@ export const product = [
         "title": "Dow Jones Futures: Stock Market Awaits CPI Inflation, Nvidia Chipmaker; Tesla Rises Again - Investor's Business Daily",
         "description": null,
         "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-awaits-cpi-inflation-tesla-rises-nvidia-falls-on-rival-ai-chips/",
-        "urlToImage": null,
+        "urlToImage": "https://media.marketrealist.com/brand-img/HFrLXxgvN/0x0/dow-jones-what-is-a-point-1600349062137.jpg",
         "publishedAt": "2024-04-10T02:32:00Z",
         "content": null
       },
@@ -151,7 +151,7 @@ export const product = [
         "title": "Boeing whistleblower alleges structural flaws in 787, 777 jets - Axios",
         "description": null,
         "url": "https://www.axios.com/2024/04/09/boeing-whistleblower-787-dreamliner-777-jets",
-        "urlToImage": null,
+        "urlToImage": "https://images.axios.com/SUJUWSnj28d81hY0JS8SHfLT4HE=/0x51:4391x2521/1920x1080/2024/04/09/1712687036158.jpg?w=1920",
         "publishedAt": "2024-04-09T23:25:22Z",
         "content": null
       },
@@ -164,7 +164,7 @@ export const product = [
         "title": "Netanyahu's defense minister contradicts him, tells U.S. Rafah invasion date not set - Axios",
         "description": null,
         "url": "https://www.axios.com/2024/04/09/israel-defense-gallant-deny-rafah-invasion-date",
-        "urlToImage": null,
+        "urlToImage": "https://images.axios.com/VnhxL68dwuCzRukXOo8xmVrbGC8=/0x63:1280x783/1920x1080/2024/04/09/1712684550830.jpg?w=1920",
         "publishedAt": "2024-04-09T23:24:56Z",
         "content": null
       },
@@ -190,7 +190,7 @@ export const product = [
         "title": "Trump said it's up to the states to decide abortion. Here's everything else he didn't say. - POLITICO",
         "description": null,
         "url": "https://www.politico.com/news/2024/04/09/trump-abortion-states-00151322",
-        "urlToImage": null,
+        "urlToImage": "https://www.politico.com/dims4/default/94c4d95/2147483647/strip/true/crop/4000x2667+0+0/resize/630x420!/quality/90/?url=https%3A%2F%2Fstatic.politico.com%2F32%2F34%2Fcd2b5219495cb4404c258a6fb232%2Fcpac-81559.jpg",
         "publishedAt": "2024-04-09T23:00:00Z",
         "content": null
       },
@@ -203,7 +203,7 @@ export const product = [
         "title": "Parents of Michigan School Shooter Ethan Crumbley Sentenced to 10-15 Years in Prison - The Wall Street Journal",
         "description": null,
         "url": "https://www.wsj.com/us-news/michigan-school-shooter-ethan-crumbley-parents-sentenced-b5d5a13c",
-        "urlToImage": null,
+        "urlToImage": "https://media-cldnry.s-nbcnews.com/image/upload/t_focal-760x428,f_auto,q_auto:best/mpx/2704722219/2024_04/crumbleyparents_240409-v7dgnq.jpg",
         "publishedAt": "2024-04-09T22:33:00Z",
         "content": null
       },
@@ -216,7 +216,7 @@ export const product = [
         "title": "Zendaya on Tom Holland, stepping away from spotlight to raise future kids - Yahoo Entertainment",
         "description": "Zendaya is looking toward her future roles — including offscreen motherhood, and maybe even a semi-normal life. That Luca Guadagnino’s “Challengers” sees the...",
         "url": "https://www.nydailynews.com/2024/04/09/zendaya-tom-holland-future-family-kids-vogue-interview/",
-        "urlToImage": "https://s.yimg.com/ny/api/res/1.2/0HO29.cTYT9th0HNYYv8Pw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD0xNzE3/https://media.zenfs.com/en/ny_daily_news_national_852/8cf4a91625e41553c0a565b7a198931a",
+        "urlToImage": "https://hips.hearstapps.com/hmg-prod/images/zendaya-at-the-2024-green-carpet-fashion-awards-held-at-1-news-photo-1709812784.jpg?crop=0.599xw:0.899xh;0.236xw,0.101xh&resize=640:*",
         "publishedAt": "2024-04-09T22:30:00Z",
         "content": "Zendaya is looking toward her future roles including offscreen motherhood, and maybe even a semi-normal life.\r\nThat Luca Guadagninos Challengers sees the 27-year-old make a refreshing departure from … [+1665 chars]"
       },
@@ -229,7 +229,7 @@ export const product = [
         "title": "'One person responsible': Biden campaign blames Trump after Arizona abortion ruling - USA TODAY",
         "description": "President Joe Biden's campaign and the White House worked to blame Donald Trump after the Arizona Supreme Court upheld the state's abortion ban.",
         "url": "https://www.usatoday.com/story/news/politics/elections/2024/04/09/biden-campaign-blames-trump-arizona-abortion-ruling/73263926007/",
-        "urlToImage": "https://www.usatoday.com/gcdn/authoring/authoring-images/2024/04/09/USAT/73266436007-afp-1948403639.jpg?crop=8206,4616,x0,y427&width=3200&height=1801&format=pjpg&auto=webp",
+        "urlToImage": "https://s.yimg.com/ny/api/res/1.2/r4AXJzOsVNSK3E.ZiAvdNw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://media.zenfs.com/en/usa_today_news_641/5bfb59f6ea3abef7968fb562c49c24b4",
         "publishedAt": "2024-04-09T22:07:54Z",
         "content": "WASHINGTON President Joe Biden's reelection campaign and his administration worked to blame Donald Trump after the Arizona Supreme Court on Tuesday upheld a 160-year-old abortion ban that could shutt… [+4781 chars]"
       },
