@@ -1,0 +1,266 @@
+{
+    "status": "ok",
+    "totalResults": 36,
+    "articles": [
+      {
+        "source": {
+          "id": "the-washington-post",
+          "name": "The Washington Post"
+        },
+        "author": "Candace Buckner",
+        "title": "U-Conn. overwhelmed Purdue with the power of team basketball - The Washington Post",
+        "description": "The best player in college hoops was no match for a relentless and gorgeous Connecticut machine.",
+        "url": "https://www.washingtonpost.com/sports/2024/04/09/uconn-national-title/",
+        "urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/XVRZRXEHENHXRONUNKFD62OJRY.jpg&w=1440",
+        "publishedAt": "2024-04-09T12:14:15Z",
+        "content": "GLENDALE, Ariz. In the end, the best player in college basketball didnt stick around long enough to hear Freddie Mercurys tenor. He never got to climb the stage that was constructed on the hardwood i… [+7047 chars]"
+      },
+      {
+        "source": {
+          "id": null,
+          "name": "CNBC"
+        },
+        "author": "Cheyenne DeVon",
+        "title": "Jamie Dimon says AI could be as transformative as electricity or the internet—here's how to invest - CNBC",
+        "description": "JPMorgan Chase CEO Jamie Dimon predicts AI innovation could transform society in big ways. Here's how to invest in the tech.",
+        "url": "https://www.cnbc.com/2024/04/09/jpmorgan-chase-ceo-jamie-dimon-ai-could-be-as-big-as-the-internet.html",
+        "urlToImage": "https://image.cnbcfm.com/api/v1/image/107398292-1712604931661-gettyimages-1806233324-UK_INVESTMENT.jpeg?v=1712604955&w=1920&h=1080",
+        "publishedAt": "2024-04-09T12:00:01Z",
+        "content": "JPMorgan Chase CEO and chairman Jamie Dimon believes artificial intelligence innovations will have as big of an impact on society as the invention of electricity and the internet.\r\n\"We are completely… [+2893 chars]"
+      },
+      {
+        "source": {
+          "id": null,
+          "name": "nj.com"
+        },
+        "author": "Jeff Goldman | NJ Advance Media for NJ.com",
+        "title": "N.J. rattled by 4 more earthquake aftershocks, including 1 during solar eclipse - NJ.com",
+        "description": "New Jersey has now had at least 43 aftershocks since a 4.8 magnitude earthquake rocked the state on Friday. See the full list.",
+        "url": "https://www.nj.com/news/2024/04/nj-rattled-by-4-more-earthquake-aftershocks-including-1-during-solar-eclipse.html",
+        "urlToImage": "https://www.nj.com/resizer/v2/UNYYA6VUNFHSFFVFXY4NXIG6LM.jpg?auth=7aed97a337cca1e033c09bc1a537fb2c9090c0140b5627bd404e19b568bacf80&width=1280&quality=90",
+        "publishedAt": "2024-04-09T11:47:00Z",
+        "content": null
+      },
+      {
+        "source": {
+          "id": null,
+          "name": "Yahoo Entertainment"
+        },
+        "author": "Karen Friar",
+        "title": "Stock market today: US futures in holding pattern in wait for CPI - Yahoo Finance",
+        "description": "Investors are biding their time until the key March CPI inflation report lands as they wrestle with uncertainty around interest rates.",
+        "url": "https://finance.yahoo.com/news/live/stock-market-today-us-futures-in-holding-pattern-in-wait-for-cpi-111042837.html",
+        "urlToImage": "https://s.yimg.com/ny/api/res/1.2/ltrLu8ImFk_hn8RvJor2lQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MTU-/https://s.yimg.com/os/creatr-uploaded-images/2023-06/2edc47c0-165a-11ee-a7fd-5ed339d198fe",
+        "publishedAt": "2024-04-09T11:41:13Z",
+        "content": "US stocks were stuck in a holding pattern on Tuesday as investors bided their time until a key inflation report lands and potentially sheds light on the path of interest rates.\r\nFutures tied to the D… [+3145 chars]"
+      },
+      {
+        "source": {
+          "id": "usa-today",
+          "name": "USA Today"
+        },
+        "author": "Nate Davis",
+        "title": "2024 NFL mock draft: Trades create chaos throughout first round - USA TODAY",
+        "description": "With just over two weeks remaining until the first round begins, our 2024 NFL mock draft embraces the potential chaos that could be ahead.",
+        "url": "https://www.usatoday.com/story/sports/nfl/draft/2024/04/09/nfl-mock-draft-trades-quarterbacks-first-round/73256277007/",
+        "urlToImage": "https://www.usatoday.com/gcdn/authoring/authoring-images/2024/04/09/USAT/73256880007-usatsi-21341870.jpg?crop=1850,1041,x599,y86&width=1850&height=1041&format=pjpg&auto=webp",
+        "publishedAt": "2024-04-09T11:02:36Z",
+        "content": "With the 2024 NFL draft still more than two weeks from initiating in Detroit, what better time to kick back, open a cold one and inhale the smoke(screens)?\r\nMid-April is when conjecture takes root, r… [+22301 chars]"
+      },
+      {
+        "source": {
+          "id": "associated-press",
+          "name": "Associated Press"
+        },
+        "author": "MIKE CORDER",
+        "title": "Germany rejects allegations that it's facilitating acts of genocide in Gaza at UN court - The Associated Press",
+        "description": "Germany is strongly rejecting a case brought by Nicaragua at the United Nations’ top court accusing Berlin of facilitating breaches of the Geneva Convention and international humanitarian law by providing arms and other support to Israel in its deadly assault…",
+        "url": "https://apnews.com/article/israel-gaza-nicaragua-germany-genocide-court-91a605921b44110ae5534e6438405997",
+        "urlToImage": "https://dims.apnews.com/dims4/default/3688b6f/2147483647/strip/true/crop/5669x3189+0+296/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fa2%2F8d%2F12ddf4702f33baa7ca009f0d22b3%2Fbf71e243445f4fa2b56797329ece2ca3",
+        "publishedAt": "2024-04-09T10:41:15Z",
+        "content": "THE HAGUE, Netherlands (AP) Germany on Tuesday strongly rejected a case brought by Nicaragua at the United Nations top court accusing Berlin of facilitating breaches of the Geneva Convention and inte… [+4599 chars]"
+      },
+      {
+        "source": {
+          "id": "cbs-news",
+          "name": "CBS News"
+        },
+        "author": null,
+        "title": "Brian Dorsey is slated for execution in Missouri. Dozens of prison guards and a former judge want his life spared. - CBS News",
+        "description": "Brian Dorsey is scheduled to be executed in Missouri for a double slaying in 2009. But dozens of prison guards and a former state Supreme Court justice are among those who want his life spared.",
+        "url": "https://www.cbsnews.com/news/brian-dorsey-is-slated-for-execution-in-missouri-dozens-of-prison-guards-and-a-former-judge-want-his-life-spared/",
+        "urlToImage": "https://assets2.cbsnewsstatic.com/hub/i/r/2024/03/21/071e3128-97e9-4068-9a50-86f2a2de80c6/thumbnail/1200x630/abb91b98676e16e199c4912fa1d7d5e5/ap24080696412580.jpg?v=95af720165ffeea582866d60dd9b1b18",
+        "publishedAt": "2024-04-09T09:42:12Z",
+        "content": "St. Louis — The fate of a Missouri man convicted of killing his cousin and her husband nearly two decades ago appears to rest with the U.S. Supreme Court, with just hours to go before the scheduled e… [+4319 chars]"
+      },
+      {
+        "source": {
+          "id": "techradar",
+          "name": "TechRadar"
+        },
+        "author": "James Rogerson",
+        "title": "Google's Find My Device network has finally launched – and the Pixel 8 gets special tracking powers - TechRadar",
+        "description": "Now you can find almost anything (as long as it has Bluetooth)",
+        "url": "https://www.techradar.com/phones/googles-find-my-device-network-has-finally-launched-and-the-pixel-8-gets-special-tracking-powers",
+        "urlToImage": "https://cdn.mos.cms.futurecdn.net/zQjTf6h4stzygNHv7MureP-1200-80.jpg",
+        "publishedAt": "2024-04-09T09:34:33Z",
+        "content": "Google’s long awaited Find My Device network is finally rolling out, so you’ll be able to track your devices, even when they’re offline.\r\nAccording to a Google blog post, this is a worldwide rollout,… [+3354 chars]"
+      },
+      {
+        "source": {
+          "id": "cnn",
+          "name": "CNN"
+        },
+        "author": "Laura Paddison",
+        "title": "International court rules Switzerland violated human rights in a landmark climate judgment - CNN",
+        "description": "An international court ruled Switzerland’s failure to tackle the climate crisis violated human rights, in a judgment experts say could have a ripple effect across the globe.",
+        "url": "https://www.cnn.com/2024/04/09/climate/international-court-judgment-human-rights-climate-intl/index.html",
+        "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/2024-04-09t100652z-363810606-rc2y27a7vh23-rtrmadp-3-climate-change-europe-verdict.JPG?c=16x9&q=w_800,c_fill",
+        "publishedAt": "2024-04-09T09:22:00Z",
+        "content": "An international court in France on Tuesday ruled Switzerlands failure to adequately tackle the climate crisis was in violation of human rights, in a landmark climate judgment that could have a rippl… [+3530 chars]"
+      },
+      {
+        "source": {
+          "id": "ign",
+          "name": "IGN"
+        },
+        "author": "Wesley Yin-Poole",
+        "title": "Fallout TV Show Release Date Brought Forward Again - IGN",
+        "description": "Prime Video has adjusted the release date for the Fallout TV show once again, this time bringing it forward one day.",
+        "url": "https://www.ign.com/articles/fallout-tv-show-release-date-brought-forward-again",
+        "urlToImage": "https://assets-prd.ignimgs.com/2024/04/05/falloutthumb-1712337497763.png?width=1280",
+        "publishedAt": "2024-04-09T08:17:25Z",
+        "content": "Prime Video has adjusted the release date for the Fallout TV show once again, this time bringing it forward one day to 6pm PT, April 10.\r\nThe hotly anticipated show was due to launch all its episodes… [+1199 chars]"
+      },
+      {
+        "source": {
+          "id": "fox-news",
+          "name": "Fox News"
+        },
+        "author": "Melissa Rudy",
+        "title": "Cancer rates rising in young people due to 'accelerated aging,' new study finds: 'Highly troubling' - Fox News",
+        "description": "Accelerated aging — which is when biological age is greater than their chronological age — could increase cancer risk, according to research presented at the Association for Cancer Research meeting.",
+        "url": "https://www.foxnews.com/health/cancer-rates-rising-people-accelerated-aging-study-finds-highly-troubling",
+        "urlToImage": "https://static.foxnews.com/foxnews.com/content/uploads/2024/04/young-adult-cancer.jpg",
+        "publishedAt": "2024-04-09T08:15:00Z",
+        "content": "Accelerated aging when someones biological age is greater than their chronological age could increase the risk of cancer tumors\r\n.\r\nThats according to new research presented this week at the American… [+5632 chars]"
+      },
+      {
+        "source": {
+          "id": "fox-news",
+          "name": "Fox News"
+        },
+        "author": null,
+        "title": "Michigan school shooter's mom wants house arrest, backtracks on regrets as killer's parents face sentencings - Fox News",
+        "description": null,
+        "url": "https://www.foxnews.com/us/michigan-school-shooters-mom-wants-house-arrest-backtracks-regrets-killers-parents-face-sentencings",
+        "urlToImage": null,
+        "publishedAt": "2024-04-09T08:00:00Z",
+        "content": null
+      },
+      {
+        "source": {
+          "id": "fox-news",
+          "name": "Fox News"
+        },
+        "author": "Tracy Wright",
+        "title": "Morgan Wallen's Nashville bar arrest could land him 'in jail for up to 6 years': legal expert - Fox News",
+        "description": "Morgan Wallen may face years in jail for allegedly throwing a chair over a rooftop bar in Nashville, but his image may still stay intact, experts say.",
+        "url": "https://www.foxnews.com/entertainment/morgan-wallens-nashville-bar-arrest-could-land-him-jail-up-6-years-legal-expert",
+        "urlToImage": "https://static.foxnews.com/foxnews.com/content/uploads/2024/04/morgan-wallen-arrest.jpg",
+        "publishedAt": "2024-04-09T08:00:00Z",
+        "content": "Morgan Wallen may face serious consequences as the result of his arrest in Nashville on Sunday after he allegedly threw a chair off a rooftop bar, according to legal experts.\r\nWallen, 30, was charged… [+5000 chars]"
+      },
+      {
+        "source": {
+          "id": "associated-press",
+          "name": "Associated Press"
+        },
+        "author": "THE ASSOCIATED PRESS",
+        "title": "Israel-Hamas war: Netanyahu vows to carry out Rafah invasion - The Associated Press",
+        "description": "Israeli Prime Minister Benjamin Netanyahu has escalated his pledge to invade Rafah. In a video statement Monday, he declared: “It will happen. There is a date,” without elaborating. He spoke as Israeli negotiators are in Cairo discussing international efforts…",
+        "url": "https://apnews.com/article/israel-hamas-war-latest-04-09-2024-69ef99967e002cdb3c23924916561e52",
+        "urlToImage": "https://dims.apnews.com/dims4/default/4e1e22d/2147483647/strip/true/crop/6000x3375+0+312/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F3c%2F08%2Fbb75bc12fc659b7dd7c73fe25303%2F3b8db738e675474cb26fe2d80e572535",
+        "publishedAt": "2024-04-09T07:21:51Z",
+        "content": "Israeli Prime Minister Benjamin Netanyahu has escalated his pledge to invade the southern Gaza city of Rafah, which is filled with around 1.4 million Palestinians, most of whom are displaced from oth… [+14507 chars]"
+      },
+      {
+        "source": {
+          "id": "cnn",
+          "name": "CNN"
+        },
+        "author": "Christina Maxouris",
+        "title": "Severe storms threaten flooding, tornadoes and large hail in South and parts of Mississippi Valley today - CNN",
+        "description": "Another round of severe weather is slamming parts of the South and Mississippi Valley on Tuesday, less than a week after a powerful storm system that swept through the region killed at least three people.",
+        "url": "https://www.cnn.com/2024/04/09/weather/mississippi-valley-storms-tuesday/index.html",
+        "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/cnn-digital-tracker-rain-and-snow-accum-20240409031202157.jpg?c=16x9&q=w_800,c_fill",
+        "publishedAt": "2024-04-09T07:17:00Z",
+        "content": "Another round of severe weather is slamming parts of the South and Mississippi Valley on Tuesday, less than a week after a powerful storm system that swept through the region killed at least three pe… [+4530 chars]"
+      },
+      {
+        "source": {
+          "id": null,
+          "name": "BBC News"
+        },
+        "author": null,
+        "title": "Billie Eilish announces eco-friendly album plan - BBC.com",
+        "description": "The star says she will only use recycled vinyl and BioVinyl for her new album, Hit Me Hard And Soft.",
+        "url": "https://www.bbc.com/news/entertainment-arts-68768414",
+        "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/1E5A/production/_133107770_eilish_crop.jpg",
+        "publishedAt": "2024-04-09T06:30:15Z",
+        "content": null
+      },
+      {
+        "source": {
+          "id": null,
+          "name": "BBC News"
+        },
+        "author": null,
+        "title": "Total solar eclipse: Continent watches in wonder - BBC.com",
+        "description": "Stunning spectacle is witnessed by millions across the continent. Here are some of the stories.",
+        "url": "https://www.bbc.com/news/world-us-canada-68766846",
+        "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/183BC/production/_133106299_image.png",
+        "publishedAt": "2024-04-09T06:19:59Z",
+        "content": null
+      },
+      {
+        "source": {
+          "id": null,
+          "name": "KLAS - 8 News Now"
+        },
+        "author": "James Schaeffer, Linsey Lewis",
+        "title": "Woman shot, killed by ex-father-in-law during deposition in Las Vegas law office filed for sole custody morning of shooting: sources - KLAS - 8 News Now",
+        "description": "Documents obtained by 8 News Now show that the woman allegedly killed by her ex-father-in-law during a deposition filed documents for sole custody of her children with the alleged killer’s son the morning of the shooting.",
+        "url": "https://www.8newsnow.com/news/local-news/woman-shot-killed-by-ex-father-in-law-during-deposition-in-las-vegas-law-office-filed-for-sole-custody-morning-of-shooting-sources/",
+        "urlToImage": "https://www.8newsnow.com/wp-content/uploads/sites/59/2024/04/IMG_7050.jpeg?w=1280",
+        "publishedAt": "2024-04-09T06:13:20Z",
+        "content": "Court records reveal new details in Las Vegas shooting during child custody depositionLAS VEGAS (KLAS) — Documents obtained by 8 News Now show that the woman allegedly killed by her ex-father-in-law … [+2087 chars]"
+      },
+      {
+        "source": {
+          "id": "axios",
+          "name": "Axios"
+        },
+        "author": "Axios",
+        "title": "Jury questionnaire in Trump hush money trial released by judge - Axios",
+        "description": null,
+        "url": "https://www.axios.com/2024/04/09/read-judge-releases-jury-questionnaire-in-trump-hush-money-trial",
+        "urlToImage": null,
+        "publishedAt": "2024-04-09T05:58:20Z",
+        "content": null
+      },
+      {
+        "source": {
+          "id": null,
+          "name": "CBS Sports"
+        },
+        "author": "",
+        "title": "Kentucky coaching candidates: Dan Hurley, Nate Oats both off list that includes Billy Donovan, Rick Pitino - CBS Sports",
+        "description": "The Wildcats will be able to pick from a quality pool of candidates to replace Calipari",
+        "url": "https://www.cbssports.com/college-basketball/news/kentucky-coaching-candidates-dan-hurley-nate-oats-both-off-list-that-includes-billy-donovan-rick-pitino/",
+        "urlToImage": "https://sportshub.cbsistatic.com/i/r/2024/04/09/e2709636-37fa-4b41-b57c-dd1f7ce51ea4/thumbnail/1200x675/0a400bd9e4b80e6227463c00f6781493/usatsi-22835835-1.jpg",
+        "publishedAt": "2024-04-09T05:38:51Z",
+        "content": "One of the top jobs in college basketball opened unexpectedly on Sunday with Kentucky coach John Calipari expected to take the vacant job at Arkansas after 15 seasons with the Wildcats. Kentucky will… [+5436 chars]"
+      }
+    ]
+  }
