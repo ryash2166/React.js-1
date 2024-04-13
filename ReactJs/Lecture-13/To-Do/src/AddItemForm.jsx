@@ -5,7 +5,7 @@ const AddItemForm = ({ addItem }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addItem(item);
+    addItem(item ? item : 'empty');
     setItem('');
   };
 
