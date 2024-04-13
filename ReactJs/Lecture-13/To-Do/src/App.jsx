@@ -28,10 +28,11 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header" style={{fontSize: '1.3rem' , fontWeight: '700'}}>
-        To Do items
-        <ItemList items={items} removeItem={removeItem} />
-        <AddItemForm addItem={addItem} />
+      <AddItemForm addItem={addItem} />
+      <header className="App-header my-3" style={{fontSize: '1.3rem'}}>
+        <p style={{fontWeight:'700'}}> To Do items </p>
+        <ItemList items={items} removeItem={removeItem} style={{fontWeight: '300'}}/>
+        
       </header>
     </div>
   );
