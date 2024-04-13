@@ -24,7 +24,7 @@ function Task1() {
                 image.map((ele) => {
                     return(
                         <div className='my-3 col-md-4'>
-                        <Card>
+                        <Card className='shadow-xl'>
                             <Card.Img variant="top" src={ele.image} />
                             <Card.Body>
                                 <Badge pill bg="dark" style={{fontWeight: '400'}} className="py-2 my-2 px-3"> {ele.category} </Badge>
