@@ -1,8 +1,4 @@
 import { useState , useEffect } from 'react';
-// import Col from 'react-bootstrap/Col';
-// import Container from 'react-bootstrap/Container';
-// import Image from 'react-bootstrap/Image';
-// import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Badge from 'react-bootstrap/Badge';
@@ -12,7 +8,7 @@ function Task1() {
     const [image , setImage] = useState([]);
 
     const getImage = async () => {
-        const res = await fetch('https://fakestoreapiserver.reactbd.com/smart');
+        const res = await fetch('https://fakestoreapiserver.reactbd.com/tech');
         setImage( await res.json());
     }
 
