@@ -23,8 +23,8 @@ class TodoItem extends Component {
         <div style={{ backgroundColor: "" }}>
           {this.state.editClicked ? (
             <form onSubmit={this.doChange} className="form-edit">
-              <input onChange={this.onChange} value={this.state.name}></input>
-              <button className="edit">Save</button>
+              <input onChange={this.onChange} value={this.state.name} className="border-2 px-3 py-2"></input>
+              <button className="edit bg-green-700 text-white px-3 py-2 rounded-full mt-2 mb-2">Save</button>
             </form>
           ) : (
             <div className="text">
@@ -32,7 +32,7 @@ class TodoItem extends Component {
             </div>
           )}
         </div>
-        <div>
+        <div className="my-2">
           {!this.state.editClicked && (
             <button onClick={this.handleEdit} className="edit bg-primary px-3 py-1 rounded-full mx-3">
               Edit
