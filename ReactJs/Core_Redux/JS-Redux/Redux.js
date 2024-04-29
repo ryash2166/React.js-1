@@ -64,22 +64,20 @@ const reducer1 = (state = 2, action) => {
   const store1 = createStore(reducer1);
   
   store1.subscribe(() => {
-    console.log("current state", store1.getState());
+    console.log("current state is", store1.getState());
   });
   
   store1.dispatch({
     type: "MULTIPLICATION",
     value: 5
   });
+    
+  store1.dispatch({
+    type: "DECREMENT",
+    value: 2
+  });
 
   store1.dispatch({
     type: "INCREMENT",
     value: 1
-  });
-  
-  
-  
-  store1.dispatch({
-    type: "DECREMENT",
-    value: 2
   });
