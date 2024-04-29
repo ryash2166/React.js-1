@@ -46,7 +46,7 @@ store.dispatch(buyicecreame())
 store.dispatch(buy_icecreame())
 
 
-
+// Short Method
 
 const reducer1 = (state = 2, action) => {
     switch (action.type) {
