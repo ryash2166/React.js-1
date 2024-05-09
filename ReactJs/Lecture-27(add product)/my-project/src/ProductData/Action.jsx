@@ -14,8 +14,8 @@ export const RemoveToCart = (data)=>{
     }
 }
 
-export const emptyCart = (data)=>{
-    console.warn('EmptyCartAction Called', data);
+export const emptyCart = ()=>{
+    console.warn('EmptyCartAction Called');
     return{
         type:EMPTY_CART_CART
     }
