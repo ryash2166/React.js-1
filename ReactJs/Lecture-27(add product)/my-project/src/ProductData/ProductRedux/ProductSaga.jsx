@@ -1,11 +1,11 @@
 import { put, takeEvery } from "redux-saga/effects";
-import { PRODUCT_ADD, PRODUCT_SET } from "./ProductConstant";
+import { PRODUCT_LIST, PRODUCT_SET } from "../Redux/Constant";
 
 
 
 function* getProduct(){
-    let ProductList = yield fetch('http://localhost:3000/Product')
-    data = yield ProductList.json()
+    let data = yield fetch('http://localhost:3000/Product')
+    data = yield data.json()
     console.warn(data);
     yield put({
         type: PRODUCT_SET , data
@@ -14,7 +14,7 @@ function* getProduct(){
 }
 
 function* ProductSaga(){
-    yield takeEvery(PRODUCT_ADD, getProduct)
+    yield takeEvery(PRODUCT_LIST, getProduct)
 }
 
 export default ProductSaga

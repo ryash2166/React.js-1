@@ -7,7 +7,8 @@ const Reducer = (data = [], action) =>{
             return[action.data, ...data]
         case REMOVE_TO_CART : 
             console.warn('reomveToCartReducer Called', action);
-            data.length = data.length - 1
+            // data.length = data.length - 1
+            data.length = data.length ? data.length - 1 : []
             return[...data]
         case EMPTY_CART : 
             console.warn('EmptyCartReducer Called', action);

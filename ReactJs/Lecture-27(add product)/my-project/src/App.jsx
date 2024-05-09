@@ -1,24 +1,23 @@
 import React from 'react'
-import {addToCart, RemoveToCart, emptyCart} from './ProductData/Action'
-import { useDispatch } from 'react-redux'
-import { ProductData } from './ProductData/ProductAction'
-import Header from './Header'
+import Header from './Components/Header'
+import { BrowserRouter, Route, Routes  } from 'react-router-dom'
+import ProductMain from './Pages/ProductMain'
+import Cart from './Pages/Cart'
+
+
+
 function App() {
 
-  const dispatch = useDispatch()
-  const product = {
-    name: 'Iphone',
-    color:'Red',
-    price: 60000,
-    chip:'M2'
-  }
+  
   return (
     <>
-    <Header></Header>
-      <button onClick={()=> dispatch(addToCart(product))}>AddToCart</button>
-      <button onClick={() => dispatch(RemoveToCart(product))}>RemoveToCart</button>
-      <button onClick={() => dispatch(emptyCart(product))}>EmptyCart</button>
-      <button onClick={() => dispatch(ProductData())}>ProductCart</button>
+    <BrowserRouter>
+      <Header/>
+      <Routes>
+        <Route path='/' element={<ProductMain/>}></Route>
+        <Route path='/cart' element={<Cart/>}></Route>
+      </Routes>
+    </BrowserRouter>
     </>
   )
 }
