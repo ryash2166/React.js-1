@@ -1,21 +1,39 @@
 import { ADD_TO_CART , REMOVE_TO_CART, EMPTY_CART} from "./Constant"
 
-const Reducer = (data = [], action) =>{
+const getCartDataFromLocalStorage = () => {
+    const cartData = localStorage.getItem('cart')
+    return cartData ? JSON.parse(cartData) : []
+}
+
+const Reducer = (state = getCartDataFromLocalStorage(), action) =>{
     switch(action.type){
         case ADD_TO_CART : 
-            console.warn('addToCartReducer Called', action);
-            return[action.data, ...data]
+            // const updatedCartAdd = [action.data , ...state]
+            // localStorage.setItem('cart' , JSON.stringify(updatedCartAdd))
+            // return updatedCartAdd
+            const existingProduct = state.findIndex(item => item.id === action.data.id)
+            let updatedCartData;
+
+            if(existingProduct >= 0 ){
+                updatedCartData = state.map((item) => item.id === action.data.id ? {...item, quantity:item.quantity += 1}: item)
+                localStorage.setItem('cart' , JSON.stringify(updatedCartData))
+            }else{
+                updatedCartData = [{...action.data, quantity : 1}, ...state]
+                localStorage.setItem('cart' , JSON.stringify(updatedCartData))
+            }
+            return existingProduct
         case REMOVE_TO_CART : 
-            console.warn('reomveToCartReducer Called', action);
             // data.length = data.length - 1
-            data.length = data.length ? data.length - 1 : []
-            return[...data]
+            const updatedCartRemove = state.filter(item => item.id !== action.data)
+            localStorage.setItem('cart' , JSON.stringify(updatedCartRemove))
+            // data.length = data.length ? data.length - 1 : []
+            return updatedCartRemove
+            
         case EMPTY_CART : 
-            console.warn('EmptyCartReducer Called', action);
-            return data = []
-        default : return data
+            localStorage.removeItem('cart')
+            return []
+        default : return state
     }
-    return ('reducer not called')
 }
 
 export default Reducer
