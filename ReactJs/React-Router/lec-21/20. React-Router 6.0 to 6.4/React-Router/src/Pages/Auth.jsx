@@ -1,32 +1,31 @@
 // authenticator with Protected Router (Save in Utitles)
 
+import { useState, useContext, createContext } from "react";
 
-import { useState,useContext,createContext, Children } from "react";
+const AuthContext = createContext(null);
 
-const AuthContext = createContext(null)
+export const AuthProvider = ({ children }) => {
+  const [user, setUser] = useState(null);
 
-export const AuthProvider = ({children}) => {
-    const [user,setUser] = useState(null)
+  const login = (user) => {
+    setUser(user);
+  };
 
-    const login = (user) => {
-        setUser(user)
-    }
+  const logout = (user) => {
+    setUser(null);
+  };
 
-    const logout = (user) => {
-        setUser(null)
-    }
-
-    return(
-        <>
-            <div>
-                <AuthContext.Provider value={{user , login , logout}}>
-                    {children}
-                </AuthContext.Provider>
-            </div>
-        </>
-    )
-}
+  return (
+    <>
+      <div>
+        <AuthContext.Provider value={{ user, login, logout }}>
+          {children}
+        </AuthContext.Provider>
+      </div>
+    </>
+  );
+};
 
 export const UseAuth = () => {
-    return useContext(AuthContext)
-}
+  return useContext(AuthContext);
+};

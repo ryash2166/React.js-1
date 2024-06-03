@@ -1,19 +1,20 @@
-import React, { useState } from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
 
   let [state , setState] = useState([]) 
     
+  console.log(state);
+
   async function componentDidMount()  {
     // let url = 'http://localhost:3000/User'
     let data = await fetch('http://localhost:3000/User')
     let Data = await data.json()
     setState(Data);
   }
-
   componentDidMount()
- 
     let navigate = useNavigate(); 
     const routeChange = () =>{ 
       let path = 'add'; 
@@ -24,6 +25,16 @@ const Home = () => {
       navigate(path);
     }
 
+    const onDelete = (id) => {
+      axios.delete(`http://localhost:3000/User/${id}`)
+      .then((reponse) => {
+        loadUser()
+      })
+      .catch((error) => {
+        console.log(error, "error data");
+      })
+    }
+  
   return (
       <section className="mx-auto w-full max-w-7xl  px-4 py-4 ">
         <div className="flex flex-col space-y-4 md:flex-row md:items-center md:justify-between md:space-y-0">
@@ -126,7 +137,7 @@ const Home = () => {
                         </span>
                       </td>
                       <td className="whitespace-nowrap px-4 py-4">
-                       <span className="text-sm">{element.address.city}</span>
+                       <span className="text-sm">{element.city}</span>
                       </td>
                       <td className="whitespace-nowrap px-4 py-4 text-sm text-gray-700">
                       <span className="text-sm">{element.profession}</span>
@@ -135,9 +146,9 @@ const Home = () => {
                         <button onClick={change} className="text-gray-700 hover:text-green-600">
                           Edit
                         </button>
-                        <a href="#" className="text-gray-700 hover:text-red-600 ml-5">
+                        <button onClick={() => onDelete(element.id)} className="text-gray-700 hover:text-red-600 ml-5">
                           Delete
-                        </a>
+                        </button>
                       </td>
                     </tr>
                   </tbody>
