@@ -25,16 +25,17 @@ const Add = () => {
     profession:""
   })
 
-  // const handleImgChange = (e) => {
-  //   const file = e.target.files(0)
-  //   if(file){
-  //     const reader = new FileReader()
-  //     reader.onloadend = () => {
-  //       setUser({...user , image:reader.result})
-  //     }
-  //     reader.readAsDataURL(file)
-  //   }
-  // }
+  const handleImgChange = (e) => {
+    const file = e.target.files(0)
+    if(file){
+      const reader = new FileReader()
+      reader.onloadend = () => {
+        setUser({...user , image:reader.result})
+      }
+      reader.readAsDataURL(file)
+    }
+  }
+  
   const onSubmitUser = (e) => {
     e.preventDefault();
     axios.post("http://localhost:3000/User" , user)
