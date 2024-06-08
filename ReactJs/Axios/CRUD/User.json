@@ -1,24 +1,28 @@
 {
-  "User": [
+  "users": [
     {
       "id": "2",
       "name": "Ervin Howell",
       "age": 23,
-      "profession": "UI & UX",
+      "profession": "Full Stack Developer",
       "username": "Antonette",
       "email": "Shanna@melissa.tv",
       "city": "Wisokyburgh",
-      "phone": "010-692-6593 x09125"
+      "phone": "0106926593",
+      "image": "https://xsgames.co/randomusers/assets/avatars/male/44.jpg",
+      "gender": "Male"
     },
     {
       "id": "3",
       "name": "Clementine Bauch",
       "age": 32,
-      "profession": "Full Stack Developer",
-      "username": "Samantha",
+      "profession": "DevOps Engineer",
+      "username": "Same",
       "email": "Nathan@yesenia.net",
       "city": "McKenziehaven",
-      "phone": "1-463-123-4447"
+      "phone": "14631234447",
+      "image": "https://xsgames.co/randomusers/assets/avatars/male/73.jpg",
+      "gender": "Male"
     },
     {
       "id": "4",
@@ -28,7 +32,9 @@
       "username": "Karianne",
       "email": "Julianne.OConner@kory.org",
       "city": "South Elvis",
-      "phone": "493-170-9623 x156"
+      "phone": "4931709623",
+      "image": "https://xsgames.co/randomusers/assets/avatars/female/39.jpg",
+      "gender": "Female"
     },
     {
       "id": "5",
@@ -38,17 +44,21 @@
       "username": "Kamren",
       "email": "Lucio_Hettinger@annie.ca",
       "city": "Roscoeview",
-      "phone": "(254)954-1289"
+      "phone": "92549541289",
+      "image": "https://xsgames.co/randomusers/assets/avatars/male/64.jpg",
+      "gender": "Male"
     },
     {
       "id": "6",
       "name": "Mrs. Dennis Schulist",
       "age": 23,
-      "profession": "Flutter",
+      "profession": "Back-End Developer",
       "username": "Leopoldo_Corkery",
       "email": "Karley_Dach@jasper.info",
       "city": "South Christy",
-      "phone": "1-477-935-8478 x6430"
+      "phone": "14779358478",
+      "image": "https://xsgames.co/randomusers/assets/avatars/female/44.jpg",
+      "gender": "Female"
     },
     {
       "id": "7",
@@ -58,7 +68,9 @@
       "username": "Elwyn.Skiles",
       "email": "Telly.Hoeger@billy.biz",
       "city": "Howemouth",
-      "phone": "210.067.6132"
+      "phone": "2100676132",
+      "image": "https://xsgames.co/randomusers/assets/avatars/female/20.jpg",
+      "gender": "Female"
     },
     {
       "id": "8",
@@ -68,7 +80,9 @@
       "username": "Maxime_Nienow",
       "email": "Sherwood@rosamond.me",
       "city": "Aliyaview",
-      "phone": "586.493.6943 x140"
+      "phone": "5864936943",
+      "image": "https://xsgames.co/randomusers/assets/avatars/female/31.jpg",
+      "gender": "Female"
     },
     {
       "id": "9",
@@ -78,7 +92,9 @@
       "username": "Delphine",
       "email": "Chaim_McDermott@dana.io",
       "city": "Bartholomebury",
-      "phone": "(775)976-6794 x41206"
+      "phone": "7759766790",
+      "image": "https://xsgames.co/randomusers/assets/avatars/male/17.jpg",
+      "gender": "Male"
     },
     {
       "id": "10",
@@ -88,7 +104,42 @@
       "username": "Moriah.Stanton",
       "email": "Rey.Padberg@karina.biz",
       "city": "Lebsackbury",
-      "phone": "024-648-3804"
+      "phone": "0246483804",
+      "image": "https://xsgames.co/randomusers/assets/avatars/male/74.jpg",
+      "gender": "Male"
+    },
+    {
+      "id": "08c4",
+      "username": "Antonette",
+      "name": "gfdfg",
+      "age": "21",
+      "phone": "3434342232",
+      "city": "South Christy",
+      "profession": "IOS Developer",
+      "image": "https://xsgames.co/randomusers/assets/avatars/female/33.jpg",
+      "gender": "Female"
+    },
+    {
+      "id": "f601",
+      "username": "Viv",
+      "name": "Ervin Howell",
+      "age": "21",
+      "phone": "3434342232",
+      "city": "South Christy",
+      "profession": "Mobile App Developer",
+      "image": "https://xsgames.co/randomusers/assets/avatars/female/63.jpg",
+      "gender": "Female"
+    },
+    {
+      "id": "bbb1",
+      "image": "https://xsgames.co/randomusers/assets/avatars/male/74.jpg",
+      "username": "Sam",
+      "name": "Clementine Bauch",
+      "age": "26",
+      "phone": "9879546780",
+      "city": "Texas",
+      "profession": "Cybersecurity Analyst",
+      "gender": "Male"
     }
   ]
 }
