@@ -1,33 +1,37 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
+import Navbar from "../Components/Navbar";
 
 const Home = () => {
   let [state, setState] = useState([]);
 
-  const [currentPage, setCurrentPage] = useState(1)
-  const [perPage, setPerPage] = useState(4)
+  const [currentPage, setCurrentPage] = useState(1);
+  const [perPage, setPerPage] = useState(4);
+  const [searchTerm, setSearchTerm] = useState("");
 
-  const totalPages = Math.ceil(state.length / perPage)
+  const filterData = state.filter(
+    (user) =>
+      user.username.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      user.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+  const totalPages = Math.ceil(state.length / perPage);
 
-  const indexOfLastData = currentPage * perPage
-  const indexOfFirstData = indexOfLastData - perPage
-  const currentData = state.slice(indexOfFirstData, indexOfLastData)
+  const indexOfLastData = currentPage * perPage;
+  const indexOfFirstData = indexOfLastData - perPage;
+  const currentData = filterData.slice(indexOfFirstData, indexOfLastData);
 
   const peginate = (pageNumber) => {
     setCurrentPage(pageNumber);
-  }
+  };
 
   const nextPage = () => {
-    setCurrentPage((prevPage) => prevPage + 1)
-  }
+    setCurrentPage((prevPage) => Math.min(prevPage + 1 , totalPages));
+  };
 
   const PrevPage = () => {
-    setCurrentPage((prevPage) => prevPage - 1)
-  }
-
-  const [searchTerm, setSearchTerm] = useState('')
-
+    setCurrentPage((prevPage) => prevPage - 1);
+  };
 
   async function componentDidMount() {
     // let url = 'http://localhost:3000/User'
@@ -36,24 +40,15 @@ const Home = () => {
     setState(Data);
   }
 
-
   let navigate = useNavigate();
   const routeChange = () => {
     let path = "add";
     navigate(path);
   };
 
-  const filterData = state.filter(
-    (user) =>
-      user.username.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      user.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      user.profession.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      user.city.toLowerCase().includes(searchTerm.toLowerCase())
-  );
-
-    useEffect(() => {
+  useEffect(() => {
     componentDidMount();
-  } , [])
+  }, []);
 
   const onDelete = (id) => {
     axios
@@ -68,6 +63,8 @@ const Home = () => {
 
   return (
     <div className="w-full">
+      <Navbar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+
       <section className="mx-auto w-full max-w-7xl  px-4 py-4 ">
         <div className="flex flex-col space-y-4 md:flex-row md:items-center md:justify-between md:space-y-0">
           <div className="flex w-full  max-md:block  justify-between items-center">
@@ -147,117 +144,110 @@ const Home = () => {
                       </th>
                     </tr>
                   </thead>
-                  {
-                    currentData.map((element) => (
-
-                      // filterData.map((element) => 
-                        //  (
-                          <tbody
-                            className="divide-y divide-gray-200 bg-white"
-                            key={element.id}
+                  {currentData.map((element) => (
+                    <tbody
+                      className="divide-y divide-gray-200 bg-white"
+                      key={element.id}
+                    >
+                      <tr>
+                        <td className="whitespace-nowrap px-4 py-4">
+                          <div className="flex items-center">
+                            <div className="h-10 w-10 flex-shrink-0">
+                              <img
+                                className="h-10 w-10 rounded-full object-cover"
+                                src={element.image}
+                                alt={element.name}
+                              />
+                            </div>
+                            <div className="ml-4">
+                              <div className="text-sm  text-gray-900">
+                                {element.username}
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td className="whitespace-nowrap px-12 py-4">
+                          <div className="text-sm font-medium text-gray-900 ">
+                            {element.name}
+                          </div>
+                        </td>
+                        <td className="whitespace-nowrap px-4 py-4">
+                          {element.age}
+                        </td>
+                        <td className="whitespace-nowrap px-4 py-4">
+                          <span className="text-sm">{element.phone}</span>
+                        </td>
+                        <td className="whitespace-nowrap px-4 py-4">
+                          <span className="text-sm">{element.city}</span>
+                        </td>
+                        <td className="whitespace-nowrap px-4 py-4 text-sm text-gray-700">
+                          <span className="text-sm">{element.profession}</span>
+                        </td>
+                        <td className="whitespace-nowrap px-4 py-4 text-sm text-gray-700">
+                          <span className="text-sm">{element.gender}</span>
+                        </td>
+                        <td className="whitespace-nowrap px-4 py-4 text-right text-[16px] font-medium">
+                          <Link to={`/edit/${element.id}`}>
+                            <button
+                              // onClick={change}
+                              className="text-gray-700 hover:text-green-600"
+                            >
+                              Edit
+                            </button>
+                          </Link>
+                          <button
+                            onClick={() => onDelete(element.id)}
+                            className="text-gray-700 hover:text-red-600 ml-5"
                           >
-                            <tr>
-                              <td className="whitespace-nowrap px-4 py-4">
-                                <div className="flex items-center">
-                                  <div className="h-10 w-10 flex-shrink-0">
-                                    <img
-                                      className="h-10 w-10 rounded-full object-cover"
-                                      src={element.image}
-                                      alt={element.name}
-                                    />
-                                  </div>
-                                  <div className="ml-4">
-                                    <div className="text-sm  text-gray-900">
-                                      {element.username}
-                                    </div>
-                                  </div>
-                                </div>
-                              </td>
-                              <td className="whitespace-nowrap px-12 py-4">
-                                <div className="text-sm font-medium text-gray-900 ">
-                                  {element.name}
-                                </div>
-                              </td>
-                              <td className="whitespace-nowrap px-4 py-4">
-                                {element.age}
-                              </td>
-                              <td className="whitespace-nowrap px-4 py-4">
-                                <span className="text-sm">{element.phone}</span>
-                              </td>
-                              <td className="whitespace-nowrap px-4 py-4">
-                                <span className="text-sm">{element.city}</span>
-                              </td>
-                              <td className="whitespace-nowrap px-4 py-4 text-sm text-gray-700">
-                                <span className="text-sm">
-                                  {element.profession}
-                                  
-                                </span>
-                              </td>
-                              <td className="whitespace-nowrap px-4 py-4 text-sm text-gray-700">
-                                <span className="text-sm">
-                                  {element.gender}
-                                  
-                                </span>
-                              </td>
-                              <td className="whitespace-nowrap px-4 py-4 text-right text-[16px] font-medium">
-                                <Link to={`/edit/${element.id}`}>
-                                  <button
-                                    // onClick={change}
-                                    className="text-gray-700 hover:text-green-600"
-                                  >
-                                    Edit
-                                  </button>
-                                </Link>
-                                <button
-                                  onClick={() => onDelete(element.id)}
-                                  className="text-gray-700 hover:text-red-600 ml-5"
-                                >
-                                  Delete
-                                </button>
-                              </td>
-                            </tr>
-                          </tbody>
-                        )
-                      )
-                    // ))
-                  }
+                            Delete
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  ))}
                 </table>
               </div>
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-center pt-6 gap-5">
-          <Link className="mx-2 font-semibold text-gray-900">
-            <button onClick={PrevPage} disabled={currentPage <= 1} className="flex items-center justify-center">
-              <span className="mr-1 mb-2 text-[18px]">&larr;</span>
-              <span className="text-[15px]">
-                Previous
-              </span>
-            </button>
-          </Link>
-          {
-            Array.from({ length: totalPages }, (_, i) => (
+        {currentData === 0 ? null : (
+          <div className="flex items-center justify-center pt-6 gap-5">
+            <Link className="mx-2 font-semibold text-gray-900">
+              <button
+                onClick={PrevPage}
+                disabled={currentPage <= 1}
+                className="flex items-center justify-center"
+              >
+                <span className="mr-1 mb-2 text-[18px]">&larr;</span>
+                <span className="text-[15px]">Previous</span>
+              </button>
+            </Link>
+            {Array.from({ length: totalPages }, (_, i) => (
               <button onClick={() => peginate(i + 1)}>
-                <NavLink className={`mx-1 flex justify-center items-center rounded-md border border-gray-400 px-3 py-2 text-gray-300 hover:scale-105 hover:bg-black hover:text-white`} style={{
-                  backgroundColor: currentPage == i + 1 ? 'black' : 'transparent', color: currentPage == i + 1 ? 'white' : 'inherit'
-                }}>
-                  <span key={i} >
-                    {i + 1}
-                  </span>
+                <NavLink
+                  className={`mx-1 flex justify-center items-center rounded-md border border-gray-400 px-3 py-2 text-gray-300 hover:scale-105 hover:bg-black hover:text-white`}
+                  style={{
+                    backgroundColor:
+                      currentPage == i + 1 ? "black" : "transparent",
+                    color: currentPage == i + 1 ? "white" : "inherit",
+                  }}
+                >
+                  <span key={i}>{i + 1}</span>
                 </NavLink>
               </button>
-            )
-            )
-          }
-          <Link className="mx-2 font-semibold text-gray-900">
-            <button onClick={nextPage} className="flex items-center justify-center">   
-              <span className="text-[15px]">
-                Next
-              </span>
-            <span className="ml-1 mb-2 text-[18px]">&rarr;</span>
-            </button>
-          </Link>
-        </div>
+            ))}
+            <Link className="mx-2 font-semibold text-gray-900">
+              <button
+                onClick={nextPage}
+                disabled={currentPage >= totalPages}
+                className="flex items-center justify-center"
+              >
+                <span className="text-[15px]">Next</span>
+                <span className="ml-1 mb-2 text-[18px]">&rarr;</span>
+              </button>
+            </Link>
+          </div>
+        )}
       </section>
     </div>
   );
