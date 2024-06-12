@@ -29,6 +29,8 @@
             <button class="fadein">Click to fade in boxes</button><br><br>
             <button class="fadeout">Click to fade out boxes</button>
             <button class="fadetoggle">Click to fade toggle boxes</button>
+            <button class="fadeto">Click to fade to boxes</button>
+
 
         </div>
         <div id="div1" style="width:100px;height:100px;display:none;background-color:red;"></div><br>
@@ -40,12 +42,12 @@
 
     <h2>Slide jQuery</h2>
 
-     <div style="margin-bottom: 10px;">
-         <div id="flip">Click to slide down panel</div>
-         <div id="panel">Hello world!</div>
-     </div>
+    <div style="margin-bottom: 10px;">
+        <div id="flip">Click to slide down panel</div>
+        <div id="panel">Hello world!</div>
+    </div>
 
-     <div style="margin-bottom: 10px;">
+    <div style="margin-bottom: 10px;">
         <div class="flip">Click to slide up panel</div>
         <div class="panel">Hello world!</div>
     </div>
@@ -54,6 +56,276 @@
         <div class="toggleflip">Click to slide toggle panel</div>
         <div class="togglepanel">Hello world!</div>
     </div>
+
+    <!-- Animate jQuery -->
+
+    <h2>Animate jQuery</h2>
+
+    <!-- Simple Animation -->
+
+    <button class="animate">Simple Animation</button>
+    <div class="simple"
+        style="height: 100px; width: 100px; background-color: rgb(147, 184, 252); position: absolute; margin-top: 10px;">
+        Simple</div>
+
+    <!-- Animation with Multiple Properties -->
+
+    <button class="multi">Multiple Properties Animation</button>
+    <div class="multiple"
+        style="height: 100px; width: 100px; background-color: rgb(78, 138, 250); position: absolute; margin-top: 10px; margin-left: 125px;">
+        Multiple</div>
+
+
+    <!-- Animation with Relative Values -->
+
+    <button class="relative">Animation with Relative Values</button>
+    <div class="value"
+        style="height: 100px; width: 100px; background-color: rgb(37, 107, 236); position: absolute; margin-top: 10px; margin-left: 320px;">
+        Relative</div>
+
+
+    <!-- Animation with Pre-defined Values -->
+
+    <!-- Values is Toggle Show and Hide -->
+
+    <button class="pre">Animation with Pre-defined Values</button>
+    <div class="defined"
+        style="height: 100px; width: 100px; background-color: rgb(41, 99, 206); position: absolute; margin-top: 10px; margin-left: 520px;">
+        Pre-defined</div>
+
+    <!-- ANimation with Queue Functionality -->
+
+    <!-- Example 1 -->
+
+    <button class="queue">Animation with Queue Functionality</button>
+    <div class="function"
+        style="height: 100px; width: 100px; background-color: rgb(13, 91, 235); position: absolute; margin-top: 10px; margin-left: 740px;">
+        Queue</div>
+
+    <!-- Example 2 -->
+    <button class="hi">Animation with Queue Functionality</button>
+    <div class="hello"
+        style="background:#98bf21;height:100px;width:200px;position:absolute; margin-left: 970px; margin-top: 10px;">
+        HELLO</div>
+
+    <!-- jQuery Stop Animations -->
+
+    <h2 style="margin-top: 150px;">jQuery Stop Animations</h2>
+
+    <div>
+        <button class="start">jQuery Start Animations</button>
+        <button class="stop">jQuery Stop Animations</button>
+
+        <div class="he" style="background:#98bf21;height:100px;width:200px;position:absolute; margin-top: 10px;">Stop
+        </div>
+    </div>
+
+    <!-- jQuery Callback Functions -->
+
+    <h2 style="margin-top: 150px;">jQuery Callback Functions</h2>
+
+    <div>
+        <!-- with Callback Function -->
+
+        <button class="with">Hide with Callback Function</button>
+        <p class="callback">This is a paragraph with little content.</p>
+
+        <button class="without">Hide without Callback Function</button>
+        <p class="call">This is a paragraph with little content.</p>
+    </div>
+
+    <!-- jQuery Method Chaining -->
+
+    <h2>jQuery Method Chaining</h2>
+    <div>
+        <p id="p1" style="padding: 10px; font-weight: 700;">jQuery - Chaining!!</p>
+
+        <button class="chaining">Click me</button>
+    </div>
+
+    <!-- jQuery HTML -->
+
+    <!-- jQuery Get Content and Attributes -->
+
+    <!-- Get Content - text(), html(), and val()
+
+        => text() - Sets or returns the text content of selected elements
+        => html() - Sets or returns the content of selected elements (including HTML markup)
+        => val() - Sets or returns the value of form fields -->
+
+    <h2>jQuery Get Content and Attributes</h2>
+
+    <h3>Get Content</h3>
+
+    <h4>Text() and HTML()</h4>
+    <div>
+        <!-- text() and html() Method -->
+
+        <p id="test">This is some <b>bold</b> text in a paragraph.</p>
+
+        <button id="btn1">Show Text</button>
+        <button id="btn2">Show HTML</button>
+    </div>
+
+    <h4>val()</h4>
+
+    <div>
+        <p>Name: <input type="text" id="val" value="Yash Rakholiya"></p>
+
+        <button class="value">Show Value</button>
+    </div>
+
+    <!-- Get Attributes - attr() -->
+
+    <h3>Get Attributes</h3>
+
+    <h4>attr()</h4>
+
+    <div>
+        <p><a href="https://aanstekelijk.nl/" id="link" target="_blank">aanstekelijk.nl</a></p>
+
+        <button class="attr">Show href Value</button>
+    </div>
+
+    <!-- jQuery - Set Content and Attributes -->
+
+    <!-- Set Content - text(), html(), and val()
+        =>  text() - Sets or returns the text content of selected elements
+        =>  html() - Sets or returns the content of selected elements (including HTML markup)
+        =>  val() - Sets or returns the value of form fields -->
+
+    <h2>jQuery Set Content and Attributes</h2>
+
+    <h3>Set Content</h3>
+
+    <h4>Text() , HTML() , Val()</h4>
+
+    <div>
+        <p id="settest1">This is a paragraph.</p>
+        <p id="settest2">This is another paragraph.</p>
+
+        <p>Input field: <input type="text" id="settest3" value="Pushpa"></p>
+
+        <button id="setbtn1">Set Text</button>
+        <button id="setbtn2">Set HTML</button>
+        <button id="setbtn3">Set Value</button>
+    </div>
+
+    <!-- A Callback Function for text(), html(), and val() -->
+
+    <h4>A Callback Function for text(), html(), and val()</h4>
+
+    <div>
+        <p id="calltest1">This is a <b>bold</b> paragraph.</p>
+        <p id="calltest2">This is another <b>bold</b> paragraph.</p>
+
+        <button id="callbtn1">Show Old/New Text</button>
+        <button id="callbtn2">Show Old/New HTML</button>
+    </div>
+
+    <!-- Set Attributes - attr() -->
+
+    <h3>Set Attributes</h3>
+
+    <h4>attr()</h4>
+
+    <div>
+        <p><a href="https://dennissnellenberg.com/" id="w3s" target="_blank"
+                title="dennissnellenberg.com">dennissnellenberg.com</a></p>
+
+        <button id="setval">Change href Value</button>
+    </div>
+
+    <!-- jQuery - Add Elements -->
+
+    <h2>jQuery - Add Elements</h2>
+    <!-- Add New HTML Content 
+            =>  append() - Inserts content at the end of the selected elements
+            =>  prepend() - Inserts content at the beginning of the selected elements
+            =>  after() - Inserts content after the selected elements
+            =>  before() - Inserts content before the selected elements-->
+
+    <h3>Add New HTML Content</h3>
+
+    <h4>jQuery append() Method</h4>
+
+    <div>
+        <p class="appendp">This is a paragraph.</p>
+        <p class="appendp">This is another paragraph.</p>
+
+        <ol class="appendol">
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+        </ol>
+
+        <button id="append1">Append text</button>
+        <button id="append2">Append list items</button>
+    </div>
+
+    <h4>jQuery prepend() Method</h4>
+
+    <div>
+        <p class="prependp">This is a paragraph.</p>
+        <p class="prependp">This is another paragraph.</p>
+
+        <ol class="prependol">
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+        </ol>
+
+        <button id="prepend1">Prepend text</button>
+        <button id="prepend2">Prepend list items</button>
+    </div>
+
+    <h4>jQuery after() and before() Methods</h4>
+
+    <div>
+        <img src="download.jpeg" alt="jQuery" id="img" width="100" height="140" style="object-fit: cover;"><br><br>
+
+        <button id="before">Insert before</button>
+        <button id="after">Insert after</button>
+    </div>
+
+    <!-- jQuery - Remove Elements -->
+
+     <!-- Remove Elements/Content
+        =>  remove() - Removes the selected element (and its child elements)
+        =>  empty() - Removes the child elements from the selected element -->
+
+    <h2>jQuery - Remove Elements</h2>
+
+    <h3>Remove Elements / Content</h3>
+
+    <h4>jQuery remove() Method</h4>
+
+    <div>
+        <div id="remove" style="height:100px;width:300px;border:1px solid black;background-color:yellow; padding: 5px;">
+
+            This is some text in the div.
+            <p>This is a paragraph in the div.</p>
+            <p>This is another paragraph in the div.</p>
+        </div>
+        <br>
+
+        <button class="remove">Remove div element</button>
+    </div>
+
+    <h4>jQuery empty() Method</h4>
+
+    <div>
+        <div id="empty" style="height:100px;width:300px;border:1px solid black;background-color:rgb(255, 179, 37); padding: 5px;">
+
+            This is some text in the div.
+            <p>This is a paragraph in the div.</p>
+            <p>This is another paragraph in the div.</p>
+        </div>
+        <br>
+
+        <button class="empty">Empty div element</button>
+    </div>
+
     <script src="jQuery.js"></script>
 </body>
 
