@@ -290,7 +290,7 @@
 
     <!-- jQuery - Remove Elements -->
 
-     <!-- Remove Elements/Content
+    <!-- Remove Elements/Content
         =>  remove() - Removes the selected element (and its child elements)
         =>  empty() - Removes the child elements from the selected element -->
 
@@ -315,7 +315,8 @@
     <h4>jQuery empty() Method</h4>
 
     <div>
-        <div id="empty" style="height:100px;width:300px;border:1px solid black;background-color:rgb(255, 179, 37); padding: 5px;">
+        <div id="empty"
+            style="height:100px;width:300px;border:1px solid black;background-color:rgb(255, 179, 37); padding: 5px;">
 
             This is some text in the div.
             <p>This is a paragraph in the div.</p>
@@ -326,6 +327,394 @@
         <button class="empty">Empty div element</button>
     </div>
 
+
+    <!-- jQuery - Get and Set CSS Classes -->
+
+    <!-- jQuery Manipulating CSS
+    
+        =>  addClass() - Adds one or more classes to the selected elements
+        =>  removeClass() - Removes one or more classes from the selected elements
+        =>  toggleClass() - Toggles between adding/removing classes from the selected elements
+        =>  css() - Sets or returns the style attribute -->
+    <h2>jQuery - Get and Set CSS Classes</h2>
+
+    <h3>jQuery addClass() Method</h3>
+
+    <div>
+        <h1 id="blue">Heading 1</h1>
+        <h1>Heading 2</h1>
+
+        <p id="important">This is another paragraph.</p>
+
+        <div>This is some important text!</div><br>
+
+        <button id="buttonAdd">Add classes to elements</button>
+    </div>
+
+    <h3>jQuery removeClass() Method</h3>
+
+    <div>
+        <h1 class="blueRemove">Heading 1</h1>
+        <h2 class="blueRemove">Heading 2</h2>
+
+        <p class="blueRemove">This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+
+        <button class="buttonRemove">Remove class from elements</button>
+    </div>
+
+    <h3>jQuery toggleClass() Method</h3>
+
+    <div>
+        <h1 id="bluetoggle">Heading 1</h1>
+        <h2 id="bluetoggle">Heading 2</h2>
+
+        <p>This is a paragraph.</p>
+        <p id="bluetoggle">This is another paragraph.</p>
+
+        <button class="buttontoggle">Toggle class</button>
+    </div>
+
+    <!-- jQuery - Dimensions -->
+
+    <h2>jQuery - Dimensions</h2>
+
+    <!-- jQuery Dimension Methods
+
+        =>  width()
+        =>  height()
+        =>  innerWidth()
+        =>  innerHeight()
+        =>  outerWidth()
+        =>  outerHeight() -->
+
+    <h3>jQuery width() and height() Methods</h3>
+
+    <div>
+        <div id="dimensions1"
+            style="height: 100px; width: 300px; padding: 10px; margin: 3px; border: 1px solid blue; background-color: lightblue;">
+        </div><br>
+
+        <button class="dimensionsButton1">Display dimensions of div</button>
+    </div>
+
+    <h3>jQuery innerWidth() and innerHeight() Methods</h3>
+
+    <div>
+        <div id="dimensions2"
+            style="height: 100px; width: 300px; padding: 10px; margin: 3px; border: 1px solid blue; background-color: lightblue;">
+        </div><br>
+
+        <button class="dimensionsButton2">Display dimensions of div</button>
+    </div>
+
+    <h3>jQuery outerWidth() and outerHeight() Methods</h3>
+
+    <div>
+        <div id="dimensions3"
+            style="height: 100px; width: 300px; padding: 10px; margin: 3px; border: 1px solid blue; background-color: lightblue;">
+        </div><br>
+
+        <button class="dimensionsButton3">Display dimensions of div</button>
+    </div>
+
+    <h3>jQuery outerWidth(true) and outerHeight(true) Methods</h3>
+
+    <div>
+        <div id="dimensions4"
+            style="height: 100px; width: 400px; padding: 10px; margin: 3px; border: 1px solid blue; background-color: lightblue;">
+        </div><br>
+
+        <button class="dimensionsButton4">Display dimensions of div</button>
+    </div>
+
+    <!-- jQuery Traversing - Ancestors -->
+
+    <!-- Traversing Up the DOM Tree
+
+        =>  parent()
+        =>  parents()
+        =>  parentsUntil() -->
+
+    <h2>jQuery Traversing - Ancestors</h2>
+
+    <h3>jQuery parent() Method</h3>
+
+    <div>
+        <div class="ancestors">
+            <div style="width:500px;">div
+                <ul>ul
+                    <li>li
+                        <span class="parent">span</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div style="width:500px;">div
+                <p>p
+                    <span class="parent">span</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <h3>jQuery parents() Method</h3>
+
+    <!-- <div>
+        <div class="ancestors">
+            <div  style="width:500px;">div 
+                <ul>ul
+                    <li>li 
+                        <span class="parents">span</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div> -->
+
+    <h3>jQuery parentsUntil() Method</h3>
+
+
+    <!-- <div>
+        <div class="ancestors">
+            <div  style="width:500px;">div 
+                <ul>ul
+                    <li>li 
+                        <span class="parentsutils">span</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- jQuery Traversing - Descendants -->
+
+    <h2>jQuery Traversing - Descendants</h2>
+
+    <h3>jQuery children() Method</h3>
+
+    <div class="descendants" style="width:500px;">div (current element)
+        <p>p (child)
+            <span>span (grandchild)</span>
+        </p>
+        <p>p (child)
+            <span>span (grandchild)</span>
+        </p>
+    </div>
+
+    <h3>jQuery children(first , second) Method</h3>
+
+    <div class="descendants1" style="width:500px;">div (current element)
+        <p class="first">p (child)
+            <span>span (grandchild)</span>
+        </p>
+        <p class="second">p (child)
+            <span>span (grandchild)</span>
+        </p>
+    </div>
+
+    <h3>jQuery find() Method</h3>
+
+    <div class="descendants2" style="width:500px;">div (current element)
+        <p>p (child)
+            <span>span (grandchild)</span>
+        </p>
+        <p>p (child)
+            <span>span (grandchild)</span>
+        </p>
+    </div>
+
+    <h3>jQuery find(first , second) Method</h3>
+
+    <div class="descendants3" style="width:500px;">div (current element)
+        <p class="first">p (child)
+            <span>span (grandchild)</span>
+        </p>
+        <p class="second">p (child)
+            <span>span (grandchild)</span>
+        </p>
+    </div>
+
+    <!-- jQuery Traversing - Siblings -->
+
+    <h2>jQuery Traversing - Siblings</h2>
+
+    <h3>jQuery siblings() Method</h3>
+
+    <div class="siblings">
+        <div>div (parent)
+            <p>p</p>
+            <span>span</span>
+            <h2 class="siblings1">h2</h2>
+            <h3>h3</h3>
+            <p>p</p>
+        </div>
+    </div>
+    <h3>jQuery siblings() Method-2</h3>
+
+    <div class="siblings2">
+        <div>div (parent)
+            <p>p</p>
+            <span>span</span>
+            <h2 class="siblings-2">h2</h2>
+            <h3>h3</h3>
+            <p>p</p>
+        </div>
+    </div>
+
+    <!-- jQuery next() Method -->
+
+    <h3>jQuery next() Method</h3>
+    <div class="next">
+        <div>div (parent)
+            <p>p</p>
+            <span>span</span>
+            <h2 class="next1">h2</h2>
+            <h3>h3</h3>
+            <p>p</p>
+        </div>
+    </div>
+
+    <!-- jQuery nextAll() Method -->
+
+    <h3>jQuery nextAll() Method</h3>
+    <div class="nextall">
+        <div>div (parent)
+            <p>p</p>
+            <span>span</span>
+            <h2 class="next2">h2</h2>
+            <h3>h3</h3>
+            <p>p</p>
+        </div>
+    </div>
+
+    <!-- jQuery nextUntil() Method -->
+
+    <h3>jQuery nextUntil() Method</h3>
+    <div class="nextuntil">
+        <div>div (parent)
+            <p>p</p>
+            <span>span</span>
+            <h2 class="next3">h2</h2>
+            <h3>h3</h3>
+            <p>p</p>
+        </div>
+    </div>
+
+    <!-- jQuery prev() Method -->
+
+    <h3>jQuery prev() Method</h3>
+    <div class="prev">
+        <div>div (parent)
+            <p>p</p>
+            <span>span</span>
+            <h2 class="prev1">h2</h2>
+            <h3>h3</h3>
+            <p>p</p>
+        </div>
+    </div>
+
+    <!-- jQuery prevAll() Method -->
+
+    <h3>jQuery prevAll() Method</h3>
+    <div class="prevall">
+        <div>div (parent)
+            <p>p</p>
+            <span>span</span>
+            <h2 class="prev2">h2</h2>
+            <h3>h3</h3>
+            <p>p</p>
+        </div>
+    </div>
+
+    <!-- jQuery prevUntil() Method -->
+
+    <h3>jQuery prevUntil() Method</h3>
+    <div class="prevuntil">
+        <div>div (parent)
+            <p>p</p>
+            <span>span</span>
+            <h2 class="prev3">h2</h2>
+            <h3>h3</h3>
+            <p>p</p>
+        </div>
+    </div>
+
+    <!-- jQuery Traversing - Filtering -->
+
+    <h2>jQuery Traversing - Filtering</h2>
+
+    <h3>jQuery first() Method</h3>
+
+    <div>
+        <div class="filterFirst" style="border: 1px solid black;">
+            <p>A paragraph in a div.</p>
+            <p>Another paragraph in a div.</p>
+        </div>
+        <br>
+
+        <div class="filterFirst" style="border: 1px solid black;">
+            <p>A paragraph in another div.</p>
+            <p>Another paragraph in another div.</p>
+        </div>
+        <br>
+
+        <div class="filterFirst" style="border: 1px solid black;">
+            <p>A paragraph in another div.</p>
+            <p>Another paragraph in another div.</p>
+        </div>
+    </div>
+
+    <h3>jQuery last() Method</h3>
+
+    <div>
+        <div class="filterLast" style="border: 1px solid black;">
+            <p>A paragraph in a div.</p>
+            <p>Another paragraph in a div.</p>
+        </div>
+        <br>
+
+        <div class="filterLast" style="border: 1px solid black;">
+            <p>A paragraph in another div.</p>
+            <p>Another paragraph in another div.</p>
+        </div>
+        <br>
+
+        <div class="filterLast" style="border: 1px solid black;">
+            <p>A paragraph in another div.</p>
+            <p>Another paragraph in another div.</p>
+        </div>
+    </div>
+
+    <h3>jQuery eq() method</h3>
+
+    <!-- The eq() method returns an element with a specific index number of the selected elements. -->
+
+    <div>
+        <p class="filterEq">My name is Donald (index 0).</p>
+        <p class="filterEq">Donald Duck (index 1).</p>
+        <p class="filterEq">I live in Duckburg (index 2).</p>
+        <p class="filterEq">My best friend is Mickey (index 3).</p>
+    </div> 
+
+    <h3>jQuery filter() Method</h3>
+
+    <div>
+        <p>My name is Donald.</p>
+        <p class="intro">I live in Duckburg.</p>
+        <p class="intro">I love Duckburg.</p>
+        <p>My best friend is Mickey.</p>
+    </div>
+
+    <h3>jQuery not() Method</h3>
+
+    <!-- <div>
+        <p>My name is Donald.</p>
+        <p class="intro1">I live in Duckburg.</p>
+        <p class="intro1">I love Duckburg.</p>
+        <p>My best friend is Mickey.</p>
+    </div> -->
+    
     <script src="jQuery.js"></script>
 </body>
 

@@ -147,7 +147,7 @@ $(function () {
 
 //  jQuery Stop Animations
 
-$(document).ready(function () {
+$(function () {
   $(".start").click(function () {
     var div = $(".he");
     div.animate({ left: "100px" }, "slow");
@@ -275,7 +275,7 @@ $(function(){
 
 //  jQuery prepend() Method
 
-$(document).ready(function(){
+$(function(){
   $("#prepend1").click(function(){
     $(".prependp").prepend("<b>Prepended text</b>. ");
   });
@@ -286,7 +286,7 @@ $(document).ready(function(){
 
 //  jQuery after() and before() Methods
 
-$(document).ready(function(){
+$(function(){
   $("#before").click(function(){
     $("#img").before("<b>Before</b>");
   });
@@ -300,7 +300,7 @@ $(document).ready(function(){
 
 //  jQuery remove() Method
 
-$(document).ready(function(){
+$(function(){
   $(".remove").click(function(){
     $("#remove").remove();
   });
@@ -308,8 +308,221 @@ $(document).ready(function(){
 
 //  jQuery empty() Method
 
-$(document).ready(function(){
+$(function(){
   $(".empty").click(function(){
     $("#empty").empty();
   });
 });
+
+
+//  jQuery Class() Method
+
+//  jQuery addClass() Method
+
+$(function(){
+  $("#buttonAdd").click(function(){
+    $("#blue").addClass("blue");
+    $("#important").addClass("important");
+  });
+});
+
+//  jQuery removeClass() Method
+
+$(function(){
+  $(".buttonRemove").click(function(){
+    $("h1, h2, p").removeClass("blueRemove");
+  });
+});
+
+//  jQuery toggleClass() Method
+
+
+$(function(){
+  $(".buttontoggle").click(function(){
+    $("#bluetoggle ").toggleClass("bluetoggle");
+  });
+});
+
+//  jQuery - Dimensions 
+
+//  jQuery width() and height() Methods
+
+$(function(){
+  $(".dimensionsButton1").click(function(){
+    var txt = "";
+    txt += "Width of div: " + $("#dimensions1").width() + "</br>";
+    txt += "Height of div: " + $("#dimensions1").height();
+    $("#dimensions1").html(txt);
+  });
+});
+
+
+//  jQuery innerWidth() and innerHeight() Methods
+
+$(function(){
+  $(".dimensionsButton2").click(function(){
+    var txt = "";
+    txt += "Width of div: " + $("#dimensions2").width() + "</br>";
+    txt += "Height of div: " + $("#dimensions2").height() + "</br>";
+    txt += "Inner width of div: " + $("#dimensions2").innerWidth() + "</br>";
+    txt += "Inner height of div: " + $("#dimensions2").innerHeight();
+    $("#dimensions2").html(txt);
+  });
+});
+
+//  jQuery outerWidth() and outerHeight() Methods
+
+$(function(){
+  $(".dimensionsButton3").click(function(){
+    var txt = "";
+    txt += "Width of div: " + $("#dimensions3").width() + "</br>";
+    txt += "Height of div: " + $("#dimensions3").height() + "</br>";
+    txt += "Outer width of div: " + $("#dimensions3").outerWidth() + "</br>";
+    txt += "Outer height of div: " + $("#dimensions3").outerHeight();
+    $("#dimensions3").html(txt);
+  });
+});
+
+//  jQuery outerWidth(true) and outerHeight(true) Methods
+
+$(function(){
+  $(".dimensionsButton4").click(function(){
+    var txt = "";
+    txt += "Width of div: " + $("#dimensions4").width() + "</br>";
+    txt += "Height of div: " + $("#dimensions4").height() + "</br>";
+    txt += "Outer width of div: " + $("#dimensions4").outerWidth(true) + "</br>";
+    txt += "Outer height of div: " + $("#dimensions4").outerHeight(true);
+    $("#dimensions4").html(txt);
+  });
+});
+
+
+//  jQuery Traversing - Ancestors
+
+//  jQuery parent() Method
+
+$(function(){
+  $(".parent").parent().css({"color": "red", "border": "2px solid red"});
+});
+
+//  jQuery parents() Method
+
+// $(function(){
+//   $(".parents").parents().css({"color": "red", "border": "2px solid red"});
+// });
+
+//  jQuery parentsUntil() Method
+
+// $(function(){
+//   $(".parentsutils").parentsUntil().css({"color": "red", "border": "2px solid red"});
+// });
+
+//  jQuery Traversing - Descendants
+
+//  jQuery children() Method
+
+$(function(){
+  $(".descendants").children().css({"color": "red", "border": "2px solid red"});
+});
+
+//  jQuery children(first , second) Method
+
+$(function(){
+  $(".descendants1").children("p.first").css({"color": "red", "border": "2px solid red"});
+});
+
+//  jQuery find() Method
+
+
+$(function(){
+  $(".descendants2").find("span").css({"color": "red", "border": "2px solid red"});
+});
+
+//  jQuery find(first , second) Method
+
+$(function(){
+  $(".descendants3").find("*").css({"color": "red", "border": "2px solid red"});
+});
+
+
+//  jQuery Traversing - Siblings 
+
+//  jQuery siblings() Metho
+
+$(function(){
+  $(".siblings1").siblings().css({"color": "red", "border": "2px solid red"});
+});
+
+$(function(){
+  $(".siblings-2").siblings("p").css({"color": "red", "border": "2px solid red"});
+});
+
+
+//  jQuery next() Method
+
+$(function(){
+  $(".next1").next().css({"color": "red", "border": "2px solid red"});
+});
+
+//  jQuery nextAll() Method
+
+$(function(){
+  $(".next2").nextAll().css({"color": "red", "border": "2px solid red"});
+});
+
+//  jQuery nextUntil() Method
+
+$(function(){
+  $(".next3").nextUntil().css({"color": "red", "border": "2px solid red"});
+});
+
+//  jQuery prev() Method
+
+$(function(){
+  $(".prev1").prev().css({"color": "red", "border": "2px solid red"});
+});
+
+//  jQuery prevAll() Method
+
+$(function(){
+  $(".prev2").prevAll().css({"color": "red", "border": "2px solid red"});
+});
+
+//  jQuery prevUntil() Method
+
+$(function(){
+  $(".prev3").prevUntil().css({"color": "red", "border": "2px solid red"});
+});
+
+//  jQuery Traversing - Filtering
+
+//  jQuery first() Method
+
+$(document).ready(function(){
+  $(".filterFirst").first().css("background-color", "yellow");
+});
+
+//  jQuery flast() Method
+
+$(document).ready(function(){
+  $(".filterLast").last().css("background-color", "yellow");
+});
+
+
+//  jQuery eq() method
+
+$(document).ready(function(){
+  $(".filterEq").eq(1).css("background-color", "yellow");
+});
+
+//  jQuery filter() method
+
+$(document).ready(function(){
+  $("p").filter(".intro").css("background-color", "yellow");
+});
+
+//  jQuery not() method
+
+// $(function(){
+//   $("p").not(".intro1").css("background-color", "yellow");
+// });

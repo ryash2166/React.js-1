@@ -45,3 +45,39 @@
     padding: 50px;
     display: none;
 }
+
+/* jQuery addClass() Method */
+
+.important {
+    font-weight: bold;
+    font-size: xx-large;
+  }
+  
+  .blue , .blueRemove , .bluetoggle{
+    color: blue;
+  }
+
+  .ancestors *  { 
+    display: block;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 5px;
+    margin: 15px;
+  }
+
+
+  .descendants  * , .descendants1 * , .descendants2 * , .descendants3 * { 
+    display: block;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 5px;
+    margin: 15px;
+  }
+
+  .siblings * , .siblings2 * , .next * , .nextuntil * , .nextall * , .prev * , .prevall * , .prevuntil * { 
+    display: block;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 5px;
+    margin: 15px;
+  }
