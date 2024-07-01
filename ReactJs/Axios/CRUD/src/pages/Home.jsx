@@ -144,10 +144,10 @@ const Home = () => {
                       </th>
                     </tr>
                   </thead>
-                  {currentData.map((element) => (
+                  {currentData.map((element , ind) => (
                     <tbody
                       className="divide-y divide-gray-200 bg-white"
-                      key={element.id}
+                      key={ind}
                     >
                       <tr>
                         <td className="whitespace-nowrap px-4 py-4">

@@ -7,6 +7,11 @@ const initialValues = {
     Email: "",
     Password: "",
   };
+
+  const onSubmit = (value) => {
+    console.log("First Data", value);
+  };
+
 const Login4 = () => {
   return (
     <>
@@ -16,7 +21,7 @@ const Login4 = () => {
           <Formik
             initialValues={initialValues}
             onSubmit={onSubmit}
-            validationSchema={validationSchema}
+            // validationSchema={validationSchema}
           >
             <Form className="">
               <label htmlFor="" className="">
