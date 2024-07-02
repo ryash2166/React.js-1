@@ -9,8 +9,6 @@ const passport = require('passport');
 app.set('view engine', 'ejs')
 app.use(express.urlencoded({ extended: true }))
 
-
-
 app.use(session({
     secret: 'keyboard cat',
     resave: false,
