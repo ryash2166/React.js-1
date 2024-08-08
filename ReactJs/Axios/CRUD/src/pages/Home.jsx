@@ -4,6 +4,7 @@ import { Link, NavLink, useNavigate } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 
 const Home = () => {
+
   let [state, setState] = useState([]);
 
   const [currentPage, setCurrentPage] = useState(1);
@@ -33,7 +34,7 @@ const Home = () => {
     setCurrentPage((prevPage) => prevPage - 1);
   };
 
-  async function componentDidMount() {
+  const componentDidMount = async () => {
     // let url = 'http://localhost:3000/User'
     let data = await fetch("http://localhost:3000/users");
     let Data = await data.json();
@@ -222,10 +223,10 @@ const Home = () => {
                 <span className="text-[15px]">Previous</span>
               </button>
             </Link>
-            {Array.from({ length: totalPages }, (_, i) => (
+            {Array.from({ length: totalPages }, ( _ , i ) => (
               <button onClick={() => peginate(i + 1)}>
                 <NavLink
-                  className={`mx-1 flex justify-center items-center rounded-md border border-gray-400 px-3 py-2 text-gray-300 hover:scale-105 hover:bg-black hover:text-white`}
+                  className={ `mx-1 flex justify-center items-center rounded-md border border-gray-400 px-3 py-2 text-gray-300 hover:scale-105 hover:bg-black hover:text-white` }
                   style={{
                     backgroundColor:
                       currentPage == i + 1 ? "black" : "transparent",

@@ -1,9 +1,8 @@
-// src/components/Navbar.js
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import emart from "../assets/emart.webp";
-const Navbar = ({searchTerm , setSearchTerm}) => {
+const Navbar = ({ setSearchTerm }) => {
   
   return (
     <nav className=" p-[1rem] flex items-center justify-between border-b-[1px] border-slate-500 bg-zinc-300">

@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { useFormik } from "formik";
-import * as Yup from "yup";
 import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 
@@ -29,7 +27,7 @@ const Edit = () => {
     setUser(response.data);
   };
 
-  useEffect(function () {
+  useEffect( () => {
     loadUserWithId();
   }, []);
 
@@ -50,6 +48,7 @@ const Edit = () => {
   //       navigate('/')
   //   })
   // }
+
   const HandelSubmit = async (e) => {
     e.preventDefault();
     await axios.put(`http://localhost:3000/users/${id}`, user);
@@ -207,6 +206,7 @@ const Edit = () => {
             className="shadow appearance-none border rounded w-full py-3 px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             // onChange={getInputVal}
             onChange={(e) => setUser({ ...user, username: e.target.value })}
+            required
           />
         </div>
         <div className="mb-4">
@@ -225,6 +225,7 @@ const Edit = () => {
             className="shadow appearance-none border rounded w-full py-3 px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             // onChange={getInputVal}
             onChange={(e) => setUser({ ...user, name: e.target.value })}
+            required
           />
         </div>
 
@@ -244,6 +245,7 @@ const Edit = () => {
             className="shadow appearance-none border rounded w-full py-3 px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             // onChange={getInputVal}
             onChange={(e) => setUser({ ...user, age: e.target.value })}
+            required
           />
         </div>
 
@@ -263,6 +265,7 @@ const Edit = () => {
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             // onChange={getInputVal}
             onChange={(e) => setUser({ ...user, phone: e.target.value })}
+            required
           />
         </div>
 
@@ -282,6 +285,7 @@ const Edit = () => {
             className="shadow appearance-none border rounded w-full py-3 px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             // onChange={getInputVal}
             onChange={(e) => setUser({ ...user, phone: e.target.value })}
+            required
           />
         </div>
 
@@ -297,6 +301,7 @@ const Edit = () => {
             name="profession"
             value={user.profession}
             onChange={(e) => setUser({ ...user, profession: e.target.value })}
+            required
             // onChange={getInputVal}
             className="w-full appearance-none shadow cursor-pointer rounded-md border bg-transparent px-[16px] py-[10px] leading-tight text-gray-700 focus:outline-gray-500"
           >
@@ -343,6 +348,7 @@ const Edit = () => {
                   checked={user.gender === "Male"}
                   // {employee.gender === "male" ?  checked : ""}
                   name="gender"
+                  required
                 />
 
                 <div className="hover:bg-gray-50 flex items-center justify-start gap-x-2 py-2 px-3 border-2 rounded-md shadow cursor-pointer  border-gray-200 group peer-checked:border-gray-500">

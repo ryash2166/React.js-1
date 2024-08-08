@@ -1,14 +1,8 @@
 import React, { useState } from 'react';
-import { useFormik } from 'formik';
-import * as Yup from 'yup';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 const Add = () => {
-
-  
-
-
 
   let navigate = useNavigate(); 
     const routeChange = () =>{ 
@@ -187,7 +181,7 @@ const Add = () => {
             name='username'
             placeholder='Username'
             className="shadow appearance-none border rounded w-full py-3 px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-        
+            required
             onChange={(e) => setUser({...user , username:e.target.value})}
           />
         </div>
@@ -201,7 +195,7 @@ const Add = () => {
             name='name'
             placeholder='Name'
             className="shadow appearance-none border rounded w-full py-3 px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-
+            required
             onChange={(e) => setUser({...user , name:e.target.value})}
           />
         </div>
@@ -214,8 +208,9 @@ const Add = () => {
             type="number"
             id="age"
             placeholder='Age'
-            className='shadow appearance-none border rounded w-full py-3 px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' onChange={(e) => setUser({...user , age:e.target.value})}
-    
+            className='shadow appearance-none border rounded w-full py-3 px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' 
+            onChange={(e) => setUser({...user , age:e.target.value})}
+            required
           />
         </div>
         
@@ -228,7 +223,9 @@ const Add = () => {
             id="phone"
             name='phone'
             placeholder='Contact Number'
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"onChange={(e) => setUser({...user , phone:e.target.value})}
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            required
+            onChange={(e) => setUser({...user , phone:e.target.value})}
           />
         
         </div>
@@ -243,6 +240,7 @@ const Add = () => {
             name='city'
             placeholder='City'
             className="shadow appearance-none border rounded w-full py-3 px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            required
             onChange={(e) => setUser({...user , city:e.target.value})}
           />
       
